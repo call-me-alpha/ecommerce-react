@@ -1,0 +1,74 @@
+.header {
+    background-color: $main-bg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: $header-height;
+
+    .container {
+        height: 100%;
+    }
+
+    &__logo {
+        @include flex(center, center);
+        position: absolute;
+        inset: 0;
+        margin-top: -8px;
+        pointer-events: none;
+
+        img {
+            height: 50px;
+        }
+    }
+
+    &__menu {
+        @include flex(center, space-between);
+        height: 100%;
+        font-size: 1.8rem;
+
+        &__mobile-toggle {
+            display: none;
+        }
+
+        &__item ~ &__item {
+            margin-left: 38px;
+        }
+
+        &__left,
+        &__right {
+            @include flex(center, center);
+            height: 100%;
+        }
+
+        &__right {
+            font-size: 2.2rem;
+            &__item {
+                @include flex(center, center);
+            }
+            @include tablet {
+                margin-left: auto;
+            }
+            @include mobile {
+                font-size: 3rem;
+            }
+        }
+
+        &__item.active {
+            font-weight: 600;
+            color: $main-color;
+        }
+
+        &__item:hover {
+            cursor: pointer;
+            color: $main-color;
+        }
+
+        &__left {
+            &__close {
+                display: none;
+            }
+        }
+    }
+}
