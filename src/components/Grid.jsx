@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Grid = (props) => {
-    console.log(props)
     const style = {
         gap: props.gap ? `${props.gap}px` : '0'
     }

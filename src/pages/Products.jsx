@@ -1,5 +1,7 @@
+import Helmet from '../components/Helmet'
+
 const Products = () => {
-    return <div>Products</div>
+    return <Helmet title="Sản phẩm">Products</Helmet>
 }
 
 export default Products

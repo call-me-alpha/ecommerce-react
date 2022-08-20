@@ -1,5 +1,7 @@
+import Helmet from '../components/Helmet'
+
 const Cart = () => {
-    return <div>Cart</div>
+    return <Helmet title="Giỏ hàng">Cart</Helmet>
 }
 
 export default Cart

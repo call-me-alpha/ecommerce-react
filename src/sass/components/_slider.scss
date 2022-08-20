@@ -1,0 +1,10 @@
+.slider {
+    &__item {
+        img {
+            width: 100%;
+        }
+    }
+    @include mobile {
+        overflow: hidden;
+    }
+}
