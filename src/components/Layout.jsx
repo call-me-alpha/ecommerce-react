@@ -7,15 +7,13 @@ import Footer from './Footer'
 const Layout = () => {
     return (
         <BrowserRouter>
-            <div>
-                <Header />
-                <div className="container">
-                    <div className="main">
-                        <Routers />
-                    </div>
+            <Header />
+            <div className="container">
+                <div className="main">
+                    <Routers />
                 </div>
-                <Footer />
             </div>
+            <Footer />
         </BrowserRouter>
     )
 }

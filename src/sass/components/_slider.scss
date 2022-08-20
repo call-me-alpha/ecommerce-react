@@ -1,4 +1,6 @@
 .slider {
+    width: 100%;
+    margin-bottom: 40px;
     &__item {
         img {
             width: 100%;
@@ -6,5 +8,36 @@
     }
     @include mobile {
         overflow: hidden;
+    }
+    .slick-prev,
+    .slick-next {
+        display: flex;
+        background-color: transparent;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 20px;
+        z-index: 1;
+    }
+    .slick-prev {
+        margin-left: 100px;
+    }
+    .slick-next {
+        margin-right: 125px;
+    }
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 4rem;
+        @include mobile {
+            display: none;
+        }
+    }
+    .slick-dots li button:before {
+        font-size: 1.2rem;
+        top: -60px;
+        @include mobile {
+            top: -40px;
+            font-size: 1.4rem;
+        }
     }
 }
