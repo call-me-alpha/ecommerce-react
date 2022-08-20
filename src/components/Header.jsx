@@ -13,12 +13,12 @@ const mainNav = [
         path: '/products'
     },
     {
-        display: 'Liên hệ',
-        path: '/contact'
-    },
-    {
         display: 'Giới thiệu',
         path: '/about'
+    },
+    {
+        display: 'Liên hệ',
+        path: '/contact'
     }
 ]
 const Header = () => {
@@ -49,7 +49,7 @@ const Header = () => {
     }, [])
     const menuToggle = () => menuRef.current.classList.toggle('active')
     return (
-        <div className="header" ref={headerRef}>
+        <header className="header" ref={headerRef}>
             <div className="container">
                 <div className="header__logo">
                     <Link to="/">
@@ -90,7 +90,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 
