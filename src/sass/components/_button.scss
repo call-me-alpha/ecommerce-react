@@ -38,6 +38,15 @@
     &-animation:hover &__icon {
         transform: translateX(0);
     }
+    &-md {
+        font-size: 1.4rem;
+    }
+    &-md &__text {
+        padding: 1.4rem 4rem;
+        @include tablet {
+            padding: 1rem 2.2rem;
+        }
+    }
     &-sm {
         font-size: 1.2rem;
     }

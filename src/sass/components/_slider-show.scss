@@ -1,0 +1,35 @@
+.slider-show {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    &__item {
+        img {
+            width: 100%;
+            padding: 36px;
+            @include mobile {
+                padding: 0 4px;
+            }
+        }
+    }
+    &__name {
+        font-weight: 600;
+        padding: 0 24px;
+        margin-bottom: 8px;
+        color: $text-second-color;
+        font-size: 1.4rem;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+    }
+    &__price {
+        color: $text-main-color;
+        font-weight: 600;
+        font-size: 1.6rem;
+        margin-bottom: 8px;
+    }
+    &__btn {
+        position: absolute;
+        top: 50px;
+    }
+}

@@ -11,10 +11,14 @@ const productSlice = createSlice({
     },
     reducers: {},
     extraReducers: (buider) => {
-        buider.addCase(getProducts.fulfilled, (state, action) => {
-            state.isLoading = false
-            state.products = action.payload
-        })
+        buider
+            .addCase(getProducts.fulfilled, (state, action) => {
+                state.isLoading = false
+                state.products = action.payload
+            })
+            .addCase(getProducts.rejected, (state, action) => {
+                state.error = action.error
+            })
     }
 })
 

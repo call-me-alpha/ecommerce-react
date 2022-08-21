@@ -4,17 +4,11 @@ import Section, { SectionTitle, SectionBody } from '../components/Section'
 import PolicyCard from '../components/PolicyCard'
 import Banner from '../components/Banner'
 import Products from '../components/Products'
-import { useDispatch } from 'react-redux'
-import { useEffect } from 'react'
-import { filtersTags } from '../redux/filtersSlice'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
+import SliderShow from '../components/SliderShow'
 
 const Home = () => {
-    const dispacth = useDispatch()
-    useEffect(() => {
-        dispacth(filtersTags('new'))
-    }, [dispacth])
     return (
         <Helmet title="Thời trang hàng hiệu, cá tính và phòng cách hàng đầu Việt Nam!">
             <Slider />
@@ -24,12 +18,24 @@ const Home = () => {
                 </SectionBody>
             </Section>
             <Section>
+                <SectionTitle>Sản bán chạy nhất</SectionTitle>
+                <SectionBody>
+                    <Products tag="seller" />
+                    <Link to="/products" style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+                        <Button size="md">Xem thêm</Button>
+                    </Link>
+                </SectionBody>
+            </Section>
+            <Section>
+                <SectionTitle>Sản phẩm nổi bật</SectionTitle>
+                <SectionBody>
+                    <SliderShow tag="popular" />
+                </SectionBody>
+            </Section>
+            <Section>
                 <SectionTitle>Sản phẩm mới</SectionTitle>
                 <SectionBody>
-                    <Products />
-                    <Link to="/products" style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-                        <Button>Xem thêm</Button>
-                    </Link>
+                    <Products tag="new" />
                 </SectionBody>
             </Section>
             <Section>
