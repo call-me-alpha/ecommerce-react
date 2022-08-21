@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-import { getAllProductServer } from './apiProduct'
+import { getProducts } from './apiProduct'
 
-const productsSlice = createSlice({
+const productSlice = createSlice({
     name: 'products',
     initialState: {
         isLoading: false,
@@ -11,15 +11,11 @@ const productsSlice = createSlice({
     },
     reducers: {},
     extraReducers: (buider) => {
-        buider
-            .addCase(getAllProductServer.pending, (state, action) => {
-                state.isLoading = true
-            })
-            .addCase(getAllProductServer.fulfilled, (state, action) => {
-                state.isLoading = false
-                state.products = action.payload
-            })
+        buider.addCase(getProducts.fulfilled, (state, action) => {
+            state.isLoading = false
+            state.products = action.payload
+        })
     }
 })
 
-export default productsSlice.reducer
+export default productSlice.reducer

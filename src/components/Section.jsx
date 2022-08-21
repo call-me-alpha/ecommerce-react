@@ -1,11 +1,11 @@
-const Section = (props) => {
-    return <section className="section">{props.children}</section>
+const Section = ({ children }) => {
+    return <section className="section">{children}</section>
 }
-const SectionTitle = (props) => {
-    return <div className="section__title">{props.children}</div>
+const SectionTitle = ({ children }) => {
+    return <div className="section__title">{children}</div>
 }
-const SectionBody = (props) => {
-    return <section className="section__body">{props.children}</section>
+const SectionBody = ({ children }) => {
+    return <section className="section__body">{children}</section>
 }
 
 export { SectionTitle, SectionBody }

@@ -19,6 +19,10 @@ const mainNav = [
     {
         display: 'Liên hệ',
         path: '/contact'
+    },
+    {
+        display: 'Admin',
+        path: '/dashboard'
     }
 ]
 const Header = () => {
@@ -28,25 +32,17 @@ const Header = () => {
     const menuRef = useRef()
 
     useEffect(() => {
-        window.addEventListener('scroll', () => {
+        const handelScroll = () => {
             document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
                 ? headerRef.current.classList.add('shink')
                 : headerRef.current.classList.remove('shink')
-        })
+        }
+        window.addEventListener('scroll', handelScroll)
         return () => {
-            window.removeEventListener('scroll')
+            window.removeEventListener('scroll', handelScroll)
         }
     }, [])
-    useEffect(() => {
-        window.addEventListener('scroll', () => {
-            document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
-                ? headerRef.current.classList.add('shink')
-                : headerRef.current.classList.remove('shink')
-        })
-        return () => {
-            window.removeEventListener('scroll')
-        }
-    }, [])
+
     const menuToggle = () => menuRef.current.classList.toggle('active')
     return (
         <header className="header" ref={headerRef}>

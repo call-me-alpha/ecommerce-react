@@ -2,38 +2,49 @@
     border: 0;
     outline: 0;
     color: $btn-main-color;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
     overflow: hidden;
     position: relative;
     @include mobile {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     &__text,
     &__icon {
         display: block;
         transition: all 0.5s ease;
     }
-    &__icon {
-        @include flex(center, center) {
-            font-size: 2rem;
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            transform: translateX(-100%);
+    &__text {
+        padding: 1rem 2rem;
+        @include tablet {
+            padding: 1.2rem 2.2rem;
         }
     }
+    &__icon {
+        @include flex(center, center);
+        font-size: 2rem;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        transform: translateX(-100%);
+    }
     &-animation:hover &__text {
+        transform: translateX(100%);
+    }
+    &-animation:hover &__icon {
         transform: translateX(0);
     }
     &-sm {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     &-sm &__text {
         padding: 0.8rem 1.4rem;
+        @include tablet {
+            padding: 1rem 2.2rem;
+        }
     }
 }
