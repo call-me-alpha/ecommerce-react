@@ -22,17 +22,17 @@ const policys = [
         icon: 'bx bx-cut'
     }
 ]
-const Policy = () => {
+const PolicyItem = () => {
     return (
         <Grid col={4} mdCol={2} smCol={2} gap={20}>
             {policys.map((item, index) => (
-                <div className="policy-card" key={index}>
-                    <div className="policy-card__icon">
+                <div className="policy-item" key={index}>
+                    <div className="policy-item__icon">
                         <i className={item.icon}></i>
                     </div>
-                    <div className="policy-card__info">
-                        <div className="policy-card__info__name">{item.name}</div>
-                        <div className="policy-card__info__desc">{item.descipton}</div>
+                    <div className="policy-item__info">
+                        <div className="policy-item__info__name">{item.name}</div>
+                        <div className="policy-item__info__desc">{item.descipton}</div>
                     </div>
                 </div>
             ))}
@@ -40,4 +40,4 @@ const Policy = () => {
     )
 }
 
-export default Policy
+export default PolicyItem

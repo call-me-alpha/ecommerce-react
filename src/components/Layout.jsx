@@ -6,13 +6,13 @@ import GoToTop from './GoToTop'
 const Layout = () => {
     return (
         <div>
-            <GoToTop />
             <Header />
             <div className="container">
                 <div className="main">
                     <Outlet />
                 </div>
             </div>
+            <GoToTop />
             <Footer />
         </div>
     )

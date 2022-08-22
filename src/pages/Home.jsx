@@ -1,26 +1,47 @@
+import { useEffect, useState } from 'react'
+
+import ProductItem from '../components/ProductItem'
+import productApi from '../api/productApi'
 import Helmet from '../components/Helmet'
 import Slider from '../components/Slider'
 import Section, { SectionTitle, SectionBody } from '../components/Section'
-import PolicyCard from '../components/PolicyCard'
+import PolicyItem from '../components/PolicyItem'
 import Banner from '../components/Banner'
-import Products from '../components/Products'
 import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 import SliderShow from '../components/SliderShow'
+import Grid from '../components/Grid'
 
 const Home = () => {
+    const [products, setProducts] = useState([])
+    useEffect(() => {
+        const getProductServer = async () => {
+            try {
+                const res = await productApi.getAll()
+                setProducts(res)
+            } catch (err) {
+                console.log(err)
+            }
+        }
+        getProductServer()
+    }, [])
+    const productsNew = products.filter((prod) => prod.tag === 'new').splice(0, 8)
+    const productsPopular = products.filter((prod) => prod.tag === 'popular').splice(0, 8)
+    const productsSeller = products.filter((prod) => prod.tag === 'seller').splice(0, 8)
     return (
         <Helmet title="Thời trang hàng hiệu, cá tính và phòng cách hàng đầu Việt Nam!">
             <Slider />
             <Section>
                 <SectionBody>
-                    <PolicyCard />
+                    <PolicyItem />
                 </SectionBody>
             </Section>
             <Section>
                 <SectionTitle>Sản bán chạy nhất</SectionTitle>
                 <SectionBody>
-                    <Products tag="seller" />
+                    <Grid col={4} mdCol={2} smCol={1} gap={20}>
+                        {productsSeller && productsSeller.map((prod) => <ProductItem product={prod} key={prod.id} />)}
+                    </Grid>
                     <Link to="/products" style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
                         <Button size="md">Xem thêm</Button>
                     </Link>
@@ -29,13 +50,15 @@ const Home = () => {
             <Section>
                 <SectionTitle>Sản phẩm nổi bật</SectionTitle>
                 <SectionBody>
-                    <SliderShow tag="popular" />
+                    <SliderShow products={productsPopular} />
                 </SectionBody>
             </Section>
             <Section>
                 <SectionTitle>Sản phẩm mới</SectionTitle>
                 <SectionBody>
-                    <Products tag="new" />
+                    <Grid col={4} mdCol={2} smCol={1} gap={20}>
+                        {productsNew && productsNew.map((prod) => <ProductItem product={prod} key={prod.id} />)}
+                    </Grid>
                 </SectionBody>
             </Section>
             <Section>

@@ -1,91 +1,117 @@
 {
+    "categories": [
+        {
+            "id": 1,
+            "name": "Váy Đầm"
+        },
+        {
+            "id": 2,
+            "name": "Chân Váy"
+        },
+        {
+            "id": 3,
+            "name": "Sơ Mi"
+        },
+        {
+            "id": 4,
+            "name": "Quần Âu"
+        },
+        {
+            "id": 5,
+            "name": "Quần Jean"
+        },
+        {
+            "id": 6,
+            "name": "Quần Sooc"
+        }
+    ],
     "products": [
         {
             "id": 1,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 1,
             "name": "Chân váy dáng xòe xếp ly, tà bong",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__3_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
             "id": 2,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 2,
             "name": "Đầm ren dáng xòe, cổ xuông, nhún trang trí",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__3_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__1_.jpg"],
             "price": 1080000,
-            "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "colors": ["blue"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
             "id": 3,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 2,
             "name": "Đầm trắng hoa chìm dáng xòe, đính hoa trang trí ngực, tay ngắn",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220723/F452319___1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220723/F452319___3_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220723/F452319___4_.jpg"],
             "price": 1080000,
-            "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "colors": ["orange"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
             "id": 4,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 3,
             "name": "Áo sơ mi dáng suông, cổ đức, nẹp kẹp bèo",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252241082__1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252241082__2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252241082__3_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
             "id": 5,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 3,
             "name": "Đầm dáng xòe, cổ buộc nơ, dập nhăn bèo vai",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452026071__1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452026071__2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452026071__3_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
             "id": 6,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 4,
             "name": "Đầm dáng suông, thắt nơ cổ, tay sát nách",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452020071__4_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452020071__2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452020071__3_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
             "id": 7,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 5,
             "name": "Chân váy dáng xòe dập ly hình quạt, họa tiết hoa loang",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__2__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__3__thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
             "id": 8,
             "tag": "new",
-            "category": "Váy Đầm",
+            "category": 6,
             "name": "Quần suông dáng dài chất Mango",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___3_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -96,7 +122,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___3_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -107,7 +133,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___3_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -118,7 +144,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/F42123305__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/F42123305__2__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/F42123305__3__thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -129,7 +155,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/f42123401__1__thumb_400x600.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/f42123401__2__thumb_400x600.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/f42123401__3__thumb_400x600.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -140,7 +166,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__2__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__3__thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -151,7 +177,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211119/F45108202__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211119/F45108202__4__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211119/F45108202__4_.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -162,7 +188,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220816/F352333011_thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220816/F352333011_thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220816/F352333011_thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -173,7 +199,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220812/F352331021__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220812/F352331021__2__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220812/F352331021__3__thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -184,7 +210,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220811/F352327011_thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220811/F352327011_thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220811/F352327011_thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -195,7 +221,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -206,7 +232,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         },
         {
@@ -217,7 +243,7 @@
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252245071__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252245071__1__thumb.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252245071__1__thumb.jpg"],
             "price": 1080000,
             "colors": ["white"],
-            "size": ["L", "M", "S"],
+            "sizes": ["L", "M", "S"],
             "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
         }
     ]

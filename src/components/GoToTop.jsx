@@ -4,7 +4,7 @@ const GoToTop = () => {
     const goToTopRef = useRef()
     useEffect(() => {
         const handelGoToTop = () => {
-            document.body.scrollTop > 80 || document.documentElement.scrollTop > 100
+            document.body.scrollTop > 300 || document.documentElement.scrollTop > 300
                 ? goToTopRef.current.classList.add('active')
                 : goToTopRef.current.classList.remove('active')
         }

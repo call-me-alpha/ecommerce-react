@@ -1,4 +1,4 @@
-.product {
+.product-item {
     text-align: center;
     margin-bottom: 30px;
 
@@ -32,7 +32,7 @@
         }
     }
     &__name {
-        padding: 0 24px;
+        padding: 0 70px;
         margin-bottom: 8px;
         color: $text-second-color;
         font-size: 1.4rem;

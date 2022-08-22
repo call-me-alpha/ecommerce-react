@@ -1,0 +1,76 @@
+.products {
+    margin-top: 140px;
+    @include flex(flex-start, flex-start);
+    &__filter {
+        width: 20%;
+        @include tablet {
+            width: unset;
+        }
+        &__search {
+            input {
+                border: 1px solid #ccc;
+                outline-color: $main-color;
+                width: 90%;
+                padding: 6px 8px;
+            }
+        }
+        &__widget {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            &__title {
+                font-size: 1.6rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+            &__content {
+                color: $text-second-color;
+                &__item {
+                    font-size: 1.2rem;
+                    margin-top: 10px;
+                    &__checkbox {
+                        @include flex(center, flex-start);
+                        cursor: pointer;
+                        &:hover {
+                            color: $main-color;
+                        }
+                        input {
+                            position: absolute;
+                            opacity: 0;
+                            cursor: pointer;
+                            height: 0;
+                            width: 0;
+                        }
+                        &__checkmark {
+                            margin-right: 10px;
+                            height: 18px;
+                            width: 18px;
+                            border: 1px solid $text-second-color;
+                            i {
+                                transform: scale(0);
+                                margin-left: 2px;
+                                transition: all 0.3s ease;
+                            }
+                        }
+                        input:checked ~ &__checkmark {
+                            background-color: $main-color;
+                            border: 1px solid $main-color;
+                            color: $text-white;
+                        }
+                        input:checked ~ &__checkmark > i {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__content {
+        width: 100%;
+        &__title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    }
+}
