@@ -1,11 +1,10 @@
 import { useEffect, useState, useMemo, useRef } from 'react'
 
-import ProductItem from '../components/ProductItem'
 import productApi from '../api/productApi'
 import Helmet from '../components/Helmet'
-import Grid from '../components/Grid'
 import categoryApi from '../api/categoryApi'
 import Button from '../components/Button'
+import Pagination from '../components/Pagination'
 
 const colors = [
     {
@@ -51,20 +50,6 @@ const sizes = [
         size: 'XXL'
     }
 ]
-const prices = [
-    {
-        display: '0 - 500.000 VNĐ',
-        price: 'cheap'
-    },
-    {
-        display: '500.000 - 1.000.000 VNĐ',
-        price: 'affordable'
-    },
-    {
-        display: 'Trên 1.000.000 VNĐ',
-        price: 'expensive'
-    }
-]
 const Products = () => {
     const initFilters = {
         categories: [],
@@ -76,8 +61,6 @@ const Products = () => {
     const [categories, setCategories] = useState([])
     const [filters, setFilters] = useState(initFilters)
     const [searchText, setSearchText] = useState('')
-    const [priceSelect, setPriceSelect] = useState('')
-    const radioRef = useRef()
     useEffect(() => {
         const getProductServer = async () => {
             try {
@@ -148,36 +131,25 @@ const Products = () => {
         if (filters.sizes.length > 0) {
             productList = productList.filter((prod) => prod.sizes.find((size) => filters.sizes.includes(size)))
         }
-        if (priceSelect !== '') {
-            switch (priceSelect) {
-                case 'cheap':
-                    productList = productList.filter((prod) => prod.price <= 500000)
-                    break
-                case 'affordable':
-                    productList = productList.filter((prod) => 500000 < prod.price && prod.price <= 1000000)
-                    break
-                case 'expensive':
-                    productList = productList.filter((prod) => prod.price > 1000000)
-                    break
-                default:
-                    break
-            }
-        }
         productList = productList.filter((prod) => prod.name.includes(searchText))
         const count = productList.length
         return { productList, count }
-    }, [filters, products, searchText, priceSelect])
+    }, [filters, products, searchText])
 
     const clearFilters = () => {
         setFilters(initFilters)
         setSearchText('')
-        radioRef.current.checked = false
     }
+    const filterFef = useRef()
+    const toggleFilterShow = () => filterFef.current.classList.toggle('active')
 
     return (
         <Helmet title="Sản Phẩm">
             <div className="products">
-                <div className="products__filter">
+                <div className="products__filter" ref={filterFef}>
+                    <div className="products__filter__close" onClick={toggleFilterShow}>
+                        <i className="bx bx-left-arrow-alt"></i>
+                    </div>
                     <div className="products__filter__search">
                         <input
                             value={searchText}
@@ -191,19 +163,17 @@ const Products = () => {
                         <div className="products__filter__widget__content">
                             {categories.map((cate) => (
                                 <div className="products__filter__widget__content__item" key={cate.id}>
-                                    <div className="products__filter__widget__content__item" key={cate.id}>
-                                        <label className="products__filter__widget__content__item__checkbox">
-                                            <input
-                                                type="checkbox"
-                                                checked={filters.categories.includes(cate.id)}
-                                                onChange={(e) => filterSlectect('CATEGORY', e.target.checked, cate)}
-                                            />
-                                            <span className="products__filter__widget__content__item__checkbox__checkmark">
-                                                <i className="bx bx-check"></i>
-                                            </span>
-                                            {cate.name}
-                                        </label>
-                                    </div>
+                                    <label className="products__filter__widget__content__item__checkbox">
+                                        <input
+                                            type="checkbox"
+                                            checked={filters.categories.includes(cate.id)}
+                                            onChange={(e) => filterSlectect('CATEGORY', e.target.checked, cate)}
+                                        />
+                                        <span className="products__filter__widget__content__item__checkbox__checkmark">
+                                            <i className="bx bx-check"></i>
+                                        </span>
+                                        {cate.name}
+                                    </label>
                                 </div>
                             ))}
                         </div>
@@ -249,28 +219,6 @@ const Products = () => {
                         </div>
                     </div>
                     <div className="products__filter__widget">
-                        <div className="products__filter__widget__title">Giá</div>
-                        <div className="products__filter__widget__content">
-                            {prices.map((price) => (
-                                <div className="products__filter__widget__content__item" key={price.price}>
-                                    <label className="products__filter__widget__content__item__checkbox">
-                                        <input
-                                            value={price.price}
-                                            type="radio"
-                                            name="price"
-                                            ref={radioRef}
-                                            onChange={(e) => setPriceSelect(e.target.value)}
-                                        />
-                                        <span className="products__filter__widget__content__item__checkbox__checkmark">
-                                            <i className="bx bx-check"></i>
-                                        </span>
-                                        {price.display}
-                                    </label>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="products__filter__widget">
                         <div className="products__filter__widget__content">
                             <Button size="sm" onClick={clearFilters}>
                                 Xoá bộ lọc
@@ -278,13 +226,16 @@ const Products = () => {
                         </div>
                     </div>
                 </div>
+                <div className="products__filter__toggle">
+                    <Button size="sm" onClick={toggleFilterShow}>
+                        Bộ lọc
+                    </Button>
+                </div>
                 <div className="products__content">
                     <div className="products__content__title">
-                        <p>( {count} ) sản phẩm được tìm thấy</p>
+                        <p>( {count} ) sản phẩm phù hợp</p>
                     </div>
-                    <Grid col={3} mdCol={2} smCol={1} gap={10}>
-                        {productList && productList.map((prod) => <ProductItem key={prod.id} product={prod} />)}
-                    </Grid>
+                    <Pagination data={productList} count={count} />
                 </div>
             </div>
         </Helmet>

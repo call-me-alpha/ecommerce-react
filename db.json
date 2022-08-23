@@ -29,7 +29,7 @@
         {
             "id": 1,
             "tag": "new",
-            "category": 1,
+            "category": 2,
             "name": "Chân váy dáng xòe xếp ly, tà bong",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__1_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__3_.jpg"],
             "price": 1080000,
@@ -40,7 +40,7 @@
         {
             "id": 2,
             "tag": "new",
-            "category": 2,
+            "category": 1,
             "name": "Đầm ren dáng xòe, cổ xuông, nhún trang trí",
             "images": ["https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__3_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__2_.jpg", "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__1_.jpg"],
             "price": 1080000,
