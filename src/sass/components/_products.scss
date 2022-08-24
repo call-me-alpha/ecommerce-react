@@ -16,7 +16,7 @@
             position: fixed;
             left: 0;
             top: $header-tablet-height;
-            z-index: 10;
+            z-index: 100;
             box-shadow: $box-shadow;
             transform: translateX(-100%);
             transition: all 0.3s ease;
@@ -33,6 +33,7 @@
         }
         &__toggle {
             display: none;
+            margin-bottom: 12px;
             @include tablet {
                 display: block;
             }
@@ -103,14 +104,24 @@
         }
     }
     &__content {
-        flex: 1;
-        @include tablet {
-            width: 100%;
-        }
-        &__title {
-            font-size: 1.8rem;
-            margin-bottom: 30px;
-            text-align: center;
+        width: 100%;
+        &__sort {
+            @include flex(center, flex-end);
+            margin-bottom: 32px;
+            margin-right: 60px;
+            &__title {
+                margin-right: 12px;
+                font-size: 1.5rem;
+            }
+            &__select {
+                padding: 4px 18px;
+                outline: none;
+                border: 1px solid $main-color;
+            }
+            @include mobile {
+                margin-right: 4px;
+                margin-top: -40px;
+            }
         }
     }
 }

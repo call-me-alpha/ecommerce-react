@@ -61,6 +61,8 @@ const Products = () => {
     const [categories, setCategories] = useState([])
     const [filters, setFilters] = useState(initFilters)
     const [searchText, setSearchText] = useState('')
+    const [sort, setSort] = useState('az')
+
     useEffect(() => {
         const getProductServer = async () => {
             try {
@@ -70,10 +72,6 @@ const Products = () => {
                 console.log(err)
             }
         }
-        getProductServer()
-    }, [])
-
-    useEffect(() => {
         const getCategoryServer = async () => {
             try {
                 const data = await categoryApi.getAll()
@@ -82,6 +80,8 @@ const Products = () => {
                 console.log(err)
             }
         }
+        window.scrollTo(0, 0)
+        getProductServer()
         getCategoryServer()
     }, [])
 
@@ -120,8 +120,13 @@ const Products = () => {
         }
     }
 
+    const handelSortChange = (e) => {
+        setSort(e.target.value)
+    }
+
     const { productList, count } = useMemo(() => {
         let productList = products
+
         if (filters.categories.length > 0) {
             productList = productList.filter((prod) => filters.categories.includes(prod.category))
         }
@@ -132,9 +137,26 @@ const Products = () => {
             productList = productList.filter((prod) => prod.sizes.find((size) => filters.sizes.includes(size)))
         }
         productList = productList.filter((prod) => prod.name.includes(searchText))
+        switch (sort) {
+            case 'az':
+                productList.sort((a, b) => a.name.localeCompare(b.name))
+                break
+            case 'za':
+                productList.sort((a, b) => b.name.localeCompare(a.name))
+                break
+            case 'decrease':
+                productList.sort((a, b) => b.price - a.price)
+                break
+            case 'ascending':
+                productList.sort((a, b) => a.price - b.price)
+                break
+
+            default:
+                break
+        }
         const count = productList.length
         return { productList, count }
-    }, [filters, products, searchText])
+    }, [filters, products, searchText, sort])
 
     const clearFilters = () => {
         setFilters(initFilters)
@@ -232,8 +254,19 @@ const Products = () => {
                     </Button>
                 </div>
                 <div className="products__content">
-                    <div className="products__content__title">
-                        <p>( {count} ) sản phẩm phù hợp</p>
+                    <div className="products__content__sort">
+                        <p className="products__content__sort__title">Sắp xếp theo</p>
+                        <select
+                            className="products__content__sort__select"
+                            name="orderBy"
+                            value={sort}
+                            onChange={(e) => handelSortChange(e)}
+                        >
+                            <option value="az">A-Z</option>
+                            <option value="za">Z-A</option>
+                            <option value="decrease">Giá giảm dần</option>
+                            <option value="ascending">Giá tăng dần</option>
+                        </select>
                     </div>
                     <Pagination data={productList} count={count} />
                 </div>

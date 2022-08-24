@@ -1,13 +1,12 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 import Button from './Button'
 
 const ProductItem = ({ product }) => {
-    const { images, name, price } = product
+    const { id, images, name, price } = product
     return (
         <div className="product-item">
-            <Link to="/">
+            <Link to={`/products/${id}`}>
                 <div className="product-item__image">
                     <img src={images[0]} alt="" />
                     <img src={images[2]} alt="" />

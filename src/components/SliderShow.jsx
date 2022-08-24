@@ -36,9 +36,9 @@ const SliderShow = ({ products }) => {
         <div className="slider-show">
             <Slider {...settings}>
                 {products &&
-                    products.map((prod, id) => (
-                        <div className="slider-show__item" key={id}>
-                            <Link to="">
+                    products.map((prod) => (
+                        <div className="slider-show__item" key={prod.id}>
+                            <Link to={`products/${prod.id}`}>
                                 <img src={prod.images[0]} alt="" />
                                 <p className="slider-show__name">{prod.name}</p>
                                 <p className="slider-show__price">{prod.price.toLocaleString()} VNĐ</p>

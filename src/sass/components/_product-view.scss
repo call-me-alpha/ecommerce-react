@@ -1,0 +1,14 @@
+.product-view {
+    @include flex(flex-start, flex-start);
+    .slick-slider {
+        width: 50%;
+        height: 50%;
+        margin: 0 40px;
+    }
+    &__info {
+        display: block;
+    }
+    img {
+        width: 100%;
+    }
+}

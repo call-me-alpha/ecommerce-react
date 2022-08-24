@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import ProductItem from '../components/ProductItem'
 import productApi from '../api/productApi'
@@ -15,6 +15,7 @@ import Grid from '../components/Grid'
 const Home = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
+        window.scrollTo(0, 0)
         const getProductServer = async () => {
             try {
                 const res = await productApi.getAll()
@@ -25,9 +26,13 @@ const Home = () => {
         }
         getProductServer()
     }, [])
-    const productsNew = products.filter((prod) => prod.tag === 'new').splice(0, 8)
-    const productsPopular = products.filter((prod) => prod.tag === 'popular').splice(0, 8)
-    const productsSeller = products.filter((prod) => prod.tag === 'seller').splice(0, 8)
+
+    const { productsNew, productsPopular, productsSeller } = useMemo(() => {
+        const productsNew = products.filter((prod) => prod.tag === 'new').splice(0, 8)
+        const productsPopular = products.filter((prod) => prod.tag === 'popular').splice(0, 8)
+        const productsSeller = products.filter((prod) => prod.tag === 'seller').splice(0, 8)
+        return { productsNew, productsPopular, productsSeller }
+    }, [products])
     return (
         <Helmet title="Thời trang hàng hiệu, cá tính và phòng cách hàng đầu Việt Nam!">
             <Slider />
@@ -40,7 +45,10 @@ const Home = () => {
                 <SectionTitle>Sản bán chạy nhất</SectionTitle>
                 <SectionBody>
                     <Grid col={4} mdCol={2} smCol={1} gap={20}>
-                        {productsSeller && productsSeller.map((prod) => <ProductItem product={prod} key={prod.id} />)}
+                        {productsSeller &&
+                            productsSeller.map((prod) => (
+                                <ProductItem product={prod} key={prod.id} path={`/products/${prod.id}`} />
+                            ))}
                     </Grid>
                     <Link to="/products" style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
                         <Button size="md">Xem thêm</Button>
