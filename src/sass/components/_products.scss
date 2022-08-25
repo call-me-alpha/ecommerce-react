@@ -1,5 +1,5 @@
 .products {
-    margin-top: 140px;
+    margin-bottom: 20px;
     @include flex(flex-start, flex-start);
     @include tablet {
         margin-top: unset;

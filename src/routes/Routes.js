@@ -9,7 +9,6 @@ import Dashboard from '../pages/Dashboard'
 import Layout from '../components/Layout'
 import ProductDetail from '../pages/ProductDetail'
 import NotFound from '../pages/NotFound'
-import ProductView from '../components/ProductView'
 
 const Routers = () => {
     return (

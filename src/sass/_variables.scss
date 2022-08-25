@@ -18,13 +18,14 @@ $box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 
 $colors: (
     'blue': #4267b2,
-    'oragen': #ffb96b,
+    'orange': #ffb96b,
     'pink': #fe7e73,
     'black': #000,
+    'red': #ff0000,
     'main': $main-color
 );
 
 $numbers: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9);
 
-$tablet-width: 1240px;
+$tablet-width: 1024px;
 $mobile-width: 600px;

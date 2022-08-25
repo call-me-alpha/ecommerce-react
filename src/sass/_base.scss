@@ -24,6 +24,9 @@ a {
     color: unset;
 }
 
+img {
+    max-width: 100%;
+}
 @each $color, $val in $colors {
     .color-#{$color} {
         color: $val;
@@ -57,7 +60,7 @@ a {
     width: 100%;
     max-width: 1620px;
     margin: auto;
-    padding: 0 40px;
+    padding: 0 50px;
     @include tablet {
         padding: 0 20px;
     }
@@ -68,8 +71,7 @@ a {
 
 .main {
     width: 100%;
-    margin: $header-height auto 2rem;
-    min-height: 100vh;
+    margin: calc($header-height + 10px) auto 2rem;
     @include tablet {
         margin-top: calc($header-height + 20px);
     }

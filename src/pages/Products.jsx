@@ -5,6 +5,8 @@ import Helmet from '../components/Helmet'
 import categoryApi from '../api/categoryApi'
 import Button from '../components/Button'
 import Pagination from '../components/Pagination'
+import Section, { SectionBody } from '../components/Section'
+import PolicyItem from '../components/PolicyItem'
 
 const colors = [
     {
@@ -271,6 +273,11 @@ const Products = () => {
                     <Pagination data={productList} count={count} />
                 </div>
             </div>
+            <Section>
+                <SectionBody>
+                    <PolicyItem />
+                </SectionBody>
+            </Section>
         </Helmet>
     )
 }

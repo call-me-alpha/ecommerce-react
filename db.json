@@ -30,7 +30,7 @@
       "id": 1,
       "tag": "new",
       "category": 2,
-      "name": "aaaaa",
+      "name": "Chân váy dáng xòe dập ly hình quạt, họa tiết hoa loang",
       "images": [
         "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__1_.jpg",
         "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__2_.jpg",
@@ -38,14 +38,34 @@
       ],
       "price": 1080000,
       "colors": [
-        "white"
+        "white",
+        "blue",
+        "orange",
+        "pink",
+        "black",
+        "red"
       ],
       "sizes": [
+        "S",
+        "M",
         "L",
-        "M"
+        "XL",
+        "XXL"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm.",
-      "completed": false
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 2,
@@ -66,7 +86,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 3,
@@ -87,7 +120,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 4,
@@ -108,7 +154,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 5,
@@ -129,7 +188,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 6,
@@ -150,7 +222,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 7,
@@ -171,7 +256,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 8,
@@ -192,7 +290,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 9,
@@ -213,7 +324,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 10,
@@ -234,7 +358,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 11,
@@ -255,7 +392,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 12,
@@ -276,7 +426,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 13,
@@ -297,7 +460,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 14,
@@ -318,7 +494,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 15,
@@ -339,7 +528,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 16,
@@ -360,7 +562,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 17,
@@ -381,7 +596,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 18,
@@ -402,7 +630,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 19,
@@ -423,7 +664,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     },
     {
       "id": 20,
@@ -444,7 +698,20 @@
         "M",
         "S"
       ],
-      "desc": "Đầm xòe họa tiết, ngực bấu mí kẹp bèo, tùng váy xếp ly. Chất liệu tơ mỏng nhẹ, thoải mái. Phù hợp đi dạo phố, đi làm."
+      "desc": [
+        {
+          "title": "Thông tin chi tiết sản phẩm",
+          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
+        },
+        { 
+          "title" : "Mô tả",
+          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
     }
   ]
 }
