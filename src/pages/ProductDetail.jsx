@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 import { withRouter } from '../hooks/withRoter'
 import productsApi from '../api/productApi'
@@ -70,13 +71,13 @@ const ProductDetail = () => {
     const handelAddToCart = () => {
         if (check()) {
             console.log(color, size, quantity)
+            toast.success('Thêm vào giỏ hàng thành công!')
         }
     }
 
     const goToCart = () => {
         if (check()) navigate('/cart')
     }
-
     return (
         <Helmet title="Chi tiết sản phẩm">
             <Section>
@@ -214,7 +215,7 @@ const ProductDetail = () => {
                     </div>
                 </SectionBody>
             </Section>
-            {productSimilar.length && (
+            {productSimilar.length > 0 && (
                 <Section>
                     <SectionTitle>Sản phẩm cùng loại</SectionTitle>
                     <SectionBody>

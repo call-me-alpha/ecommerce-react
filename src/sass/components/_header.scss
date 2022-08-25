@@ -162,5 +162,28 @@
                 @include hover;
             }
         }
+        &__cart {
+            z-index: 100;
+            position: fixed;
+            top: 0;
+            left: 70%;
+            right: 0;
+            bottom: 0;
+            background-color: orange;
+            transform: translateX(100%);
+            transition: all 0.3s ease;
+
+            @include tablet {
+                left: 50%;
+                top: $header-tablet-height;
+            }
+            @include mobile {
+                left: 0;
+                top: $header-mobile-height;
+            }
+            &.active {
+                transform: translateX(0);
+            }
+        }
     }
 }

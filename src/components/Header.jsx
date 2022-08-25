@@ -30,6 +30,7 @@ const Header = () => {
     const activeNav = mainNav.findIndex((item) => item.path === pathname)
     const headerRef = useRef()
     const menuRef = useRef()
+    const cartRef = useRef()
 
     useEffect(() => {
         const handelScroll = () => {
@@ -44,6 +45,7 @@ const Header = () => {
     }, [])
 
     const menuToggle = () => menuRef.current.classList.toggle('active')
+    const cartToggle = () => cartRef.current.classList.toggle('active')
     return (
         <header className="header" ref={headerRef}>
             <div className="container">
@@ -75,13 +77,17 @@ const Header = () => {
                         ))}
                     </div>
                     <div className="header__menu__right">
-                        <div className="header__menu__item header__menu__right__item">
-                            <Link to="/cart">
-                                <i className="bx bx-cart"></i>
-                            </Link>
+                        <div className="header__menu__item header__menu__right__item" onClick={cartToggle}>
+                            <i className="bx bx-cart"></i>
                         </div>
                         <div className="header__menu__item header__menu__right__item">
                             <i className="bx bx-user-circle"></i>
+                        </div>
+                    </div>
+                    <div className="header__menu__cart" ref={cartRef}>
+                        Giỏ hàng
+                        <div onClick={cartToggle}>
+                            <i className="bx bx-right-arrow-alt"></i>
                         </div>
                     </div>
                 </div>

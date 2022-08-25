@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types'
+import { toast } from 'react-toastify'
+import { useEffect, useMemo, useState } from 'react'
 
 import ProductItem from './ProductItem'
 import Grid from './Grid'
-import { useEffect, useMemo, useState } from 'react'
 
 const Pagination = ({ data, count, col }) => {
     const temp = useMemo(() => {
@@ -21,8 +22,10 @@ const Pagination = ({ data, count, col }) => {
     const handelLoad = () => {
         setLoading(true)
         setProducts(data)
+        toast.loading('Đang load thêm sản phẩm...')
         setTimeout(() => {
             setLoading(false)
+            toast.dismiss()
         }, 1000)
         document.body.scrollTop = 0
         document.documentElement.scrollTop = 0
