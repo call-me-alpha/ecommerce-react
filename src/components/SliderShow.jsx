@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
+import { useDispatch } from 'react-redux'
+
+import { set } from '../redux/productModalSlice'
 import Button from './Button'
 
 const SliderShow = ({ products }) => {
+    const dispatch = useDispatch()
+
     const settings = {
         dots: true,
         infinite: true,
@@ -44,7 +49,12 @@ const SliderShow = ({ products }) => {
                                 <p className="slider-show__price">{prod.price.toLocaleString()} VNĐ</p>
                             </Link>
                             <div className="slider-show__btn">
-                                <Button size="sm" icon="bx bx-cart" animation={true}>
+                                <Button
+                                    size="sm"
+                                    icon="bx bx-cart"
+                                    animation={true}
+                                    onClick={() => dispatch(set(prod.id))}
+                                >
                                     Mua ngay
                                 </Button>
                             </div>

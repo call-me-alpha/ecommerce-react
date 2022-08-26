@@ -4,6 +4,7 @@ import { ToastContainer } from 'react-toastify'
 import Header from './Header'
 import Footer from './Footer'
 import GoToTop from './GoToTop'
+import ProductViewModal from './ProductViewModal'
 
 const Layout = () => {
     return (
@@ -21,6 +22,7 @@ const Layout = () => {
                 </div>
             </div>
             <GoToTop />
+            <ProductViewModal />
             <Footer />
         </div>
     )
