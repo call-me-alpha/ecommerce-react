@@ -20,9 +20,9 @@ const Routers = () => {
                 <Route path="cart" element={<Cart />} />
                 <Route path="products/:id" element={<ProductDetail />} />
                 <Route path="products" element={<Products />} />
+                <Route path="*" element={<NotFound />}></Route>
             </Route>
             <Route path="dashboard" element={<Dashboard />} />
-            <Route path="*" element={<NotFound />}></Route>
         </Routes>
     )
 }
