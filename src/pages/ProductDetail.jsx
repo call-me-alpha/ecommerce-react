@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-import { withRouter } from '../hooks/withRoter'
 import productsApi from '../api/productApi'
 import Helmet from '../components/Helmet'
 import Section, { SectionTitle, SectionBody } from '../components/Section'
@@ -67,4 +66,4 @@ const ProductDetail = () => {
     )
 }
 
-export default withRouter(ProductDetail)
+export default ProductDetail

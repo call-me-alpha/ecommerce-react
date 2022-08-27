@@ -71,7 +71,6 @@ img {
 
 .main {
     width: 100%;
-    min-height: 100vh;
     margin: calc($header-height + 10px) auto 2rem;
     @include tablet {
         margin-top: calc($header-height + 20px);

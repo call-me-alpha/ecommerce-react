@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 
 import logo from '../assets/images/logos/logo.png'
+import CartInfo from './CartInfo'
 
 const mainNav = [
     {
@@ -85,9 +86,12 @@ const Header = () => {
                         </div>
                     </div>
                     <div className="header__menu__cart" ref={cartRef}>
-                        Giỏ hàng
-                        <div onClick={cartToggle}>
-                            <i className="bx bx-right-arrow-alt"></i>
+                        <div className="header__menu__cart__content">
+                            {/* <CartInfo /> */}
+                            <Link to="/cart">Go to cart</Link>
+                            <div className="header__menu__cart__content__btn" onClick={cartToggle}>
+                                <i className="bx bx-right-arrow-alt"></i>
+                            </div>
                         </div>
                     </div>
                 </div>

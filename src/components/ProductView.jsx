@@ -2,10 +2,13 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import { useDispatch } from 'react-redux'
 
 import Button from '../components/Button'
+import { addItem } from '../redux/cartSlice'
 
 const ProductView = (props) => {
+    const dispatch = useDispatch()
     const [product, setProduct] = useState(props.product || {})
     const [showMoreDesc, setShowMoreDesc] = useState(false)
     const [previewImage, setPreviewImage] = useState('')
@@ -44,13 +47,34 @@ const ProductView = (props) => {
     }
     const handelAddToCart = () => {
         if (check()) {
-            console.log(color, size, quantity)
+            dispatch(
+                addItem({
+                    id: product.id,
+                    color,
+                    size,
+                    price: product.price,
+                    quantity,
+                    product
+                })
+            )
             toast.success('Thêm vào giỏ hàng thành công!')
         }
     }
 
     const goToCart = () => {
-        if (check()) navigate('/cart')
+        if (check()) {
+            dispatch(
+                addItem({
+                    id: product.id,
+                    color,
+                    size,
+                    price: product.price,
+                    quantity,
+                    product
+                })
+            )
+            navigate('/cart')
+        }
     }
     return (
         <div className="product-view">

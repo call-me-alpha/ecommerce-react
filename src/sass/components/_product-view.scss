@@ -1,4 +1,6 @@
 .product-view {
+    box-shadow: $box-shadow;
+    padding: 40px 0;
     @include flex(flex-start, flex-start);
     @include mobile {
         flex-direction: column;
