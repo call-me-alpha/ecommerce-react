@@ -69,6 +69,9 @@
                     margin-top: 12px;
                     width: 100%;
                 }
+                &:hover {
+                    color: $main-color;
+                }
             }
             &__name,
             &__price {

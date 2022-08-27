@@ -43,7 +43,7 @@ const ProductDetail = () => {
             </Section>
             {productSimilar.length > 0 && (
                 <Section>
-                    <SectionTitle>Sản phẩm cùng loại</SectionTitle>
+                    <SectionTitle>Sản phẩm tương tự</SectionTitle>
                     <SectionBody>
                         {productSimilar && (
                             <Pagination data={productSimilar} count={productSimilar.length} col={4}></Pagination>
