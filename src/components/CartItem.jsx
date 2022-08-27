@@ -32,51 +32,43 @@ const CartItem = (props) => {
     }
 
     return (
-        <>
-            {props.item?.product ? (
-                <div className="cart__item">
-                    <div className="cart__item__image">
-                        <img src={image} alt="" />
-                    </div>
-                    <div className="cart__item__info">
-                        <div className="cart__item__info__name">
-                            <Link to={`/products/${item.id}`}>
-                                {`${item.product.name} - ${item.color} - ${item.size}`}
-                            </Link>
-                        </div>
-                        <div className="cart__item__info__price">{item.product.price.toLocaleString()} VNĐ</div>
-                        <div className="cart__item__info__quantity">
-                            <div className="product-view__info__item__quantity">
-                                <div
-                                    className="product-view__info__item__quantity__btn"
-                                    onClick={() => updateQuantity('-', item)}
-                                >
-                                    <i className="bx bx-minus"></i>
-                                </div>
-                                <div className="product-view__info__item__quantity__input">{quantity}</div>
-                                <div
-                                    className="product-view__info__item__quantity__btn"
-                                    onClick={() => updateQuantity('+', item)}
-                                >
-                                    <i className="bx bx-plus"></i>
-                                </div>
-                            </div>
-                        </div>
+        <div className="cart__item">
+            <div className="cart__item__image">
+                <img src={image} alt="" />
+            </div>
+            <div className="cart__item__info">
+                <div className="cart__item__info__name">
+                    <Link to={`/products/${item.id}`}>{`${item.product.name} - ${item.color} - ${item.size}`}</Link>
+                </div>
+                <div className="cart__item__info__price">{item.product.price.toLocaleString()} VNĐ</div>
+                <div className="cart__item__info__quantity">
+                    <div className="product-view__info__item__quantity">
                         <div
-                            className="cart__item__info__action"
-                            onClick={() => {
-                                dispatch(removeItem(item))
-                                toast.success('Xoá sản phẩm thành công !')
-                            }}
+                            className="product-view__info__item__quantity__btn"
+                            onClick={() => updateQuantity('-', item)}
                         >
-                            <i className="bx bx-trash"></i>
+                            <i className="bx bx-minus"></i>
+                        </div>
+                        <div className="product-view__info__item__quantity__input">{quantity}</div>
+                        <div
+                            className="product-view__info__item__quantity__btn"
+                            onClick={() => updateQuantity('+', item)}
+                        >
+                            <i className="bx bx-plus"></i>
                         </div>
                     </div>
                 </div>
-            ) : (
-                <>Chưa có sản phẩm nào</>
-            )}
-        </>
+                <div
+                    className="cart__item__info__action"
+                    onClick={() => {
+                        dispatch(removeItem(item))
+                        toast.success('Xoá sản phẩm thành công !')
+                    }}
+                >
+                    <i className="bx bx-trash"></i>
+                </div>
+            </div>
+        </div>
     )
 }
 

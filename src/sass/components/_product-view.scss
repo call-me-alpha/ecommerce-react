@@ -86,9 +86,9 @@
     &__info {
         @include mobile {
             margin-top: 12px;
-            padding-bottom: 20px;
             position: relative;
             top: unset;
+            padding: 20px 20px 0;
         }
         flex-grow: 1;
         position: sticky;

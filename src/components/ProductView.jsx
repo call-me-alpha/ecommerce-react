@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux'
 
 import Button from '../components/Button'
 import { addItem } from '../redux/cartSlice'
+import { remove } from '../redux/productModalSlice'
 
 const ProductView = (props) => {
     const dispatch = useDispatch()
@@ -58,23 +59,14 @@ const ProductView = (props) => {
                 })
             )
             toast.success('Thêm vào giỏ hàng thành công!')
+            setColor(undefined)
+            setSize(undefined)
         }
     }
 
     const goToCart = () => {
-        if (check()) {
-            dispatch(
-                addItem({
-                    id: product.id,
-                    color,
-                    size,
-                    price: product.price,
-                    quantity,
-                    product
-                })
-            )
-            navigate('/cart')
-        }
+        dispatch(remove())
+        navigate('/cart')
     }
     return (
         <div className="product-view">
@@ -175,8 +167,12 @@ const ProductView = (props) => {
                     </div>
                 </div>
                 <div className="product-view__info__item">
-                    <Button onClick={handelAddToCart}>Thêm vào giỏ hàng</Button>
-                    <Button onClick={goToCart}>Mua ngay</Button>
+                    <Button size="full" onClick={handelAddToCart}>
+                        Thêm vào giỏ hàng
+                    </Button>
+                    <Button size="full" onClick={goToCart}>
+                        Đi tới giỏ hàng
+                    </Button>
                 </div>
             </div>
             <div className={`product-view__desc mobile ${showMoreDesc ? 'show' : ''}`}>

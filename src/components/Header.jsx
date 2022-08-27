@@ -1,8 +1,9 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
 import logo from '../assets/images/logos/logo.png'
-import CartInfo from './CartInfo'
+import Button from './Button'
 
 const mainNav = [
     {
@@ -20,10 +21,6 @@ const mainNav = [
     {
         display: 'Liên hệ',
         path: '/contact'
-    },
-    {
-        display: 'Admin',
-        path: '/dashboard'
     }
 ]
 const Header = () => {
@@ -32,6 +29,9 @@ const Header = () => {
     const headerRef = useRef()
     const menuRef = useRef()
     const cartRef = useRef()
+
+    const cartItems = useSelector((state) => state.cart.value)
+    console.log(cartItems)
 
     useEffect(() => {
         const handelScroll = () => {
@@ -42,8 +42,11 @@ const Header = () => {
         window.addEventListener('scroll', handelScroll)
         return () => {
             window.removeEventListener('scroll', handelScroll)
+            cartToggle()
         }
     }, [])
+
+    const countItem = useMemo(() => cartItems.reduce((total, item) => total + item.quantity, 0), [cartItems])
 
     const menuToggle = () => menuRef.current.classList.toggle('active')
     const cartToggle = () => cartRef.current.classList.toggle('active')
@@ -79,7 +82,11 @@ const Header = () => {
                     </div>
                     <div className="header__menu__right">
                         <div className="header__menu__item header__menu__right__item" onClick={cartToggle}>
-                            <i className="bx bx-cart"></i>
+                            <i className="bx bx-cart header__menu__right__item__cart">
+                                <div className="header__menu__right__item__cart__count">
+                                    <span>{countItem}</span>
+                                </div>
+                            </i>
                         </div>
                         <div className="header__menu__item header__menu__right__item">
                             <i className="bx bx-user-circle"></i>
@@ -87,8 +94,9 @@ const Header = () => {
                     </div>
                     <div className="header__menu__cart" ref={cartRef}>
                         <div className="header__menu__cart__content">
-                            {/* <CartInfo /> */}
-                            <Link to="/cart">Go to cart</Link>
+                            <Link to="/cart">
+                                <Button onClick={cartToggle}>Đi đến giỏ hàng</Button>
+                            </Link>
                             <div className="header__menu__cart__content__btn" onClick={cartToggle}>
                                 <i className="bx bx-right-arrow-alt"></i>
                             </div>

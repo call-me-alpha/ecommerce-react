@@ -1,6 +1,6 @@
-import { useEffect, useMemo } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
+import { useEffect, useMemo, useState } from 'react'
 
+import productApi from '../api/productApi'
 import ProductItem from '../components/ProductItem'
 import Helmet from '../components/Helmet'
 import Slider from '../components/Slider'
@@ -11,15 +11,17 @@ import Button from '../components/Button'
 import { Link } from 'react-router-dom'
 import SliderShow from '../components/SliderShow'
 import Grid from '../components/Grid'
-import { getProdutcsServer } from '../redux/productSlice'
 
 const Home = () => {
-    const dispatch = useDispatch()
-    const products = useSelector((state) => state.products.products)
+    const [products, setProducts] = useState([])
     useEffect(() => {
         window.scrollTo(0, 0)
-        dispatch(getProdutcsServer())
-    }, [dispatch])
+        const getProductsServer = async () => {
+            const res = await productApi.getAll()
+            setProducts(res)
+        }
+        getProductsServer()
+    }, [])
 
     const { productsNew, productsPopular, productsSeller } = useMemo(() => {
         const productsNew = products.filter((prod) => prod.tag === 'new').splice(0, 8)

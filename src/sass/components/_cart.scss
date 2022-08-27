@@ -12,6 +12,13 @@
         box-shadow: $box-shadow;
         position: sticky;
         top: calc(#{$header-shrink-height} + 20px);
+        @include mobile {
+            width: 100%;
+            position: unset;
+            margin-top: unset;
+            margin-bottom: 20px;
+            margin-right: unset;
+        }
         &__text {
             & > * {
                 margin-top: 10px;
@@ -34,6 +41,9 @@
             margin-bottom: 12px;
         }
     }
+    &__list {
+        flex-grow: 1;
+    }
     &__item {
         @include flex(center, flex-start);
         margin-bottom: 20px;
@@ -45,9 +55,20 @@
         }
         &__info {
             @include flex(center, space-between);
+            @include mobile {
+                @include flex(flex-start, center);
+                flex-direction: column;
+                & > * {
+                    margin-bottom: 10px;
+                }
+            }
             flex-grow: 1;
             &__name {
                 width: 40%;
+                @include mobile {
+                    margin-top: 12px;
+                    width: 100%;
+                }
             }
             &__name,
             &__price {
@@ -61,5 +82,10 @@
                 }
             }
         }
+    }
+    &__no-item {
+        text-align: center;
+        font-size: 1.8rem;
+        margin-top: 30px;
     }
 }
