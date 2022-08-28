@@ -32,6 +32,7 @@ const Header = () => {
     const headerRef = useRef()
     const menuRef = useRef()
     const cartRef = useRef()
+    const userRef = useRef()
 
     const cartItems = useSelector((state) => state.cart.value)
 
@@ -56,6 +57,7 @@ const Header = () => {
 
     const menuToggle = () => menuRef.current.classList.toggle('active')
     const cartToggle = () => cartRef.current.classList.toggle('active')
+    const userToggle = () => userRef.current.classList.toggle('active')
     return (
         <header className="header" ref={headerRef}>
             <div className="container">
@@ -94,8 +96,19 @@ const Header = () => {
                                 </div>
                             </i>
                         </div>
-                        <div className="header__menu__item header__menu__right__item">
+                        <div
+                            className="header__menu__item header__menu__right__item header__menu__right__item__user"
+                            onClick={userToggle}
+                        >
                             <i className="bx bx-user-circle"></i>
+                            <div className="header__menu__right__item__user__control" ref={userRef}>
+                                <Link to="/login">
+                                    <div>Đăng nhập</div>
+                                </Link>
+                                <Link to="/">
+                                    <div>Đăng ký</div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div className="header__menu__cart" ref={cartRef} onClick={cartToggle}>

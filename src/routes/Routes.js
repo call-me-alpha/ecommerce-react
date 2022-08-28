@@ -8,6 +8,8 @@ import Contact from '../pages/Contact'
 import Dashboard from '../pages/Dashboard'
 import Layout from '../components/Layout'
 import ProductDetail from '../pages/ProductDetail'
+import Login from '../pages/Login'
+import Register from '../pages/Register'
 import NotFound from '../pages/NotFound'
 
 const Routers = () => {
@@ -20,6 +22,8 @@ const Routers = () => {
                 <Route path="cart" element={<Cart />} />
                 <Route path="products/:id" element={<ProductDetail />} />
                 <Route path="products" element={<Products />} />
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<Register />} />
                 <Route path="*" element={<NotFound />}></Route>
             </Route>
             <Route path="dashboard" element={<Dashboard />} />

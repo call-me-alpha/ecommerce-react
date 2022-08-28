@@ -7,9 +7,9 @@ import PolicyItem from '../components/PolicyItem'
 import Section, { SectionBody } from '../components/Section'
 import Button from '../components/Button'
 
-const Login = () => {
+const Register = () => {
     return (
-        <Helmet title="Đăng nhập">
+        <Helmet title="Đăng ký">
             <div className="login" style={{ background: `url(${background}) center` }}>
                 <div className="login__overlay"></div>
                 <div className="login__content">
@@ -28,23 +28,28 @@ const Login = () => {
                         </div>
                     </div>
                     <div className="login__content__form">
-                        <div className="login__content__form__title">đăng nhập</div>
-                        <div className="login__content__form__not-account">
-                            Nếu bạn chưa có tài khoản,
-                            <span>
-                                <Link to="/register">đăng ký tại đây</Link>
-                            </span>
+                        <div className="login__content__form__title">Đăng ký</div>
+                        <div className="login__content__form__group">
+                            <label htmlFor="name">Họ và tên:</label>
+                            <input type="text" placeholder="Name" id="name" />
                         </div>
                         <div className="login__content__form__group">
-                            <label htmlFor="email">Email của bạn</label>
+                            <label htmlFor="phone">Điện thoại:</label>
+                            <input type="text" placeholder="Phone" id="phone" />
+                        </div>
+                        <div className="login__content__form__group">
+                            <label htmlFor="email">Email của bạn:</label>
                             <input type="text" placeholder="Email" id="email" />
                         </div>
                         <div className="login__content__form__group">
-                            <label htmlFor="pass">Mật khẩu</label>
+                            <label htmlFor="pass">Mật khẩu:</label>
                             <input type="password" placeholder="Password" id="pass" />
                         </div>
+                        <div className="login__content__form__acounted">
+                            <Link to="/login">Bạn đã có tài khoản ?</Link>
+                        </div>
                         <div className="login__content__form__btn">
-                            <Button size="full">Đăng nhập</Button>
+                            <Button size="full">Đăng ký</Button>
                         </div>
                     </div>
                 </div>
@@ -58,4 +63,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Register

@@ -169,6 +169,43 @@
                         }
                     }
                 }
+                &__user {
+                    position: relative;
+                    &:hover {
+                        color: unset;
+                    }
+                    &__control {
+                        position: absolute;
+                        top: 34px;
+                        right: 0px;
+                        width: 160px;
+                        font-size: 1.4rem;
+                        box-shadow: $box-shadow;
+                        background-color: $main-bg;
+                        display: none;
+                        div {
+                            padding: 8px 12px;
+                            &:first-child {
+                                border-bottom: 1px solid #ccc;
+                            }
+                            &:hover {
+                                @include hover;
+                            }
+                        }
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: -15px;
+                            right: 1px;
+                            border-style: solid;
+                            border-width: 8px 12px;
+                            border-color: transparent transparent #000 transparent;
+                        }
+                        &.active {
+                            display: block;
+                        }
+                    }
+                }
             }
 
             @include mobile {
