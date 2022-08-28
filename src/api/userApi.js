@@ -1,7 +1,7 @@
 import axiosClient from './axiosClient'
 
 const userApi = {
-    resgister(data) {
+    login(data) {
         const url = 'users'
         return axiosClient.post(url, data)
     }

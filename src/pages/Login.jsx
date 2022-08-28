@@ -1,13 +1,40 @@
-import { Link } from 'react-router-dom'
+import {
+    signInWithPopup,
+    FacebookAuthProvider,
+    getAdditionalUserInfo,
+    GoogleAuthProvider,
+    GithubAuthProvider
+} from 'firebase/auth'
 
 import background from '../assets/images/background.jpeg'
 import logo from '../assets/images/logos/logo.png'
 import Helmet from '../components/Helmet'
 import PolicyItem from '../components/PolicyItem'
 import Section, { SectionBody } from '../components/Section'
-import Button from '../components/Button'
+import { auth } from '../firebase/config'
 
 const Login = () => {
+    const providerFb = new FacebookAuthProvider()
+    const providerGg = new GoogleAuthProvider()
+    const providerGh = new GithubAuthProvider()
+    const handelLoginFb = async () => {
+        const data = await signInWithPopup(auth, providerFb)
+        const { isNewUser } = getAdditionalUserInfo(data)
+        const { user } = data
+        console.log(user)
+    }
+    const handelLoginGg = async () => {
+        const data = await signInWithPopup(auth, providerGg)
+        const { isNewUser } = getAdditionalUserInfo(data)
+        const { user } = data
+        console.log(user)
+    }
+    const handelLoginGh = async () => {
+        const data = await signInWithPopup(auth, providerGh)
+        const { isNewUser } = getAdditionalUserInfo(data)
+        const { user } = data
+        console.log(user)
+    }
     return (
         <Helmet title="Đăng nhập">
             <div className="login" style={{ background: `url(${background}) center` }}>
@@ -29,22 +56,24 @@ const Login = () => {
                     </div>
                     <div className="login__content__form">
                         <div className="login__content__form__title">đăng nhập</div>
-                        <div className="login__content__form__not-account">
-                            Nếu bạn chưa có tài khoản,
-                            <span>
-                                <Link to="/register">đăng ký tại đây</Link>
-                            </span>
+                        <div className="login__content__form__text">Đăng nhập bằng</div>
+                        <div className="login__content__form__item facebook" onClick={handelLoginFb}>
+                            <div className="login__content__form__item__logo">
+                                <i className="bx bxl-facebook-square"></i>
+                            </div>
+                            <div className="login__content__form__item__name">Facebook</div>
                         </div>
-                        <div className="login__content__form__group">
-                            <label htmlFor="email">Email của bạn</label>
-                            <input type="text" placeholder="Email" id="email" />
+                        <div className="login__content__form__item google" onClick={handelLoginGg}>
+                            <div className="login__content__form__item__logo">
+                                <i className="bx bxl-google"></i>
+                            </div>
+                            <div className="login__content__form__item__name">Google</div>
                         </div>
-                        <div className="login__content__form__group">
-                            <label htmlFor="pass">Mật khẩu</label>
-                            <input type="password" placeholder="Password" id="pass" />
-                        </div>
-                        <div className="login__content__form__btn">
-                            <Button size="full">Đăng nhập</Button>
+                        <div className="login__content__form__item github" onClick={handelLoginGh}>
+                            <div className="login__content__form__item__logo">
+                                <i className="bx bxl-github"></i>
+                            </div>
+                            <div className="login__content__form__item__name">Github</div>
                         </div>
                     </div>
                 </div>

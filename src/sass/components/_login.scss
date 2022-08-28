@@ -61,39 +61,37 @@
                 text-align: center;
                 font-weight: 600;
             }
-            &__not-account {
+            &__text {
                 font-size: 1.6rem;
                 margin-top: 20px;
                 font-weight: 500;
-                span {
-                    color: $main-color;
-                    margin-left: 4px;
-                }
+                text-align: center;
             }
-            &__group {
-                margin-top: 20px;
-                label {
-                    display: block;
-                    font-size: 1.6rem;
-                    font-weight: 500;
+            &__item {
+                margin: 30px 40px;
+                @include flex(center, flex-start);
+                &.facebook {
+                    background-color: #3c5997;
                 }
-                input {
-                    width: 100%;
-                    padding: 10px 12px;
-                    margin-top: 8px;
-                    outline-color: $main-color;
-                    border: 1px solid #ccc;
+                &.google {
+                    background-color: #cc3233;
                 }
-            }
-            &__btn {
-                margin-top: 30px;
-            }
-            &__acounted {
-                margin-top: 20px;
-                font-size: 1.6rem;
-                color: $main-color;
-                text-align: right;
-                font-weight: 500;
+                &.github {
+                    background-color: #000;
+                }
+                &__name {
+                    color: $text-white;
+                    font-size: 2rem;
+                    margin-left: 20px;
+                }
+                &__logo {
+                    color: $text-white;
+                    width: 30%;
+                    text-align: center;
+                    font-size: 3rem;
+                    border-right: 1px solid #ccc;
+                    margin-top: 4px;
+                }
             }
         }
     }
