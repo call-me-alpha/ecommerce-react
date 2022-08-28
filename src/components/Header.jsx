@@ -105,7 +105,7 @@ const Header = () => {
                                 <Link to="/login">
                                     <div>Đăng nhập</div>
                                 </Link>
-                                <Link to="/">
+                                <Link to="/register">
                                     <div>Đăng ký</div>
                                 </Link>
                             </div>
