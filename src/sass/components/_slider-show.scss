@@ -31,5 +31,8 @@
     &__btn {
         position: absolute;
         top: 50px;
+        @include mobile {
+            top: 10px;
+        }
     }
 }

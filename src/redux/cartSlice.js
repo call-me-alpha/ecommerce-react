@@ -38,13 +38,13 @@ const cartSlice = createSlice({
             let check = state.value.find((item) => item.id === id && item.color === color && item.size === size)
             if (check.quantity === 1) {
                 state.value.forEach((item, index) => {
-                    if (item.id === id) {
+                    if (item.id === id && item.color === color && item.size === size) {
                         state.value.splice(index, 1)
                     }
                 })
             } else {
                 state.value.forEach((item, index) => {
-                    if (item.id === id) {
+                    if (item.id === id && item.color === color && item.size === size) {
                         let updateItem = {
                             ...item,
                             quantity: item.quantity - 1
@@ -56,9 +56,9 @@ const cartSlice = createSlice({
             localStorage.setItem('cartItems', JSON.stringify(state.value))
         },
         updateQuantityUp: (state, { payload }) => {
-            const { id } = payload
+            const { id, size, color } = payload
             state.value.forEach((item, index) => {
-                if (item.id === id) {
+                if (item.id === id && item.color === color && item.size === size) {
                     let updateItem = {
                         ...item,
                         quantity: item.quantity + 1

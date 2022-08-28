@@ -108,9 +108,10 @@ const Header = () => {
                                             <img src={item.product.images[0]} alt="" />
                                         </div>
                                         <div className="cart-toggle__item__info">
-                                            <div className="cart-toggle__item__info__name" onClick={cartToggle}>
+                                            <div className="cart-toggle__item__info__name">
                                                 <Link
                                                     to={`/products/${item.id}`}
+                                                    onClick={cartToggle}
                                                 >{`${item.product.name} - ${item.color} - ${item.size}`}</Link>
                                             </div>
                                             <div className="cart-toggle__item__info__price">
