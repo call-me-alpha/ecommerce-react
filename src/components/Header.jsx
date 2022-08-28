@@ -34,7 +34,6 @@ const Header = () => {
     const cartRef = useRef()
 
     const cartItems = useSelector((state) => state.cart.value)
-    console.log(cartItems)
 
     useEffect(() => {
         const handelScroll = () => {
