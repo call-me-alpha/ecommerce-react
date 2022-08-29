@@ -1,0 +1,66 @@
+.sidebar {
+    z-index: 100;
+    min-width: $sidebar-width;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $main-bg-ad;
+    box-shadow: $box-shadow;
+    transition: all 0.3s ease;
+    @include tablet {
+        width: 50%;
+        transform: translateX(-100%);
+    }
+    @include mobile {
+        width: 100%;
+        transform: translateX(-100%);
+    }
+    &.active {
+        transform: translateX(0);
+    }
+    &__logo {
+        height: 140px;
+        @include flex(center, center);
+        img {
+            height: 50px;
+        }
+    }
+    &__item {
+        padding: 0 20px;
+        &__inner {
+            padding: 15px 25px;
+            align-items: center;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            @include flex(center, flex-start);
+            i {
+                font-size: 2rem;
+                margin-right: 10px;
+            }
+            span {
+                font-size: 1.6rem;
+                text-transform: capitalize;
+            }
+            &:hover {
+                color: $main-color;
+            }
+            &.active {
+                border-radius: $border-radius;
+                background-color: $main-color;
+                color: $txt-white-ad;
+            }
+        }
+    }
+    &__close {
+        cursor: pointer;
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 3rem;
+        @include tablet {
+            display: block;
+        }
+    }
+}

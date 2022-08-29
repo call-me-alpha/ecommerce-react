@@ -5,11 +5,17 @@ import Cart from '../pages/Cart'
 import Products from '../pages/Products'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
-import Dashboard from '../pages/Dashboard'
 import Layout from '../components/Layout'
 import ProductDetail from '../pages/ProductDetail'
 import Login from '../pages/Login'
 import NotFound from '../pages/NotFound'
+
+import Admin from '../pages/admin/Admin'
+import Dashboard from '../pages/admin/Dashboard'
+import Category from '../pages/admin/Category'
+import Product from '../pages/admin/Product'
+import Customer from '../pages/admin/Customer'
+import Order from '../pages/admin/Order'
 
 const Routers = () => {
     return (
@@ -22,9 +28,15 @@ const Routers = () => {
                 <Route path="products/:id" element={<ProductDetail />} />
                 <Route path="products" element={<Products />} />
                 <Route path="login" element={<Login />} />
-                <Route path="*" element={<NotFound />}></Route>
+                <Route path="*" element={<NotFound />} />
             </Route>
-            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="admin" element={<Admin />}>
+                <Route index element={<Dashboard />} />
+                <Route path="categories" element={<Category />} />
+                <Route path="products" element={<Product />} />
+                <Route path="customers" element={<Customer />} />
+                <Route path="orders" element={<Order />} />
+            </Route>
         </Routes>
     )
 }

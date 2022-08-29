@@ -1,0 +1,89 @@
+.topnav {
+    padding: 30px;
+    @include flex(center, space-between);
+    height: $topnav-height;
+    @include tablet {
+        padding: 20px;
+    }
+    @include mobile {
+        padding: 10px;
+    }
+    &__toggle-sidebar {
+        cursor: pointer;
+        font-size: 3.2rem;
+        margin-right: 8px;
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+    &__search {
+        position: relative;
+        height: 40px;
+        margin-top: -4px;
+        width: 300px;
+        background-color: $main-bg-ad;
+        box-shadow: $box-shadow;
+        overflow: hidden;
+        border-radius: $border-radius;
+        @include mobile {
+            width: 300px;
+            margin-right: 10px;
+        }
+        input {
+            border-radius: $border-radius;
+            height: 100%;
+            width: 100%;
+            padding: 10px 30px;
+            font-size: 1.4rem;
+            border: none;
+            outline-color: $main-color;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            font-size: 2rem;
+        }
+    }
+    &__right {
+        @include flex(center, flex-start);
+        &__toggle-theme {
+            .bx {
+                color: #f5c412;
+            }
+            &.react-toggle--checked .react-toggle-track {
+                background-color: #ccc;
+            }
+            &.react-toggle--checked:hover .react-toggle-track {
+                background-color: #e8e8e8;
+            }
+        }
+        &__user {
+            margin-left: 10px;
+            cursor: pointer;
+            @include flex(center, flex-start);
+            @include mobile {
+                justify-content: flex-end;
+            }
+            img {
+                margin-top: -2px;
+                width: 38px;
+                border-radius: 50%;
+                border: 1px solid $main-color;
+                @include mobile {
+                    width: 40px;
+                }
+            }
+            span {
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                margin-right: 8px;
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+}

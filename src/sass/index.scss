@@ -1,6 +1,7 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
 @import 'react-toastify/dist/ReactToastify.css';
+@import 'react-toggle/style.css';
 
 @import './variables';
 @import './mixins';
@@ -22,3 +23,9 @@
 @import './components/product-modal';
 @import './components/cart';
 @import './components/login';
+
+@import './admin/theme';
+@import './admin/layout';
+@import './admin/sidebar';
+@import './admin/topnav';
+@import './admin/dashboard';

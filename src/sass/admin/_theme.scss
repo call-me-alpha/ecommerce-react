@@ -1,0 +1,36 @@
+// Admin
+$main-bg-ad: #ffffff;
+$second-bg-ad: #fafafb;
+$txt-color-ad: #455560;
+$txt-white-ad: #fff;
+$main-color-ad: #349eff;
+$second-color-ad: #62b4ff;
+$box-shadow-ad: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$sidebar-width: 300px;
+$border-radius: 15px;
+$topnav-height: 110px;
+$transition-cubic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+$main-bg-light: #ffffff;
+$second-bg-light: #fafafb;
+$txt-color-light: #455560;
+$box-shadow-light: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$main-bg-dark: #2d2d2d;
+$second-bg-dark: #202020;
+$txt-color-dark: #bbbbbb;
+$box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+
+.theme-mode-light {
+    $main-bg-ad: $main-bg-light;
+    $second-bg-ad: $second-bg-light;
+    $txt-color-ad: $txt-color-light;
+    $box-shadow: $box-shadow-light;
+}
+
+.theme-mode-dark {
+    $main-bg-ad: $main-bg-dark;
+    $second-bg-ad: $second-bg-dark;
+    $txt-color-ad: $txt-color-dark;
+    $box-shadow-ad: $box-shadow-dark;
+}

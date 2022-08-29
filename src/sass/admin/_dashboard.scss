@@ -1,0 +1,56 @@
+.dashboard {
+    &__title {
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    &__statistical {
+        &__item {
+            cursor: pointer;
+            padding: 10px 20px;
+            @include flex(center, flex-start);
+            background-color: $main-bg-ad;
+            box-shadow: $box-shadow;
+            border-radius: $border-radius;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.8s ease;
+            &__icon {
+                z-index: 1;
+                width: 30%;
+                height: 100%;
+                font-size: 3rem;
+                @include flex(center, center);
+            }
+            &__info {
+                z-index: 1;
+                flex-grow: 1;
+                text-align: center;
+                h4 {
+                    font-size: 2.4rem;
+                    margin-bottom: 10px;
+                }
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+            &::before {
+                content: '';
+                background-color: $main-color;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                transform: translateX(-100%);
+                transition: all 0.8s ease;
+            }
+            &:hover {
+                color: $txt-white-ad;
+            }
+            &:hover::before {
+                transform: translateX(0);
+            }
+        }
+    }
+}

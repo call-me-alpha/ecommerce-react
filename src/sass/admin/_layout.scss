@@ -1,0 +1,21 @@
+.layout {
+    color: $txt-color-ad;
+    &__content {
+        padding-left: $sidebar-width;
+        background-color: $second-bg-ad;
+        box-shadow: $box-shadow-ad;
+        min-height: 100vh;
+        &__main {
+            padding: 30px;
+            @include tablet {
+                padding: 20px;
+            }
+            @include mobile {
+                padding: 10px;
+            }
+        }
+        @include tablet {
+            padding-left: unset;
+        }
+    }
+}
