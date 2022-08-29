@@ -199,11 +199,24 @@
                             right: 1px;
                             border-style: solid;
                             border-width: 8px 12px;
-                            border-color: transparent transparent #000 transparent;
+                            border-color: transparent transparent $main-color transparent;
                         }
                         &.active {
                             display: block;
                         }
+                    }
+                    &__avatar {
+                        margin-top: 6px;
+                        img {
+                            box-shadow: $box-shadow;
+                            width: 30px;
+                            border-radius: 50%;
+                            border: 1px solid $main-color;
+                        }
+                    }
+                    &__avatar ~ &__control {
+                        top: 44px;
+                        right: 1px;
                     }
                 }
             }

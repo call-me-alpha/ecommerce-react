@@ -5,6 +5,10 @@ import {
     GoogleAuthProvider,
     GithubAuthProvider
 } from 'firebase/auth'
+import { useEffect } from 'react'
+import { useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 import background from '../assets/images/background.jpeg'
 import logo from '../assets/images/logos/logo.png'
@@ -12,28 +16,132 @@ import Helmet from '../components/Helmet'
 import PolicyItem from '../components/PolicyItem'
 import Section, { SectionBody } from '../components/Section'
 import { auth } from '../firebase/config'
+import userApi from '../api/userApi'
+import { login } from '../redux/userSlice'
 
 const Login = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
     const providerFb = new FacebookAuthProvider()
     const providerGg = new GoogleAuthProvider()
     const providerGh = new GithubAuthProvider()
     const handelLoginFb = async () => {
         const data = await signInWithPopup(auth, providerFb)
         const { isNewUser } = getAdditionalUserInfo(data)
-        const { user } = data
-        console.log(user)
+        const {
+            user: { uid, displayName, email, photoURL }
+        } = data
+        if (isNewUser) {
+            const fomrData = {
+                id: uid,
+                name: displayName,
+                email,
+                avatar: photoURL,
+                role: 'user'
+            }
+            const registerServer = async (data) => {
+                try {
+                    const res = await userApi.register(data)
+                    dispatch(login(res))
+                } catch (err) {
+                    toast.error(err)
+                }
+            }
+            registerServer(fomrData)
+        } else {
+            const getUserServer = async (id) => {
+                try {
+                    const res = await userApi.getOne(id)
+                    dispatch(login(res))
+                } catch (err) {
+                    console.log(err)
+                    toast.error(err)
+                }
+            }
+            getUserServer(uid)
+        }
+        navigate('/')
+        toast.success('Đăng nhập thành công!')
     }
     const handelLoginGg = async () => {
         const data = await signInWithPopup(auth, providerGg)
         const { isNewUser } = getAdditionalUserInfo(data)
-        const { user } = data
-        console.log(user)
+        const {
+            user: { uid, displayName, email, photoURL }
+        } = data
+        if (isNewUser) {
+            const fomrData = {
+                id: uid,
+                name: displayName,
+                email,
+                avatar: photoURL,
+                role: 'user'
+            }
+            const registerServer = async (data) => {
+                try {
+                    const res = await userApi.register(data)
+                    dispatch(login(res))
+                } catch (err) {
+                    toast.error(err)
+                }
+            }
+            registerServer(fomrData)
+        } else {
+            const getUserServer = async (id) => {
+                try {
+                    const res = await userApi.getOne(id)
+                    dispatch(login(res))
+                } catch (err) {
+                    console.log(err)
+                    toast.error(err)
+                }
+            }
+            getUserServer(uid)
+        }
+        navigate('/')
+        toast.success('Đăng nhập thành công!')
     }
     const handelLoginGh = async () => {
         const data = await signInWithPopup(auth, providerGh)
         const { isNewUser } = getAdditionalUserInfo(data)
-        const { user } = data
-        console.log(user)
+        const {
+            user: { uid, displayName, email, photoURL }
+        } = data
+        if (isNewUser) {
+            const fomrData = {
+                id: uid,
+                name: displayName,
+                email,
+                avatar: photoURL,
+                role: 'user'
+            }
+            const registerServer = async (data) => {
+                try {
+                    const res = await userApi.register(data)
+                    dispatch(login(res))
+                } catch (err) {
+                    toast.error(err)
+                }
+            }
+            registerServer(fomrData)
+        } else {
+            const getUserServer = async (id) => {
+                try {
+                    const res = await userApi.getOne(id)
+                    dispatch(login(res))
+                } catch (err) {
+                    console.log(err)
+                    toast.error(err)
+                }
+            }
+            getUserServer(uid)
+        }
+        navigate('/')
+        toast.success('Đăng nhập thành công!')
     }
     return (
         <Helmet title="Đăng nhập">

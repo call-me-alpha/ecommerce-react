@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { toast } from 'react-toastify'
@@ -6,6 +6,8 @@ import { toast } from 'react-toastify'
 import logo from '../assets/images/logos/logo.png'
 import Button from './Button'
 import { removeItem } from '../redux/cartSlice'
+import { auth } from '../firebase/config'
+import { logOut } from '../redux/userSlice'
 
 const mainNav = [
     {
@@ -35,7 +37,13 @@ const Header = () => {
     const userRef = useRef()
 
     const cartItems = useSelector((state) => state.cart.value)
+    const currentUser = useSelector((state) => state.user.currentUser)
 
+    const [user, setUser] = useState(currentUser)
+
+    useEffect(() => {
+        setUser(currentUser)
+    }, [currentUser])
     useEffect(() => {
         const handelScroll = () => {
             document.body.scrollTop > 80 || document.documentElement.scrollTop > 80
@@ -58,6 +66,13 @@ const Header = () => {
     const menuToggle = () => menuRef.current.classList.toggle('active')
     const cartToggle = () => cartRef.current.classList.toggle('active')
     const userToggle = () => userRef.current.classList.toggle('active')
+    const handelLogout = () => {
+        auth.signOut()
+        dispatch(logOut())
+        toast.success('Đăng xuất thành công !')
+    }
+
+    console.log(user)
     return (
         <header className="header" ref={headerRef}>
             <div className="container">
@@ -96,20 +111,32 @@ const Header = () => {
                                 </div>
                             </i>
                         </div>
-                        <div
-                            className="header__menu__item header__menu__right__item header__menu__right__item__user"
-                            onClick={userToggle}
-                        >
-                            <i className="bx bx-user-circle"></i>
-                            <div className="header__menu__right__item__user__control" ref={userRef}>
-                                <Link to="/login">
-                                    <div>Đăng nhập</div>
-                                </Link>
-                                <Link to="/register">
-                                    <div>Đăng ký</div>
-                                </Link>
+                        {user ? (
+                            <div
+                                className="header__menu__item header__menu__right__item header__menu__right__item__user"
+                                onClick={userToggle}
+                            >
+                                <div className="header__menu__right__item__user__avatar">
+                                    <img src={user.avatar} alt="" />
+                                </div>
+                                <div className="header__menu__right__item__user__control" ref={userRef}>
+                                    <div>Đơn hàng của tôi</div>
+                                    <div onClick={handelLogout}>Đăng xuất</div>
+                                </div>
                             </div>
-                        </div>
+                        ) : (
+                            <div
+                                className="header__menu__item header__menu__right__item header__menu__right__item__user"
+                                onClick={userToggle}
+                            >
+                                <i className="bx bx-user-circle"></i>
+                                <div className="header__menu__right__item__user__control" ref={userRef}>
+                                    <Link to="/login">
+                                        <div>Đăng nhập</div>
+                                    </Link>
+                                </div>
+                            </div>
+                        )}
                     </div>
                     <div className="header__menu__cart" ref={cartRef} onClick={cartToggle}>
                         <div className="header__menu__cart__content">
