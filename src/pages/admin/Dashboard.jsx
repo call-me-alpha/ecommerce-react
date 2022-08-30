@@ -4,9 +4,12 @@ import Grid from '../../components/Grid'
 import StatisticalItem from '../../components/admin/StatisticalItem'
 import { useEffect, useState } from 'react'
 import userApi from '../../api/userApi'
+import orderApi from '../../api/orderApi'
+import Badge from '../../components/admin/Badge'
 
 const Dashboard = () => {
     const [customers, setCustomers] = useState([])
+    const [orders, setOrders] = useState([])
     const statisticals = [
         {
             icon: 'bx bx-shopping-bag',
@@ -38,9 +41,19 @@ const Dashboard = () => {
                 console.log(err)
             }
         }
+        const getOrderServer = async () => {
+            try {
+                const res = await orderApi.getAll()
+                setOrders(res.splice(0, 10))
+            } catch (err) {
+                console.log(err)
+            }
+        }
         getCustoterServer()
+        getOrderServer()
     }, [])
     console.log(customers)
+    console.log(orders)
     return (
         <div className="dashboard">
             <h2 className="dashboard__title">Dashboard</h2>
@@ -56,12 +69,14 @@ const Dashboard = () => {
                     <div className="dashboard__table__item">
                         <div className="dashboard__table__item__title">Khách hàng mới</div>
                         <table>
-                            <tbody>
+                            <thead>
                                 <tr>
                                     <th>Hình ảnh</th>
                                     <th>Tên</th>
                                     <th>Email</th>
                                 </tr>
+                            </thead>
+                            <tbody>
                                 {customers
                                     ? customers.map((cust) => (
                                           <tr key={cust.id}>
@@ -82,20 +97,24 @@ const Dashboard = () => {
                     <div className="dashboard__table__item">
                         <div className="dashboard__table__item__title">Đơn hàng mới</div>
                         <table>
-                            <tbody>
+                            <thead>
                                 <tr>
-                                    <th>Hình ảnh</th>
-                                    <th>Tên</th>
-                                    <th>Email</th>
+                                    <th>Người đặt</th>
+                                    <th>Thời gian</th>
+                                    <th>Tổng đơn hàng</th>
+                                    <th>Trạng thái</th>
                                 </tr>
-                                {customers
-                                    ? customers.map((cust) => (
-                                          <tr key={cust.id}>
+                            </thead>
+                            <tbody>
+                                {orders
+                                    ? orders.map((order, index) => (
+                                          <tr key={index}>
+                                              <td>{order.user}</td>
+                                              <td>{order.date}</td>
+                                              <td>{order.price}</td>
                                               <td>
-                                                  <img src={cust.avatar} alt="" />
+                                                  <Badge status={order.status} />
                                               </td>
-                                              <td>{cust.name}</td>
-                                              <td>{cust.email}</td>
                                           </tr>
                                       ))
                                     : null}

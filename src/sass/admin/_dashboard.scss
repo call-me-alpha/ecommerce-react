@@ -59,30 +59,51 @@
             box-shadow: $box-shadow;
             border-radius: $border-radius;
             padding: 20px;
-            table {
-                margin: 10px 0;
-                th {
-                    font-size: 1.4rem;
-                }
-                tr {
-                    margin-top: 12px;
-                    td {
-                        font-size: 1.4rem;
-                        img {
-                            width: 40px;
-                            border-radius: 50%;
-                            border: 1px solid $main-color;
-                        }
-                    }
-                }
-            }
             &__title {
                 font-size: 1.8rem;
                 font-weight: 600;
             }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+                thead {
+                    th {
+                        font-size: 1.4rem;
+                    }
+                }
+                tbody {
+                    tr {
+                        text-align: center;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                        &:hover {
+                            background-color: $main-color;
+                            color: $txt-white-ad;
+                        }
+                        &:hover img {
+                            border: 1px solid $txt-white-ad;
+                        }
+                        td {
+                            padding: 0 4px;
+                            font-size: 1.4rem;
+                            img {
+                                margin-top: 5px;
+                                width: 34px;
+                                border-radius: 50%;
+                                border: 1px solid $main-color;
+                            }
+                        }
+                    }
+                }
+            }
             &__link {
+                margin-top: 4px;
                 font-size: 1.6rem;
                 text-align: center;
+                &:hover {
+                    color: $main-color;
+                }
             }
         }
     }
