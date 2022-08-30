@@ -44,7 +44,7 @@ const Dashboard = () => {
         const getOrderServer = async () => {
             try {
                 const res = await orderApi.getAll()
-                setOrders(res.splice(0, 10))
+                setOrders(res.splice(0, 5))
             } catch (err) {
                 console.log(err)
             }
@@ -52,8 +52,6 @@ const Dashboard = () => {
         getCustoterServer()
         getOrderServer()
     }, [])
-    console.log(customers)
-    console.log(orders)
     return (
         <div className="dashboard">
             <h2 className="dashboard__title">Dashboard</h2>
@@ -71,9 +69,10 @@ const Dashboard = () => {
                         <table>
                             <thead>
                                 <tr>
-                                    <th>Hình ảnh</th>
+                                    <th>Avatar</th>
                                     <th>Tên</th>
                                     <th>Email</th>
+                                    <th>Vai trò</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -85,6 +84,9 @@ const Dashboard = () => {
                                               </td>
                                               <td>{cust.name}</td>
                                               <td>{cust.email}</td>
+                                              <td>
+                                                  <Badge status={cust.role} />
+                                              </td>
                                           </tr>
                                       ))
                                     : null}
@@ -109,7 +111,12 @@ const Dashboard = () => {
                                 {orders
                                     ? orders.map((order, index) => (
                                           <tr key={index}>
-                                              <td>{order.user}</td>
+                                              <td>
+                                                  <img
+                                                      src="https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c"
+                                                      alt=""
+                                                  />
+                                              </td>
                                               <td>{order.date}</td>
                                               <td>{order.price}</td>
                                               <td>
@@ -121,7 +128,7 @@ const Dashboard = () => {
                             </tbody>
                         </table>
                         <div className="dashboard__table__item__link">
-                            <Link to="customers">View All</Link>
+                            <Link to="orders">View All</Link>
                         </div>
                     </div>
                 </Grid>

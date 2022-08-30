@@ -1,6 +1,32 @@
+$main-color-red: #fb0b12;
+
+$main-color-cyan: #10d4d2;
+
+$main-color-green: #019707;
+
+$main-color-orange: #0285d6;
+
 .badge {
-    padding: 6px 12px;
+    padding: 6px 10px;
     color: $txt-white-ad;
     border-radius: 10px;
     box-shadow: $box-shadow;
+    &.badge-pendding {
+        background-color: $main-color-cyan;
+    }
+    &.badge-shipping {
+        background-color: $main-color-orange;
+    }
+    &.badge-successful {
+        background-color: $main-color-green;
+    }
+    &.badge-canceled {
+        background-color: $main-color-red;
+    }
+    &.badge-admin {
+        background-color: $main-color-red;
+    }
+    &.badge-user {
+        background-color: $main-color-cyan;
+    }
 }

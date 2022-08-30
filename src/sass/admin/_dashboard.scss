@@ -1,6 +1,6 @@
 .dashboard {
     &__title {
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         text-transform: uppercase;
         font-size: 2rem;
     }
@@ -74,6 +74,7 @@
                 }
                 tbody {
                     tr {
+                        padding: 4px 8px;
                         text-align: center;
                         transition: all 0.3s ease;
                         cursor: pointer;
@@ -85,13 +86,16 @@
                             border: 1px solid $txt-white-ad;
                         }
                         td {
-                            padding: 0 4px;
+                            padding: 4px 8px;
                             font-size: 1.4rem;
                             img {
                                 margin-top: 5px;
                                 width: 34px;
                                 border-radius: 50%;
                                 border: 1px solid $main-color;
+                            }
+                            span {
+                                margin-left: 4px;
                             }
                         }
                     }
