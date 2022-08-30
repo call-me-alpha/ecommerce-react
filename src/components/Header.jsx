@@ -64,7 +64,11 @@ const Header = () => {
     }, [cartItems])
 
     const menuToggle = () => menuRef.current.classList.toggle('active')
-    const cartToggle = () => cartRef.current.classList.toggle('active')
+    const cartToggle = () => {
+        if (cartRef.current !== null) {
+            cartRef.current.classList.toggle('active')
+        }
+    }
     const userToggle = () => userRef.current.classList.toggle('active')
     const handelLogout = () => {
         auth.signOut()
@@ -86,7 +90,7 @@ const Header = () => {
                         <i className="bx bx-menu"></i>
                     </div>
                     <div className="header__menu__left" ref={menuRef}>
-                        <div className="header__menu__left__close" onClick={menuToggle}>
+                        <div className="header__menu__left__close" onClick={userRef.current && menuToggle}>
                             <i className="bx bx-chevron-left"></i>
                         </div>
                         {mainNav.map((item, index) => (
@@ -112,15 +116,15 @@ const Header = () => {
                             </i>
                         </div>
                         {user ? (
-                            <div
-                                className="header__menu__item header__menu__right__item header__menu__right__item__user"
-                                onClick={userToggle}
-                            >
-                                <div className="header__menu__right__item__user__avatar">
+                            <div className="header__menu__item header__menu__right__item header__menu__right__item__user">
+                                <div className="header__menu__right__item__user__avatar" onClick={userToggle}>
                                     <img src={user.avatar} alt="" />
                                 </div>
                                 <div className="header__menu__right__item__user__control" ref={userRef}>
                                     <div>Đơn hàng của tôi</div>
+                                    <div>
+                                        <Link to="admin">Trang quản trị</Link>
+                                    </div>
                                     <div onClick={handelLogout}>Đăng xuất</div>
                                 </div>
                             </div>
@@ -138,7 +142,7 @@ const Header = () => {
                             </div>
                         )}
                     </div>
-                    <div className="header__menu__cart" ref={cartRef} onClick={cartToggle}>
+                    <div className="header__menu__cart" ref={cartRef}>
                         <div className="header__menu__cart__content">
                             {cartItems.length ? (
                                 cartItems.map((item, index) => (
