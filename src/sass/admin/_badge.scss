@@ -29,4 +29,13 @@ $main-color-orange: #0285d6;
     &.badge-user {
         background-color: $main-color-cyan;
     }
+    &.badge-new {
+        background-color: $main-color-orange;
+    }
+    &.badge-popular {
+        background-color: $main-color-green;
+    }
+    &.badge-seller {
+        background-color: $main-color-cyan;
+    }
 }

@@ -1,15 +1,27 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { useSelector } from 'react-redux'
 import Toggle from 'react-toggle'
 
 const TopNav = ({ handelToggle }) => {
     const currentUser = useSelector((state) => state.user.currentUser)
     const [user, setUser] = useState(currentUser)
+    const topnavRef = useRef()
     useEffect(() => {
         setUser(currentUser)
     }, [currentUser])
+    useEffect(() => {
+        const handelScroll = () => {
+            document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20
+                ? topnavRef.current.classList.add('shink')
+                : topnavRef.current.classList.remove('shink')
+        }
+        window.addEventListener('scroll', handelScroll)
+        return () => {
+            window.removeEventListener('scroll', handelScroll)
+        }
+    }, [])
     return (
-        <div className="topnav">
+        <div className="topnav" ref={topnavRef}>
             <div className="topnav__toggle-sidebar" onClick={handelToggle}>
                 <i className="bx bx-menu"></i>
             </div>

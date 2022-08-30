@@ -34,3 +34,11 @@ $box-shadow-dark: rgba(0, 0, 0, 0.2) 0px 5px 10px;
     $txt-color-ad: $txt-color-dark;
     $box-shadow-ad: $box-shadow-dark;
 }
+
+.loading {
+    margin: auto;
+    @include flex(center, center);
+    & > * {
+        margin: auto;
+    }
+}

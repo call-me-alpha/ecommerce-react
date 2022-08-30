@@ -1,0 +1,63 @@
+.table {
+    overflow-y: auto;
+    table {
+        font-size: 1.4rem;
+        width: 100%;
+        border-spacing: 0;
+        thead {
+            background-color: $second-bg-ad;
+            th {
+                text-align: left;
+                text-transform: capitalize;
+                padding: 14px 10px;
+            }
+        }
+
+        tbody {
+            tr {
+                text-align: left;
+                transition: all 0.3s ease;
+                td {
+                    text-transform: capitalize;
+                    padding: 14px 10px;
+                    img {
+                        width: 30px;
+                    }
+
+                    .btn__edit,
+                    .btn__delete {
+                        cursor: pointer;
+                        border-radius: $border-radius;
+                        transition: all 0.3s ease;
+                        i {
+                            margin-right: 4px;
+                            @include tablet {
+                                margin-right: unset;
+                            }
+                        }
+                        span {
+                            @include tablet {
+                                display: none;
+                            }
+                        }
+                        @include tablet {
+                            font-size: 2rem;
+                        }
+                    }
+                    .btn__delete {
+                        margin-left: 12px;
+                        @include mobile {
+                            margin-left: unset;
+                        }
+                    }
+                    .btn__edit:hover {
+                        color: #10d4d2;
+                    }
+                    .btn__delete:hover {
+                        color: #fb0b12;
+                    }
+                }
+            }
+        }
+    }
+}

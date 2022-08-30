@@ -3,6 +3,7 @@
         margin-bottom: 30px;
         text-transform: uppercase;
         font-size: 2rem;
+        font-weight: 600;
     }
     &__statistical {
         &__item {
@@ -56,6 +57,7 @@
     &__table {
         margin-top: 40px;
         &__item {
+            overflow-y: auto;
             box-shadow: $box-shadow;
             border-radius: $border-radius;
             padding: 20px;
@@ -64,18 +66,21 @@
                 font-weight: 600;
             }
             table {
+                overflow-y: auto;
                 width: 100%;
                 border-collapse: collapse;
                 margin-top: 20px;
                 thead {
+                    background-color: $main-bg-ad;
                     th {
+                        text-align: left;
                         font-size: 1.4rem;
+                        padding: 14px 10px;
                     }
                 }
                 tbody {
                     tr {
-                        padding: 4px 8px;
-                        text-align: center;
+                        text-align: left;
                         transition: all 0.3s ease;
                         cursor: pointer;
                         &:hover {

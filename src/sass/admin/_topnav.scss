@@ -1,12 +1,22 @@
 .topnav {
+    position: sticky;
+    top: 0;
+    left: $sidebar-width;
+    z-index: 100;
     padding: 30px;
-    @include flex(center, space-between);
     height: $topnav-height;
+    transition: all 0.4s ease;
+    @include flex(center, space-between);
     @include tablet {
         padding: 20px;
     }
     @include mobile {
         padding: 10px;
+    }
+    &.shink {
+        height: 80px;
+        box-shadow: $box-shadow;
+        background-color: $main-bg-ad;
     }
     &__toggle-sidebar {
         cursor: pointer;

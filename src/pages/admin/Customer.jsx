@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Custormer = () => {
-    return <div>Custormer</div>
+    return <div className="customer">Custormer</div>
 }
 
 export default Custormer
