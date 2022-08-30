@@ -10,9 +10,9 @@
             @include tablet {
                 padding: 20px;
             }
-            @include mobile {
-                padding: 10px;
-            }
+            // @include mobile {
+            //     padding: 10px;
+            // }
         }
         @include tablet {
             padding-left: unset;

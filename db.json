@@ -1,6 +1,40 @@
 {
   "users": [
-    
+    {
+      "id": "mpozBZhTX8g6X9SiJtq7exuNnId2",
+      "name": "Huy Nguyễn",
+      "email": "nguyentuhuy97@gmail.com",
+      "avatar": "https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c",
+      "role": "user"
+    },
+    {
+      "id": "ovY78BR187gSvpoiZeKBKYa6EZy2",
+      "name": "Huy Nguyễn",
+      "email": "nguyentuhuy97@gmail.com",
+      "avatar": "https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c",
+      "role": "user"
+    },
+    {
+      "id": "Cx51WY2laLPnuT5MyEN09pbrjpJ3",
+      "name": "Nguyen Tu Huy (FPL DN_K16)",
+      "email": "huyntpd04333@fpt.edu.vn",
+      "avatar": "https://lh3.googleusercontent.com/a-/AFdZucp6_Zt-Mhk4ZVzzOf4RJgaCM68iO6GE0B0Kg_VqQg=s96-c",
+      "role": "user"
+    },
+    {
+      "id": "RuHmRplLTLMHuYVsmknwbDfiUrQ2",
+      "name": "Huy Nguyễn",
+      "email": "nguyentuhuy97@gmail.com",
+      "avatar": "https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c",
+      "role": "user"
+    },
+    {
+      "id": "Hur5D3yqyqYEj7Z6937Q6okiVD33",
+      "name": "Huy Nguyễn",
+      "email": "nguyentuhuy97@gmail.com",
+      "avatar": "https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c",
+      "role": "user"
+    }
   ],
   "categories": [
     {
@@ -26,6 +60,50 @@
     {
       "id": 6,
       "name": "Quần Sooc"
+    }
+  ],
+  "orders": [
+    {
+        "id": "#OD1711",
+        "user": "john doe",
+        "date": "17 Jun 2021",
+        "price": "$900",
+        "status": "shipping"
+    },
+    {
+        "id": "#OD1711",
+        "user": "john doe",
+        "date": "17 Jun 2021",
+        "price": "$900",
+        "status": "shipping"
+    },
+    {
+        "id": "#OD1711",
+        "user": "john doe",
+        "date": "17 Jun 2021",
+        "price": "$900",
+        "status": "shipping"
+    },
+    {
+        "id": "#OD1711",
+        "user": "john doe",
+        "date": "17 Jun 2021",
+        "price": "$900",
+        "status": "shipping"
+    },
+    {
+        "id": "#OD1711",
+        "user": "john doe",
+        "date": "17 Jun 2021",
+        "price": "$900",
+        "status": "shipping"
+    },
+    {
+        "id": "#OD1711",
+        "user": "john doe",
+        "date": "17 Jun 2021",
+        "price": "$900",
+        "status": "shipping"
     }
   ],
   "products": [

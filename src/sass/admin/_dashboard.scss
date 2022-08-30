@@ -53,4 +53,37 @@
             }
         }
     }
+    &__table {
+        margin-top: 40px;
+        &__item {
+            box-shadow: $box-shadow;
+            border-radius: $border-radius;
+            padding: 20px;
+            table {
+                margin: 10px 0;
+                th {
+                    font-size: 1.4rem;
+                }
+                tr {
+                    margin-top: 12px;
+                    td {
+                        font-size: 1.4rem;
+                        img {
+                            width: 40px;
+                            border-radius: 50%;
+                            border: 1px solid $main-color;
+                        }
+                    }
+                }
+            }
+            &__title {
+                font-size: 1.8rem;
+                font-weight: 600;
+            }
+            &__link {
+                font-size: 1.6rem;
+                text-align: center;
+            }
+        }
+    }
 }
