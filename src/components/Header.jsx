@@ -125,7 +125,13 @@ const Header = () => {
                                     <div>
                                         <Link to="admin">Trang quản trị</Link>
                                     </div>
-                                    <div onClick={handelLogout}>Đăng xuất</div>
+                                    <div
+                                        className="header__menu__right__item__user__control__logout"
+                                        onClick={handelLogout}
+                                    >
+                                        <i className="bx bx-log-out-circle"></i>
+                                        <span>Đăng xuất</span>
+                                    </div>
                                 </div>
                             </div>
                         ) : (

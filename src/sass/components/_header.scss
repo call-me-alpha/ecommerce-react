@@ -192,6 +192,13 @@
                                 @include hover;
                             }
                         }
+                        &__logout {
+                            @include flex(center, center);
+                            i {
+                                margin-right: 8px;
+                                font-size: 1.6rem;
+                            }
+                        }
                         &::before {
                             content: '';
                             position: absolute;
