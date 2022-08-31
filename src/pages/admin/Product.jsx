@@ -10,7 +10,7 @@ const headData = ['', 'Hình ảnh', 'Tên', 'Nhãn', 'Giá', 'Thao tác']
 const renderHead = (item, index) => <th key={index}>{item}</th>
 const renderBody = (item, index) => (
     <tr key={index}>
-        <td>{index + 1}</td>
+        <td>{item.id}</td>
         <td>
             <img src={item.images[0]} alt="" />
         </td>
@@ -54,6 +54,7 @@ const Product = () => {
                 <div className="page__table">
                     {products.length ? (
                         <Table
+                            limit={10}
                             headData={headData}
                             renderHead={(item, index) => renderHead(item, index)}
                             bodyData={products}

@@ -60,4 +60,26 @@
             }
         }
     }
+    &__pagination {
+        @include flex(center, flex-end);
+        width: 100%;
+        margin-top: 20px;
+        &__item {
+            font-size: 1.4rem;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            @include flex(center, center);
+            cursor: pointer;
+            &.active {
+                background-color: $main-color;
+                color: $txt-white-ad;
+                font-weight: 600;
+            }
+            &:hover {
+                color: $txt-white-ad;
+                background-color: #fe9946;
+            }
+        }
+    }
 }

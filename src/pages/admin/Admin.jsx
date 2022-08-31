@@ -9,9 +9,9 @@ const Admin = () => {
         sideBarRef.current.classList.toggle('active')
     }
     return (
-        <div className="layout">
+        <div className="layout theme-mode-dark">
             <SliderBar sideBarRef={sideBarRef} />
-            <div className="layout__content">
+            <div className="layout__content ">
                 <TopNav handelToggle={handelToggle} />
                 <div className="layout__content__main">
                     <Outlet />

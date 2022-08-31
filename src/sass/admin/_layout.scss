@@ -1,5 +1,23 @@
+$main-bg-ad: #ffffff;
+$second-bg-ad: #fafafb;
+$txt-color-ad: #455560;
+$box-shadow-ad: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+$txt-white-ad: #fff;
+$sidebar-width: 300px;
+$border-radius: 15px;
+$topnav-height: 110px;
+
+.loading {
+    margin: auto;
+    @include flex(center, center);
+    & > * {
+        margin: auto;
+    }
+}
+
 .layout {
     color: $txt-color-ad;
+
     &__content {
         padding-left: $sidebar-width;
         background-color: $second-bg-ad;
