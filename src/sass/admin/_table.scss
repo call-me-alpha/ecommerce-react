@@ -5,7 +5,7 @@
         width: 100%;
         border-spacing: 0;
         thead {
-            background-color: $second-bg-ad;
+            background-color: $main-bg-ad;
             th {
                 text-align: left;
                 text-transform: capitalize;
@@ -18,10 +18,14 @@
                 text-align: left;
                 transition: all 0.3s ease;
                 td {
-                    text-transform: capitalize;
                     padding: 14px 10px;
                     img {
-                        width: 30px;
+                        width: 50px;
+                    }
+                    .avatar {
+                        width: 40px;
+                        border-radius: 50%;
+                        border: 1px solid $main-color;
                     }
 
                     .btn__edit,
