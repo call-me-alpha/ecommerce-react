@@ -1,11 +1,13 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Table = (props) => {
-    const initDataShow = props.limit ? props.bodyData.slice(0, props.limit) : props.bodyData
-
-    const [dataShow, setDataShow] = useState(initDataShow)
+    const [dataShow, setDataShow] = useState([])
     const [currPage, setCurrPage] = useState(0)
 
+    useEffect(() => {
+        const initDataShow = props.limit ? props.bodyData.slice(0, props.limit) : props.bodyData
+        setDataShow(initDataShow)
+    }, [props])
     let totalPage = 1
     let pageNumbers = []
 

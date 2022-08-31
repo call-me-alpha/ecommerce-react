@@ -31,24 +31,23 @@ const renderBody = (item, index, onClick) => (
 
 const Customer = () => {
     const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getUsersThunk())
+    }, [dispatch])
 
     const users = useSelector((state) => state.user.users)
     const [customers, setCustomers] = useState([])
     useEffect(() => {
-        dispatch(getUsersThunk())
-    }, [dispatch])
-    useEffect(() => {
         setCustomers(users)
     }, [users])
-
-    console.log(customers)
     const handelUpdateRole = (id, role) => {
         if (window.confirm(`Bạn muốn chỉnh sửa vai trò người này thành ${role}`)) {
-            dispatch(updateRoleThunk(id, role))
+            dispatch(updateRoleThunk({ id, role }))
         }
     }
+    console.log(customers)
     return (
-        <Helmet title="Quản lý sản phẩm">
+        <Helmet title="Quản lý người dùng">
             <div className="page">
                 <div className="page__title">Quản lý người dùng</div>
                 <div className="page__table">

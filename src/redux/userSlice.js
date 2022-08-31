@@ -5,7 +5,6 @@ import userApi from '../api/userApi'
 const getUsersThunk = createAsyncThunk('users/getAll', async () => {
     try {
         const res = await userApi.getAll()
-        console.log(res)
         return res
     } catch (err) {
         console.log(err)
@@ -13,9 +12,7 @@ const getUsersThunk = createAsyncThunk('users/getAll', async () => {
 })
 const updateRoleThunk = createAsyncThunk('users/updateRole', async ({ id, role }) => {
     try {
-        console.log(role)
         const res = await userApi.updateRole(id, { role })
-        console.log(res)
         return res
     } catch (err) {
         console.log(err)
@@ -40,6 +37,10 @@ const userSlice = createSlice({
         logOut: (state, action) => {
             state.currentUser = null
             sessionStorage.setItem('currentUser', JSON.stringify(state.currentUser))
+        },
+        updateRole: (state, { payload }) => {
+            const indexCurr = state.users.findIndex((user) => user.id === payload.id)
+            state.users[indexCurr] = payload
         }
     },
     extraReducers: (buider) => {
