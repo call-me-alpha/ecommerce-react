@@ -183,20 +183,18 @@
                         box-shadow: $box-shadow;
                         background-color: $main-bg;
                         display: none;
-                        div {
+                        &__item {
+                            @include flex(center, flex-start);
+                            i {
+                                margin-right: 8px;
+                                font-size: 1.6rem;
+                            }
                             padding: 8px 12px;
                             &:first-child {
                                 border-bottom: 1px solid #ccc;
                             }
                             &:hover {
                                 @include hover;
-                            }
-                        }
-                        &__logout {
-                            @include flex(center, center);
-                            i {
-                                margin-right: 8px;
-                                font-size: 1.6rem;
                             }
                         }
                         &::before {

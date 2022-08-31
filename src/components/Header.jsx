@@ -121,12 +121,23 @@ const Header = () => {
                                     <img src={user.avatar} alt="" />
                                 </div>
                                 <div className="header__menu__right__item__user__control" ref={userRef}>
-                                    <div>Đơn hàng của tôi</div>
-                                    <div>
-                                        <Link to="admin">Trang quản trị</Link>
-                                    </div>
+                                    {user.role !== 'admin' && (
+                                        <div className="header__menu__right__item__user__control__item">
+                                            <i className="bx bxs-cart-alt"></i>
+                                            <span>Đơn hàng của tôi</span>
+                                        </div>
+                                    )}
+
+                                    {user.role === 'admin' && (
+                                        <Link to="admin">
+                                            <div className="header__menu__right__item__user__control__item">
+                                                <i className="bx bxs-dashboard"></i>
+                                                <span>Trang quản trị</span>
+                                            </div>
+                                        </Link>
+                                    )}
                                     <div
-                                        className="header__menu__right__item__user__control__logout"
+                                        className="header__menu__right__item__user__control__item"
                                         onClick={handelLogout}
                                     >
                                         <i className="bx bx-log-out-circle"></i>
@@ -142,7 +153,10 @@ const Header = () => {
                                 <i className="bx bx-user-circle"></i>
                                 <div className="header__menu__right__item__user__control" ref={userRef}>
                                     <Link to="/login">
-                                        <div>Đăng nhập</div>
+                                        <div className="header__menu__right__item__user__control__item">
+                                            <i className="bx bx-log-in-circle"></i>
+                                            <span>Đăng nhập</span>
+                                        </div>
                                     </Link>
                                 </div>
                             </div>
