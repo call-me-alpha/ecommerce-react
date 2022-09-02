@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import ReactLoading from 'react-loading'
 import { useDispatch, useSelector } from 'react-redux'
+import { toast } from 'react-toastify'
 
 import { getUsersThunk, updateRoleThunk } from '../../redux/userSlice'
 import Helmet from '../../components/Helmet'
@@ -9,7 +10,7 @@ import Badge from '../../components/admin/Badge'
 
 const headData = ['', 'Hình ảnh', 'Tên', 'Email', 'Vai trò', 'Thao tác']
 const renderHead = (item, index) => <th key={index}>{item}</th>
-const renderBody = (item, index, onClick) => (
+const renderBody = (item, index, handelUpdateRole) => (
     <tr key={index}>
         <td>{index + 1}</td>
         <td>
@@ -21,7 +22,10 @@ const renderBody = (item, index, onClick) => (
             <Badge status={item.role} />
         </td>
         <td>
-            <span className="btn__edit" onClick={() => onClick(item.id, item.role === 'admin' ? 'user' : 'admin')}>
+            <span
+                className="btn__edit"
+                onClick={() => handelUpdateRole(item.id, item.role === 'admin' ? 'user' : 'admin')}
+            >
                 <i className="bx bxs-edit-alt"></i>
                 <span>Đặt làm {item.role === 'admin' ? 'user' : 'admin'}</span>
             </span>
@@ -43,6 +47,7 @@ const Customer = () => {
     const handelUpdateRole = (id, role) => {
         if (window.confirm(`Bạn muốn chỉnh sửa vai trò người này thành ${role}`)) {
             dispatch(updateRoleThunk({ id, role }))
+            toast.success('Chỉnh sửa vai trò thành công !')
         }
     }
     console.log(customers)
