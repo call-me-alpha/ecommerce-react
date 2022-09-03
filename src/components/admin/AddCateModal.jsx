@@ -1,7 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { v4 } from 'uuid'
 import { toast } from 'react-toastify'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import Button from '../Button'
 import { createCateThunk } from '../../redux/categorySlice'
@@ -9,18 +9,24 @@ import { createCateThunk } from '../../redux/categorySlice'
 const AddCateModal = ({ display, toggleAddModal }) => {
     const dispatch = useDispatch()
     const [name, setName] = useState('')
+    const isLoading = useSelector((state) => state.category.loading)
+    const [loading, setLoading] = useState(isLoading)
+    useEffect(() => {
+        setLoading(isLoading)
+    }, [isLoading])
 
     const handelSubmit = (e) => {
         e.preventDefault()
-        console.log(name)
         const formData = {
             id: v4(),
             name
         }
         dispatch(createCateThunk(formData))
         setName('')
-        toggleAddModal()
-        toast.success('Thêm danh mục thành công !')
+        if (!loading) {
+            toggleAddModal()
+            toast.success('Thêm danh mục thành công !')
+        }
     }
     return (
         <div className={`modal-admin ${display}`}>

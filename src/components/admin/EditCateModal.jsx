@@ -1,12 +1,17 @@
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
 import Button from '../Button'
 import { updateCateThunk } from '../../redux/categorySlice'
 
 const EditCateModal = ({ display, toggleEditModal, cateEdit }) => {
     const dispatch = useDispatch()
+    const isLoading = useSelector((state) => state.category.loading)
+    const [loading, setLoading] = useState(isLoading)
+    useEffect(() => {
+        setLoading(isLoading)
+    }, [isLoading])
     const [id, setId] = useState(cateEdit.id)
     const [name, setName] = useState(cateEdit.name)
     useEffect(() => {
@@ -20,8 +25,10 @@ const EditCateModal = ({ display, toggleEditModal, cateEdit }) => {
             name
         }
         dispatch(updateCateThunk(formData))
-        toast.success('Chỉnh sửa danh mục thành công !')
-        toggleEditModal()
+        if (!loading) {
+            toast.success('Chỉnh sửa danh mục thành công !')
+            toggleEditModal()
+        }
     }
 
     return (

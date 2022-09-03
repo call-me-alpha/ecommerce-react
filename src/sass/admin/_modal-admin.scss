@@ -3,9 +3,11 @@
     position: fixed;
     top: 0;
     left: $sidebar-width;
-    bottom: 0;
     right: 0;
+    bottom: 0;
     z-index: 101;
+    overflow: auto;
+    visibility: visible;
     background-color: rgba($color: #000000, $alpha: 0.5);
     @include tablet {
         left: 0;
@@ -15,8 +17,9 @@
         margin: auto;
         background-color: $main-bg-ad;
         position: relative;
-        padding: 30px 20px;
+        padding: 30px 20px 0;
         box-shadow: $box-shadow;
+
         &__title {
             font-size: 2rem;
             font-weight: 500;
@@ -24,17 +27,21 @@
         &__body {
             padding: 30px 0;
             &__form-group {
+                margin-bottom: 10px;
                 @include flex(flex-start, flex-start);
                 flex-direction: column;
                 label {
                     font-size: 1.6rem;
                 }
-                input {
+                input,
+                textarea {
                     margin-top: 8px;
                     width: 100%;
                     padding: 10px 20px;
                     border: 1px solid #ccc;
                     outline-color: $main-color;
+                    color: $txt-color-ad;
+                    font-family: 'Roboto', sans-serif;
                 }
             }
             &__btn {

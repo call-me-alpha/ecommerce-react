@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import ReactLoading from 'react-loading'
 
 import Helmet from '../../components/Helmet'
 import Grid from '../../components/Grid'
@@ -68,67 +69,75 @@ const Dashboard = () => {
                     <Grid col={2} mdCol={1} smCol={1} gap={20}>
                         <div className="dashboard__table__item">
                             <div className="dashboard__table__item__title">Khách hàng mới</div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Avatar</th>
-                                        <th>Tên</th>
-                                        <th>Email</th>
-                                        <th>Vai trò</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {customers.length
-                                        ? customers.map((cust) => (
-                                              <tr key={cust.id}>
-                                                  <td>
-                                                      <img src={cust.avatar} alt="" />
-                                                  </td>
-                                                  <td>{cust.name}</td>
-                                                  <td>{cust.email}</td>
-                                                  <td>
-                                                      <Badge status={cust.role} />
-                                                  </td>
-                                              </tr>
-                                          ))
-                                        : null}
-                                </tbody>
-                            </table>
+                            {customers.length ? (
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Avatar</th>
+                                            <th>Tên</th>
+                                            <th>Email</th>
+                                            <th>Vai trò</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {customers.map((cust) => (
+                                            <tr key={cust.id}>
+                                                <td>
+                                                    <img src={cust.avatar} alt="" />
+                                                </td>
+                                                <td>{cust.name}</td>
+                                                <td>{cust.email}</td>
+                                                <td>
+                                                    <Badge status={cust.role} />
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            ) : (
+                                <div className="loading">
+                                    <ReactLoading type="spinningBubbles" height={50} width={50} color="#f5801f" />
+                                </div>
+                            )}
                             <div className="dashboard__table__item__link">
                                 <Link to="customers">Xem tất cả</Link>
                             </div>
                         </div>
                         <div className="dashboard__table__item">
                             <div className="dashboard__table__item__title">Đơn hàng mới</div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Người đặt</th>
-                                        <th>Thời gian</th>
-                                        <th>Tổng đơn hàng</th>
-                                        <th>Trạng thái</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {orders.length
-                                        ? orders.map((order, index) => (
-                                              <tr key={index}>
-                                                  <td>
-                                                      <img
-                                                          src="https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c"
-                                                          alt=""
-                                                      />
-                                                  </td>
-                                                  <td>{order.date}</td>
-                                                  <td>{order.price}</td>
-                                                  <td>
-                                                      <Badge status={order.status} />
-                                                  </td>
-                                              </tr>
-                                          ))
-                                        : null}
-                                </tbody>
-                            </table>
+                            {orders.length ? (
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Người đặt</th>
+                                            <th>Thời gian</th>
+                                            <th>Tổng đơn hàng</th>
+                                            <th>Trạng thái</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {orders.map((order, index) => (
+                                            <tr key={index}>
+                                                <td>
+                                                    <img
+                                                        src="https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c"
+                                                        alt=""
+                                                    />
+                                                </td>
+                                                <td>{order.date}</td>
+                                                <td>{order.price}</td>
+                                                <td>
+                                                    <Badge status={order.status} />
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            ) : (
+                                <div className="loading">
+                                    <ReactLoading type="spinningBubbles" height={50} width={50} color="#f5801f" />
+                                </div>
+                            )}
                             <div className="dashboard__table__item__link">
                                 <Link to="orders">Xêm tất cả</Link>
                             </div>

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 import { useDispatch } from 'react-redux'
+import ReactLoading from 'react-loading'
 
 import { set } from '../redux/productModalSlice'
 import Button from './Button'
@@ -40,7 +41,7 @@ const SliderShow = ({ products }) => {
     return (
         <div className="slider-show">
             <Slider {...settings}>
-                {products &&
+                {products ? (
                     products.map((prod) => (
                         <div className="slider-show__item" key={prod.id}>
                             <Link to={`products/${prod.id}`}>
@@ -59,7 +60,12 @@ const SliderShow = ({ products }) => {
                                 </Button>
                             </div>
                         </div>
-                    ))}
+                    ))
+                ) : (
+                    <div className="loading">
+                        <ReactLoading type="spinningBubbles" height={50} width={50} color="#f5801f" />
+                    </div>
+                )}
             </Slider>
         </div>
     )

@@ -38,6 +38,7 @@ const updateCateThunk = createAsyncThunk('category/update', async (data) => {
 })
 
 const initialState = {
+    loading: false,
     categories: []
 }
 
@@ -46,16 +47,32 @@ const categorySlice = createSlice({
     initialState,
     extraReducers: (buider) => {
         buider
+            .addCase(getCategoriesThunk.pending, (state, { payload }) => {
+                state.loading = true
+            })
             .addCase(getCategoriesThunk.fulfilled, (state, { payload }) => {
+                state.loading = false
                 state.categories = payload
             })
+            .addCase(deleteCateThunk.pending, (state, { payload }) => {
+                state.loading = true
+            })
             .addCase(deleteCateThunk.fulfilled, (state, { payload }) => {
+                state.loading = false
                 state.categories = state.categories.filter((cate) => cate.id !== payload)
             })
+            .addCase(createCateThunk.pending, (state, { payload }) => {
+                state.loading = true
+            })
             .addCase(createCateThunk.fulfilled, (state, { payload }) => {
+                state.loading = false
                 state.categories.push(payload)
             })
+            .addCase(updateCateThunk.pending, (state, { payload }) => {
+                state.loading = true
+            })
             .addCase(updateCateThunk.fulfilled, (state, { payload }) => {
+                state.loading = false
                 const indexCurrr = state.categories.findIndex((cate) => cate.id === payload.id)
                 state.categories[indexCurrr] = payload
             })

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { toast } from 'react-toastify'
 import { useEffect, useMemo, useState } from 'react'
+import ReactLoading from 'react-loading'
 
 import ProductItem from './ProductItem'
 import Grid from './Grid'
@@ -39,7 +40,13 @@ const Pagination = ({ data, count, col }) => {
             ) : (
                 <div style={{ width: '100%' }}>
                     <Grid col={col ? col : 3} mdCol={2} smCol={1} gap={10}>
-                        {products && products.map((prod) => <ProductItem key={prod.id} product={prod} />)}
+                        {products.length ? (
+                            products.map((prod) => <ProductItem key={prod.id} product={prod} />)
+                        ) : (
+                            <div className="loading">
+                                <ReactLoading type="spinningBubbles" height={50} width={50} color="#f5801f" />
+                            </div>
+                        )}
                     </Grid>
                     {count > pageItem && hide && (
                         <div className="pagination__btn">

@@ -36,6 +36,11 @@ const Category = () => {
     }, [dispatch])
     const cateList = useSelector((state) => state.category.categories)
     const [categories, setCategories] = useState(cateList)
+    const isLoading = useSelector((state) => state.category.loading)
+    const [loading, setLoading] = useState(isLoading)
+    useEffect(() => {
+        setLoading(isLoading)
+    }, [isLoading])
 
     useEffect(() => {
         setCategories(cateList)
@@ -54,7 +59,9 @@ const Category = () => {
     const handelDeleteCate = (id) => {
         if (window.confirm('Bạn có chắc chắn muốn xoá danh mục này ?')) {
             dispatch(deleteCateThunk(id))
-            toast.success('Xoá danh mục thành công !')
+            if (!loading) {
+                toast.success('Xoá danh mục thành công !')
+            }
         }
     }
 

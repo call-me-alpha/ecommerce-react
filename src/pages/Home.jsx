@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import ReactLoading from 'react-loading'
 
 import productApi from '../api/productApi'
 import ProductItem from '../components/ProductItem'
@@ -41,10 +42,15 @@ const Home = () => {
                 <SectionTitle>Sản bán chạy nhất</SectionTitle>
                 <SectionBody>
                     <Grid col={4} mdCol={2} smCol={1} gap={20}>
-                        {productsSeller &&
+                        {productsSeller.length ? (
                             productsSeller.map((prod) => (
                                 <ProductItem product={prod} key={prod.id} path={`/products/${prod.id}`} />
-                            ))}
+                            ))
+                        ) : (
+                            <div className="loading">
+                                <ReactLoading type="spinningBubbles" height={50} width={50} color="#f5801f" />
+                            </div>
+                        )}
                     </Grid>
                     <Link to="/products" style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
                         <Button size="md">Xem thêm</Button>
@@ -61,7 +67,13 @@ const Home = () => {
                 <SectionTitle>Sản phẩm mới</SectionTitle>
                 <SectionBody>
                     <Grid col={4} mdCol={2} smCol={1} gap={20}>
-                        {productsNew && productsNew.map((prod) => <ProductItem product={prod} key={prod.id} />)}
+                        {productsNew ? (
+                            productsNew.map((prod) => <ProductItem product={prod} key={prod.id} />)
+                        ) : (
+                            <div className="loading">
+                                <ReactLoading type="spinningBubbles" height={50} width={50} color="#f5801f" />
+                            </div>
+                        )}
                     </Grid>
                 </SectionBody>
             </Section>
