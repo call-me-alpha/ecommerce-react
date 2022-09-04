@@ -13,6 +13,13 @@
       "email": "huyntpd04333@fpt.edu.vn",
       "avatar": "https://lh3.googleusercontent.com/a-/AFdZucp6_Zt-Mhk4ZVzzOf4RJgaCM68iO6GE0B0Kg_VqQg=s96-c",
       "role": "user"
+    },
+    {
+      "id": "IRKu9KevujeluLZFBRiCxwU4NNr1",
+      "name": "Huy Nguyễn",
+      "email": "callmealpha.ecommerce@gmail.com",
+      "avatar": "https://lh3.googleusercontent.com/a/AItbvmlXHtCeXEKqZEuzGzN8RY7ZlKMn5YmzOMAV1FqX=s96-c",
+      "role": "admin"
     }
   ],
   "categories": [
@@ -39,6 +46,10 @@
     {
       "id": "ab58a7f4-3fc0-4949-9eac-e98edfede7e1",
       "name": "Quần Jeans"
+    },
+    {
+      "id": "07191045-2cc9-4cfe-8f90-00a3fb00839b",
+      "name": "Áo Len"
     }
   ],
   "orders": [
@@ -87,7 +98,6 @@
   ],
   "products": [
     {
-      "id": "0c07338e-e8ac-4bf8-972c-e0e804f20332",
       "name": "Quần sooc dạ , cạp cao đính cúc trang trí",
       "tag": "popular",
       "cateId": "69da15d6-82da-4abe-8e4f-0d8cc4b58e94",
@@ -118,7 +128,8 @@
           "title": "LƯU Ý",
           "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
         }
-      ]
+      ],
+      "id": "0c07338e-e8ac-4bf8-972c-e0e804f20332"
     },
     {
       "id": "09afefe1-587c-44c9-82d9-8958ee247c0c",
@@ -257,9 +268,9 @@
       ]
     },
     {
-      "id": "1e9ecae6-7e39-4ccb-b6a5-503216479ff8",
       "name": "Chân váy dáng ôm, 3 ly xếp, đính cúc, xẻ trước",
-      "tag": "new",
+      "tag": "seller",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
       "images": [
         "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F552233011__2_.jpg",
         "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220830/_F252232021__1_.jpg",
@@ -287,10 +298,10 @@
           "title": "LƯU Ý",
           "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
         }
-      ]
+      ],
+      "id": "1e9ecae6-7e39-4ccb-b6a5-503216479ff8"
     },
     {
-      "id": "95d368d0-1bee-4d36-85c4-efd2779a1ec9",
       "name": "Chân váy xòe freesize cạp chun, tùng váy can hông",
       "tag": "new",
       "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
@@ -301,7 +312,8 @@
       ],
       "price": 298000,
       "colors": [
-        "black"
+        "black",
+        "white"
       ],
       "sizes": [
         "S",
@@ -321,7 +333,8 @@
           "title": "LƯU Ý",
           "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
         }
-      ]
+      ],
+      "id": "95d368d0-1bee-4d36-85c4-efd2779a1ec9"
     },
     {
       "id": "4ef4b3f1-382f-4928-919e-de6edd4d471b",
@@ -359,7 +372,6 @@
       ]
     },
     {
-      "id": "f39d6370-aea7-40e0-ae11-b6243ea61e63",
       "name": "Chân váy dáng ôm classic , tà bong , đính cúc trang trí",
       "tag": "seller",
       "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
@@ -389,12 +401,12 @@
           "title": "LƯU Ý",
           "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
         }
-      ]
+      ],
+      "id": "f39d6370-aea7-40e0-ae11-b6243ea61e63"
     },
     {
-      "id": "42772246-2325-486b-9c84-54c13ffca6ee",
       "name": "Chân váy dáng xòe , xếp ly thân trước, đính 3 cúc trang trí",
-      "tag": "seller",
+      "tag": "new",
       "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
       "images": [
         "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252224021__1_.jpg",
@@ -423,7 +435,8 @@
           "title": "LƯU Ý",
           "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
         }
-      ]
+      ],
+      "id": "42772246-2325-486b-9c84-54c13ffca6ee"
     },
     {
       "id": "afeda3f9-3afb-4c64-a96b-49507e8b70b8",
@@ -528,7 +541,6 @@
       ]
     },
     {
-      "id": "4387bc7d-60c8-4a9e-bc0d-44ba9693dc67",
       "name": "Chân váy bò dáng ôm, xẻ sau, nắp túi thân trước",
       "tag": "seller",
       "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
@@ -539,7 +551,8 @@
       ],
       "price": 450000,
       "colors": [
-        "black"
+        "black",
+        "white"
       ],
       "sizes": [
         "M",
@@ -551,6 +564,427 @@
         {
           "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
           "body": "* Tên sản phẩm: Chân váy bò dáng ôm, xẻ sau, nắp túi thân trước\n<br>\n* Chất liệu: Jeans mềm, đứng phom.\n<br>\n* Thiết kế trẻ trung, năng động kết hợp với các loại áo phông, áo thun, croptop trẻ trung, năng động, dành cho mùa hè tươi mới..."
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ],
+      "id": "4387bc7d-60c8-4a9e-bc0d-44ba9693dc67"
+    },
+    {
+      "name": "Áo len lông nữ, cổ tròn họa tiết, dáng bo gấu",
+      "tag": "new",
+      "cateId": "07191045-2cc9-4cfe-8f90-00a3fb00839b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F852760072__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F852760072__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F852760072__3_.jpg"
+      ],
+      "price": 480000,
+      "colors": [
+        "blue",
+        "brown"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Áo len lông nữ, cổ tròn họa tiết, dáng bo gấu\n<br>\n* Chất liệu: Len\n<br>\n* Mô tả: Áo len lông nữ, cổ tròn họa tiết, dáng bo gấu. Sang trọng và tinh tế, thiết kế này giúp quý cô trở nên thời thượng khi mix cùng chân zuýp ôm, boot cao gót"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ],
+      "id": "ef25dac8-9bb0-4531-a69f-5b3ec55114a7"
+    },
+    {
+      "id": "edb559c3-eec8-42e8-8d51-e790357560e4",
+      "name": "Áo len nữ dáng bo gấu, cổ cao 4 cm dệt họa tiết",
+      "tag": "new",
+      "cateId": "07191045-2cc9-4cfe-8f90-00a3fb00839b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F852755012__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F852755012__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F852755012__3_.jpg"
+      ],
+      "price": 395000,
+      "colors": [
+        "black",
+        "white"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Áo len nữ dáng bo gấu, cổ cao 4 cm dệt họa tiết\n<br>\n* Chất liệu: Len\n<br>\n* Mô tả: Áo len nữ dáng bo gấu, cổ cao 4 cm dệt họa tiết . Mix cùng zuýp, chân váy jean, quần dài...để có set đồ ưng ý đi chơi, hẹn hò, đi làm..."
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "bb72e377-33ee-4c35-8374-b4af8abec91f",
+      "name": "Áo len nữ cổ tròn dáng bo gấu, dệt vặn thừng thân trước",
+      "tag": "new",
+      "cateId": "07191045-2cc9-4cfe-8f90-00a3fb00839b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/f852746022__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/f852746022__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/f852746022__4_.jpg"
+      ],
+      "price": 395000,
+      "colors": [
+        "brown",
+        "white"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Áo len nữ cổ tròn dáng bo gấu, dệt vặn thừng thân trước\n<br>\n* Chất liệu: Len\n<br>\n* Mô tả: Áo len nữ cổ tròn dáng bo gấu, dệt vặn thừng thân trước. Chất liệu len cao cấp, mềm mại, mịn màng, giữ ấm tốt. Áo phù hợp đi làm, đi chơi"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "name": "Quần bò dáng ôm in chữ trang trí cạp",
+      "tag": "seller",
+      "cateId": "ab58a7f4-3fc0-4949-9eac-e98edfede7e1",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220316/C522002012___B342011_1_.JPG",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220316/C522002012___B342011_4_.JPG",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220316/C522002012___B342011_2_.JPG"
+      ],
+      "price": 420000,
+      "colors": [
+        "blue"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Tên sản phẩm: Quần bò dáng ôm in chữ trang trí cạp\n<br>\n* Chất liệu: Jeans mềm, đứng phom.\n<br>\n* Thiết kế trẻ trung, năng động kết hợp với các loại áo phông, áo thun, croptop trẻ trung, năng động, dành cho mùa hè tươi mới..."
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ],
+      "id": "800fcd16-3047-45b3-af35-5fed379e4518"
+    },
+    {
+      "id": "c62ef40b-c541-4b48-94d4-0992ab2c28b5",
+      "name": "Quần bò baggy cạp thêu chữ",
+      "tag": "seller",
+      "cateId": "ab58a7f4-3fc0-4949-9eac-e98edfede7e1",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211210/B341282032_630_1.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211210/B341282032_630_2.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211210/B341282032_630_3.jpg"
+      ],
+      "price": 378000,
+      "colors": [
+        "grey"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Tên sản phẩm: Quần bò baggy cạp thêu chữ\n<br>\n* Chất liệu: Jeans mềm, đứng phom.\n<br>\n* Thiết kế trẻ trung, năng động kết hợp với các loại áo phông, áo thun, croptop trẻ trung, năng động, dành cho mùa hè tươi mới..."
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "a3ac1616-a233-4cb1-91a7-be412f123ade",
+      "name": "Đầm maxi dáng dài, cổ tròn, nẹp đính cúc trang trí",
+      "tag": "seller",
+      "cateId": "d7c40c0a-510a-41dd-8df0-9a7c9e4a5ac4",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220830/F452022092__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220830/F452022092__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220830/F452022092__3_.jpg"
+      ],
+      "price": 810000,
+      "colors": [
+        "pink",
+        "white",
+        "yellow"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Đầm maxi dáng dài, cổ tròn, nẹp đính cúc trang trí\n<br>\n* Chất liệu: Linen\n<br>\n* Mô tả: Đầm maxi dáng dài, cổ tròn, nẹp đính cúc trang trí. Chất liệu thoáng mát, tạo cảm giác dễ chịu cho người mặc. Phù hợp mặc đi làm"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "d513095f-4105-44dc-a0ea-bbd18f9464f0",
+      "name": "Đầm dáng A, cổ phối oganza, nơ trang trí",
+      "tag": "seller",
+      "cateId": "d7c40c0a-510a-41dd-8df0-9a7c9e4a5ac4",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/F452289___1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/F452289___4_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/F452289___5_.jpg"
+      ],
+      "price": 972000,
+      "colors": [
+        "white",
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Đầm dáng A, cổ phối oganza, nơ trang trí\n<br>\n* Chất liệu: Tuýt si màu\n<br>\n* Mô tả: Đầm dáng A, cổ phối oganza, nơ trang trí. Đầm làm bằng chất liệu tuýt si đứng phom, thoáng mát, tạo cảm giác dễ chịu cho người mặc. Phù hợp mặc đi làm"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "0c1c2876-bc3d-4c81-aff0-99be49b1ff61",
+      "name": "Đầm xòe xếp ly hoa chân, cổ nơ trang trí",
+      "tag": "seller",
+      "cateId": "d7c40c0a-510a-41dd-8df0-9a7c9e4a5ac4",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220729/F452294011___1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220729/F452294011___2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220729/F452294011___3_.jpg"
+      ],
+      "price": 1080000,
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Đầm xòe xếp ly hoa chân, cổ nơ trang trí\n<br>\n* Chất liệu: Tơ hoa\n<br>\n* Mô tả: Đầm xòe xếp ly hoa chân, cổ nơ trang trí. Đầm có chất liệu tơ mỏng nhẹ cùng phom dáng xòe, thoải mái. Phù hợp đi dạo phố, đi làm"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "5df93b58-e00d-4ca5-9011-fd770b5430c3",
+      "name": "Quần ống đứng, đính cúc trang trí, mặt đai mở",
+      "tag": "new",
+      "cateId": "13e70010-e3b0-4cb5-a303-25e79c8419a3",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/F352314011__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/F352314021__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/F352314011__2_.jpg"
+      ],
+      "price": 440000,
+      "colors": [
+        "beige",
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Quần ống đứng, đính cúc trang trí, mặt đai mở\n<br>\n* Chất liệu: Tuytsi\n<br>\n* Mô tả: Quần ống đứng, đính cúc trang trí, mặt đai mở. Chất liệu Tuýt si đứng phom, co giãn nhẹ. Sản phẩm mix cùng sơ mi, áo phông... Phù hợp đi làm, đi dạo phố"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "5a7068a5-d1a6-476c-9e62-34161e06967f",
+      "name": "Quần legging dáng dài , cạp trang trí dây dệt kẻ, cạp chun",
+      "tag": "popular",
+      "cateId": "13e70010-e3b0-4cb5-a303-25e79c8419a3",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/C322276013__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/C322276013__3_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/C322276013__4_.jpg"
+      ],
+      "price": 180000,
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Quần legging dáng dài , cạp trang trí dây dệt kẻ, cạp chun\n<br>\n* Chất liệu: Cotton Hàn\n<br>\n* Mô tả: Quần legging dáng dài , cạp trang trí dây dệt kẻ, cạp chun. Chất liệu cotton Hàn co giãn. Quần mix cùng các kiểu áo phông, áo sơ mi. Phù hợp đi làm , đi chơi."
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "f4d80182-c251-45d5-b858-c372b8b76002",
+      "name": "Áo sơ mi cổ đức dáng classic, tay ngắn",
+      "tag": "popular",
+      "cateId": "e7104f3d-5067-4dbc-af0f-192d7fcca489",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/f552258081__2__1825x2738.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/f552258081__4__1825x2738.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/f552258081__5__1825x2738.jpg"
+      ],
+      "price": 477000,
+      "colors": [
+        "white",
+        "pink"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Áo sơ mi cổ đức dáng classic, tay ngắn\n<br>\n* Chất liệu: Lụa\n<br>\n* Mô tả: Áo sơ mi cổ đức dáng classic, tay ngắn. Chất liệu lụa mềm tạo cảm giác mát mẻ, thoải mái trong mùa hè này. Phù hợp đi làm, đi chơi"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "cc159d2b-5b52-4a94-ad82-5c1aa5836617",
+      "name": "Áo sơ mi họa tiết chữ cổ tròn vai chờm tà lệch trang trí",
+      "tag": "seller",
+      "cateId": "e7104f3d-5067-4dbc-af0f-192d7fcca489",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220527/F352160011__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220216/F552005011__3____F352160011.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220216/F552005011__4____F352160011.jpg"
+      ],
+      "price": 406000,
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Tên sản phẩm: Áo sơ mi họa tiết chữ cổ tròn vai chờm tà lệch trang trí (sét cứng)\n<br>\n* Chất liệu: Lụa mềm mịn\n<br>\n* Áo nữ cộc tay phù hợp nơi công sở, chất liệu cao cấp mềm mại, thoải mái. Phong cách thanh lịch, khí chất phù hợp với gu thời trang văn phòng. Mix đồ phù hợp với các sản phẩm quần âu, quần tây."
         },
         {
           "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",

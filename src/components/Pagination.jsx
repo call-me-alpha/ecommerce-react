@@ -1,24 +1,21 @@
 import PropTypes from 'prop-types'
 import { toast } from 'react-toastify'
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ReactLoading from 'react-loading'
 
 import ProductItem from './ProductItem'
 import Grid from './Grid'
 
 const Pagination = ({ data, count, col }) => {
-    const temp = useMemo(() => {
-        return [...data]
-    }, [data])
     const pageItem = col ? col : 6
-    const [products, setProducts] = useState(temp)
+    const [products, setProducts] = useState(data)
     const [loading, setLoading] = useState(false)
     const [hide, setHide] = useState(true)
 
     useEffect(() => {
-        setProducts(temp.splice(0, pageItem))
+        setProducts(data.slice(0, pageItem))
         setHide(true)
-    }, [temp, pageItem])
+    }, [data, pageItem])
 
     const handelLoad = () => {
         setLoading(true)

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import { v4 } from 'uuid'
 import { toast } from 'react-toastify'
 import { useDispatch, useSelector } from 'react-redux'
@@ -8,8 +8,12 @@ import Button from '../Button'
 import { getCategoriesThunk } from '../../redux/categorySlice'
 import { createProdThunk } from '../../redux/productSlice'
 
+const tags = ['new', 'popular', 'seller']
+const tagOptions = [...tags.map((tag) => ({ value: tag, label: tag }))]
 const sizeList = ['S', 'M', 'L', 'XL', 'XXL']
-const colorList = ['white', 'blue', 'orange', 'pink', 'black', 'red', 'brown', 'beige', 'yellow']
+const sizeOptions = [...sizeList.map((size) => ({ value: size, label: size }))]
+const colorList = ['white', 'blue', 'orange', 'pink', 'black', 'red', 'brown', 'beige', 'yellow', 'grey']
+const colorOptinos = [...colorList.map((color) => ({ value: color, label: color }))]
 const descs = [
     {
         title: 'THÔNG TIN CHI TIẾT SẢN PHẨM',
@@ -53,6 +57,10 @@ const AddProdModal = ({ display, toggleAddModal }) => {
         setCategories(cateList)
     }, [cateList])
 
+    const cateOptions = useMemo(
+        () => [...categories.map((cate) => ({ value: cate.id, label: cate.name }))],
+        [categories]
+    )
     const handelSubmit = (e) => {
         e.preventDefault()
         let images = []
@@ -60,8 +68,6 @@ const AddProdModal = ({ display, toggleAddModal }) => {
         if (image2 !== '') images.push(image2)
         if (image3 !== '') images.push(image3)
 
-        const colorsData = colors.map((color) => color.value)
-        const sizesData = sizes.map((size) => size.value)
         descs[0].body = desc
         const formData = {
             id: v4(),
@@ -70,27 +76,50 @@ const AddProdModal = ({ display, toggleAddModal }) => {
             cateId,
             images,
             price: +price,
-            colors: colorsData,
-            sizes: sizesData,
+            colors,
+            sizes,
             desc: descs
         }
-        console.log(formData)
         dispatch(createProdThunk(formData))
+        setName('')
+        setTag('')
+        setCateId('')
+        setImage1('')
+        setImage2('')
+        setImage3('')
+        setPrice('')
+        setColors([])
+        setSizes([])
+        setDesc('')
         if (!loading) {
-            setName('')
-            setTag('')
-            setCateId('')
-            setImage1('')
-            setImage2('')
-            setImage3('')
-            setPrice('')
-            setColors([])
-            setSizes([])
-            setDesc('')
             toggleAddModal()
             toast.success('Thêm sản phẩm thành công !')
         }
     }
+    const indexColor = useMemo(() => {
+        let temp = []
+        if (colors) {
+            colors.forEach((color) => {
+                let index = colorOptinos.findIndex((item) => item.value === color)
+                if (index !== -1) {
+                    temp.push(index)
+                }
+            })
+        }
+        return temp
+    }, [colors])
+    const indexSize = useMemo(() => {
+        let temp = []
+        if (sizes) {
+            sizes.forEach((size) => {
+                let index = sizeOptions.findIndex((item) => item.value === size)
+                if (index !== -1) {
+                    temp.push(index)
+                }
+            })
+        }
+        return temp
+    }, [sizes])
     return (
         <div className={`modal-admin ${display}`}>
             <div className="modal-admin__content">
@@ -113,19 +142,17 @@ const AddProdModal = ({ display, toggleAddModal }) => {
                         <div className="modal-admin__content__body__form-group">
                             <label htmlFor="tag">Chọn loại: </label>
                             <Select
+                                value={tagOptions[tagOptions.findIndex((item) => item.value === tag)] || ''}
                                 onChange={(e) => setTag(e.value)}
-                                options={[
-                                    { value: 'new', label: 'new' },
-                                    { value: 'popular', label: 'popular' },
-                                    { value: 'seller', label: 'seller' }
-                                ]}
+                                options={tagOptions}
                             />
                         </div>
                         <div className="modal-admin__content__body__form-group">
                             <label htmlFor="cate">Chọn danh mục: </label>
                             <Select
+                                value={cateOptions[cateOptions.findIndex((item) => item.value === cateId)] || ''}
                                 onChange={(e) => setCateId(e.value)}
-                                options={[...categories.map((cate) => ({ value: cate.id, label: cate.name }))]}
+                                options={cateOptions}
                             />
                         </div>
                         <div className="modal-admin__content__body__form-group">
@@ -165,10 +192,11 @@ const AddProdModal = ({ display, toggleAddModal }) => {
                         <div className="modal-admin__content__body__form-group">
                             <label htmlFor="colors">Chọn màu sắc: </label>
                             <Select
-                                onChange={(e) => setColors(e)}
+                                value={indexColor.map((item) => colorOptinos[item]) || ''}
+                                onChange={(e) => setColors(e.map((item) => item.value))}
                                 isMulti
                                 name="colors"
-                                options={[...colorList.map((color) => ({ value: color, label: color }))]}
+                                options={colorOptinos}
                                 className="basic-multi-select"
                                 classNamePrefix="selectColor"
                             />
@@ -176,10 +204,11 @@ const AddProdModal = ({ display, toggleAddModal }) => {
                         <div className="modal-admin__content__body__form-group">
                             <label htmlFor="sizes">Chọn size: </label>
                             <Select
-                                onChange={(e) => setSizes(e)}
+                                value={indexSize.map((item) => sizeOptions[item]) || ''}
+                                onChange={(e) => setSizes(e.map((item) => item.value))}
                                 isMulti
                                 name="sizes"
-                                options={[...sizeList.map((size) => ({ value: size, label: size }))]}
+                                options={sizeOptions}
                                 className="basic-multi-select"
                                 classNamePrefix="selectSize"
                             />
@@ -187,6 +216,7 @@ const AddProdModal = ({ display, toggleAddModal }) => {
                         <div className="modal-admin__content__body__form-group">
                             <label htmlFor="desc">Mô tả:</label>
                             <textarea
+                                value={desc}
                                 onChange={(e) => setDesc(e.target.value)}
                                 type="text"
                                 id="desc"

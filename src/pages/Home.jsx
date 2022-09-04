@@ -75,6 +75,9 @@ const Home = () => {
                             </div>
                         )}
                     </Grid>
+                    <Link to="/products" style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
+                        <Button size="md">Xem thêm</Button>
+                    </Link>
                 </SectionBody>
             </Section>
             <Section>

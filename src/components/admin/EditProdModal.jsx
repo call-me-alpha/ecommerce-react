@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from 'react'
-import { v4 } from 'uuid'
 import { toast } from 'react-toastify'
 import { useDispatch, useSelector } from 'react-redux'
 import Select from 'react-select'
@@ -12,7 +11,7 @@ const tags = ['new', 'popular', 'seller']
 const tagOptions = [...tags.map((tag) => ({ value: tag, label: tag }))]
 const sizeList = ['S', 'M', 'L', 'XL', 'XXL']
 const sizeOptions = [...sizeList.map((size) => ({ value: size, label: size }))]
-const colorList = ['white', 'blue', 'orange', 'pink', 'black', 'red', 'brown', 'beige', 'yellow']
+const colorList = ['white', 'blue', 'orange', 'pink', 'black', 'red', 'brown', 'beige', 'yellow', 'grey']
 const colorOptinos = [...colorList.map((color) => ({ value: color, label: color }))]
 const descs = [
     {
@@ -95,18 +94,8 @@ const EditProdModal = ({ display, toggleEditModal, product }) => {
             desc: descs
         }
         console.log(formData)
-        dispatch(updateProdThunk({ id: prodId, formData }))
+        dispatch(updateProdThunk({ id: prodId, data: formData }))
         if (!loading) {
-            setName('')
-            setTag('')
-            setCateId('')
-            setImage1('')
-            setImage2('')
-            setImage3('')
-            setPrice(0)
-            setColors([])
-            setSizes([])
-            setDesc('')
             toggleEditModal()
             toast.success('Chỉnh sửa sản phẩm thành công !')
         }
