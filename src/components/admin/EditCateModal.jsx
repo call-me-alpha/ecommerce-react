@@ -50,7 +50,7 @@ const EditCateModal = ({ display, toggleEditModal, cateEdit }) => {
                             />
                         </div>
                         <div className="modal-admin__content__body__btn">
-                            <Button size="sm">Xác nhận</Button>
+                            <Button size="sm">Lưu lại</Button>
                         </div>
                     </form>
                 </div>

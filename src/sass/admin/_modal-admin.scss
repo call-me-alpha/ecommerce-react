@@ -43,6 +43,9 @@
                     color: $txt-color-ad;
                     font-family: 'Roboto', sans-serif;
                 }
+                .css-b62m3t-container {
+                    width: 100%;
+                }
             }
             &__btn {
                 margin-top: 20px;
@@ -57,4 +60,17 @@
     &.active {
         display: flex;
     }
+}
+.color {
+    @include flex(center, flex-start);
+    &__cricle {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        box-shadow: $box-shadow;
+        margin-right: 4px;
+    }
+}
+.size {
+    margin-right: 4px;
 }

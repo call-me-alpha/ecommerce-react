@@ -32,7 +32,7 @@ const ProductDetail = () => {
 
     const productSimilar = useMemo(() => {
         let temp
-        temp = products.filter((prod) => prod.category === product.category)
+        temp = products.filter((prod) => prod.cateId === product.cateId)
         temp = temp.filter((prod) => prod.id !== product.id)
         return temp
     }, [products, product])

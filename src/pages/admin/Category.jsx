@@ -10,11 +10,11 @@ import Table from '../../components/admin/Table'
 import AddCateModal from '../../components/admin/AddCateModal'
 import EditCateModal from '../../components/admin/EditCateModal'
 
-const headData = ['', 'Tên', 'Thao tác']
+const headData = ['ID', 'Tên', 'Thao tác']
 const renderHead = (item, index) => <th key={index}>{item}</th>
 const renderBody = (item, index, handelDeleteCate, handelEditCate) => (
     <tr key={index}>
-        <td>{index + 1}</td>
+        <td>{item.id}</td>
         <td>{item.name}</td>
         <td>
             <span className="btn__edit" onClick={() => handelEditCate(item.id)}>

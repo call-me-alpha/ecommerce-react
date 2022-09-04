@@ -28,7 +28,6 @@ const Routers = () => {
                 <Route path="products/:id" element={<ProductDetail />} />
                 <Route path="products" element={<Products />} />
                 <Route path="login" element={<Login />} />
-                <Route path="*" element={<NotFound />} />
             </Route>
             <Route path="/admin" element={<Admin />}>
                 <Route index element={<Dashboard />} />
@@ -37,6 +36,7 @@ const Routers = () => {
                 <Route path="customers" element={<Customer />} />
                 <Route path="orders" element={<Order />} />
             </Route>
+            <Route path="*" element={<NotFound />} />
         </Routes>
     )
 }

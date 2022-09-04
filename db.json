@@ -17,28 +17,28 @@
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "69da15d6-82da-4abe-8e4f-0d8cc4b58e94",
+      "name": "Quần Sooc"
+    },
+    {
+      "id": "d7c40c0a-510a-41dd-8df0-9a7c9e4a5ac4",
       "name": "Váy Đầm"
     },
     {
-      "id": 2,
+      "id": "bc591738-a0be-4239-9351-98a1aac0e75b",
       "name": "Chân Váy"
     },
     {
-      "id": 3,
+      "id": "e7104f3d-5067-4dbc-af0f-192d7fcca489",
       "name": "Sơ Mi"
     },
     {
-      "id": 4,
+      "id": "13e70010-e3b0-4cb5-a303-25e79c8419a3",
       "name": "Quần Âu"
     },
     {
-      "id": 5,
-      "name": "Quần Jean"
-    },
-    {
-      "id": 6,
-      "name": "Quần Sooc"
+      "id": "ab58a7f4-3fc0-4949-9eac-e98edfede7e1",
+      "name": "Quần Jeans"
     }
   ],
   "orders": [
@@ -87,26 +87,461 @@
   ],
   "products": [
     {
-      "id": 1,
-      "tag": "new",
-      "category": 2,
-      "name": "Chân váy dáng xòe dập ly hình quạt, họa tiết hoa loang",
+      "id": "0c07338e-e8ac-4bf8-972c-e0e804f20332",
+      "name": "Quần sooc dạ , cạp cao đính cúc trang trí",
+      "tag": "popular",
+      "cateId": "69da15d6-82da-4abe-8e4f-0d8cc4b58e94",
       "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__1_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252194__3_.jpg"
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F35050603_660K__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F35050603_660K__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F35050603_660K__4_.jpg"
       ],
-      "price": 1080000,
+      "price": 200000,
       "colors": [
-        "white",
-        "blue",
-        "orange",
-        "pink",
-        "black",
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Quần sóc dạ, cạp cao đính cúc trang trí\n<br>\n* Quần sooc dạ, cạp cao, đỉa to đính 2 cúc trang trí, phần gấu xẻ V nhỏ\n<br>\n* Quần dễ mix cùng áo len, khoác áo khoác cùng các phụ kiện khác tạo vẻ ngoài thời\nthượng"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "09afefe1-587c-44c9-82d9-8958ee247c0c",
+      "name": "Quần sooc có túi, nắp túi đính cúc bọc",
+      "tag": "popular",
+      "cateId": "69da15d6-82da-4abe-8e4f-0d8cc4b58e94",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F52069502_380K_F35050502_660K__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F52069305_380K_F35050502_660K__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F35050502_660K_F52069305_380K.jpg"
+      ],
+      "price": 200000,
+      "colors": [
+        "beige"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "*Quần sooc có túi, nắp túi đính cúc bọc\n<br>\n* Quần sooc tuí chéo có nắp 2 bên, cạp đính cúc bọc trang trí\n<br>\nĐược may bằng chất liệu Tuysi cao cấp và ít nhăn, giữ phom dáng hiệu quả. Phần lưng quần được thiết kế với tác dụng che khuyết điểm vòng 2 và khiến eo thon thả hơn nếu nàng sơ vin cùng các kiểu áo khác nhau."
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "66b6def0-a35e-4dff-86ae-35682a0996e5",
+      "name": "Quần sooc túi chéo thân trước, lơve gấu",
+      "tag": "popular",
+      "cateId": "69da15d6-82da-4abe-8e4f-0d8cc4b58e94",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211228/F65028107_F350504__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211228/F65028107_F350504__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211228/F65028107_F350504__3_.jpg"
+      ],
+      "price": 200000,
+      "colors": [
+        "blue"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Quần sooc túi chéo thân trước, lơ ve gấu\n<br>\n* Chất liệu vải Linen mặt nhám mang lại cảm giác mát mẻ, thấm hút mồ hôi tốt.\n<br>\n* Set đồ công sở cùng màu sắc này khiến bạn trở nên lịch sự và chỉnh chu hơn trong phong cách của mình. Dễ dàng phối cùng áo thun, áo 2 dây bên trong, mix cùng áo blazer đồng bộ đem đến sự thanh lịch mà\nquyến rũ cho các quý cô công sở."
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "cd263506-f9a4-42ce-b5a1-3277ab244972",
+      "name": "Quần sooc đai cài cúc trước trang trí",
+      "tag": "new",
+      "cateId": "69da15d6-82da-4abe-8e4f-0d8cc4b58e94",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211228/F65026002_1150K___F35000902_660K__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211228/F65026002_1150K___F35000902_660K__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211228/F65026002_1150K___F35000902_660K__3_.jpg"
+      ],
+      "price": 200000,
+      "colors": [
+        "beige"
+      ],
+      "sizes": [
+        "S",
+        "M"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "Quần sooc đai cài cúc trước trang trí\n<br>\n* Quần sooc ngắn, cạp cao có đỉa. Cài bằng khóa kéo và khuy. Có 2 túi chéo và 1 viền túi giả phía sau.\n<br>\n* Chất liệu Tuysi tạo phom và giữ màu hiệu quả cho thiết kế này. Nhớ mặc đồng bộ để có \"gu\" nhất nhé!"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "43da5ba6-7ccd-4f94-a98e-af01bb312ee6",
+      "name": "Quần giả váy đính cúc hình tròn trang trí",
+      "tag": "popular",
+      "cateId": "69da15d6-82da-4abe-8e4f-0d8cc4b58e94",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F55026509_590K_F35001001_750K__3_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F55026509_590K_F35001001_750K__4_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211230/F55026509_590K_F35001001_750K__2_.jpg"
+      ],
+      "price": 150000,
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Quần giả váy đính cúc hình tròn trang trí\n<br>\n* Quần sooc giả váy, cạp bẻ có đai liền mặt kim loại đi kèm. Mặt trước vải đáp chéo, gấu lệch\n<br>\n* Chất liệu tuytsy mỏng có đường vân kẻ chìm, ít nhăn và lên phom hiệu quả"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "1e9ecae6-7e39-4ccb-b6a5-503216479ff8",
+      "name": "Chân váy dáng ôm, 3 ly xếp, đính cúc, xẻ trước",
+      "tag": "new",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220901/F552233011__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220830/_F252232021__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220830/_F252232021__2_.jpg"
+      ],
+      "price": 495000,
+      "colors": [
+        "brown"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy dáng ôm , 3 ly xếp, đính cúc, xẻ trước\n<br>\n* Chất liệu: Tuýt si\n<br>\n* Mô tả: Chân váy dáng ôm , 3 ly xếp, đính cúc, xẻ trước. Chất liệu tuytsi cao cấp, lên phom tốt. Phù hợp đi làm hoặc đi chơi"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "95d368d0-1bee-4d36-85c4-efd2779a1ec9",
+      "name": "Chân váy xòe freesize cạp chun, tùng váy can hông",
+      "tag": "new",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/C252393012___1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/C252393012___2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/C252393012___3_.jpg"
+      ],
+      "price": 298000,
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy xòe freesize cạp chun, tùng váy can hông\n<br>\n* Chất liệu: Linen lụa\n<br>\n* Mô tả: Chân váy dáng xòe, cạp chun Chân váy có thể mix cùng sét bộ cứng hoặc phối cùng nhiều kiểu sơ mi áo phông khác nhau đều đẹp . Phù hợp cả đi làm và đi chơi\n"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "4ef4b3f1-382f-4928-919e-de6edd4d471b",
+      "name": "Chân váy dập nhăn hình quạt màu xanh",
+      "tag": "seller",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/F252246071___3_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/F252246071___4_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220725/F252246071___1_.jpg"
+      ],
+      "price": 585000,
+      "colors": [
+        "blue"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy dập nhăn hình quạt màu xanh (Set bộ)\n<br>\n* Chất liệu: Tằm tuyết nhăn\n<br>\n* Mô tả: Chân váy dập nhăn hình quạt màu xanh. Chất liệu tằm mềm tạo cảm giác mát, thoải mái trong mùa hè này. Phù hợp đi làm, đi chơi"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "f39d6370-aea7-40e0-ae11-b6243ea61e63",
+      "name": "Chân váy dáng ôm classic , tà bong , đính cúc trang trí",
+      "tag": "seller",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252240011__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252240011__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252240011__4_.jpg"
+      ],
+      "price": 540000,
+      "colors": [
+        "black"
+      ],
+      "sizes": [
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy dáng ôm classic , tà bong , đính cúc trang trí\n<br>\n* Chất liệu: Tuýt si\n<br>\n* Mô tả: Chân váy dáng ôm classic , tà bong , đính cúc trang trí. Chất liệu tuytsi cao cấp, lên phom tốt. Phù hợp đi làm hoặc đi chơi"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "42772246-2325-486b-9c84-54c13ffca6ee",
+      "name": "Chân váy dáng xòe , xếp ly thân trước, đính 3 cúc trang trí",
+      "tag": "seller",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252224021__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252224021__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252224021__4_.jpg"
+      ],
+      "price": 585000,
+      "colors": [
+        "beige"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy dáng xòe , xếp ly thân trước, đính 3 cúc trang trí\n<br>\n* Chất liệu: Tuýt si\n<br>\n* Mô tả: Chân váy dáng xòe , xếp ly thân trước, đính 3 cúc trang trí. Chất liệu tuýt si, co giãn thoải mái, đứng phom, thoáng mát. Phù hợp đi làm, đi chơi"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "afeda3f9-3afb-4c64-a96b-49507e8b70b8",
+      "name": "Chân váy dập nhăn hình quạt họa tiết xích ",
+      "tag": "popular",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/F252185051__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/F252185051__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220514/F252185051__3_.jpg"
+      ],
+      "price": 385000,
+      "colors": [
+        "blue"
+      ],
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy dập nhăn hình quạt họa tiết xích (Set bộ)\n<br>\n* Chất liệu: chiffon\n<br>\n* Mô tả: Chân váy dập nhăn hình quạt họa tiết xích. Sản phẩm mix cùng sơ mi, áo phông... Phù hợp đi làm, đi dạo phố"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "33975d2c-b28d-44ce-86cd-d5580a14c892",
+      "name": "Chân váy bút chì",
+      "tag": "new",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220527/F252204061__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220527/F252204061__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220527/F252204061__4_.jpg"
+      ],
+      "price": 385000,
+      "colors": [
         "red"
       ],
       "sizes": [
         "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy bút chì\n<br>\n* Chất liệu: Tuýt si, co giãn thoải mái, đứng phom, thoáng mát\n<br>\n* Mô tả: Chân váy bút chì. Chất liệu tuýt si, co giãn thoải mái, đứng phom, thoáng mát. Phù hợp đi làm"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "5d99e137-8c80-4983-93a0-2dca7caa3568",
+      "name": "Chân váy dáng xòe dài",
+      "tag": "new",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220527/F252207071__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220527/F252207071__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220527/F252207071__3_.jpg"
+      ],
+      "price": 440000,
+      "colors": [
+        "yellow"
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "desc": [
+        {
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Chân váy dáng xòe dài\n<br>\n* Chất liệu: lụa xốp thời trang, mềm mát\n<br>\n* Mô tả: Chân váy dáng xòe dài. Chất liệu lụa xốp thời trang, mềm mát. Mix cùng áo croptop. Phù hợp đi làm"
+        },
+        {
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
+        },
+        {
+          "title": "LƯU Ý",
+          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
+        }
+      ]
+    },
+    {
+      "id": "4387bc7d-60c8-4a9e-bc0d-44ba9693dc67",
+      "name": "Chân váy bò dáng ôm, xẻ sau, nắp túi thân trước",
+      "tag": "seller",
+      "cateId": "bc591738-a0be-4239-9351-98a1aac0e75b",
+      "images": [
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220513/B242008011__1_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220513/B242008011__2_.jpg",
+        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220513/B242008011__3_.jpg"
+      ],
+      "price": 450000,
+      "colors": [
+        "black"
+      ],
+      "sizes": [
         "M",
         "L",
         "XL",
@@ -114,658 +549,12 @@
       ],
       "desc": [
         {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+          "title": "THÔNG TIN CHI TIẾT SẢN PHẨM",
+          "body": "* Tên sản phẩm: Chân váy bò dáng ôm, xẻ sau, nắp túi thân trước\n<br>\n* Chất liệu: Jeans mềm, đứng phom.\n<br>\n* Thiết kế trẻ trung, năng động kết hợp với các loại áo phông, áo thun, croptop trẻ trung, năng động, dành cho mùa hè tươi mới..."
         },
         {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "tag": "new",
-      "category": 1,
-      "name": "bbbbbb",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__3_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452268021__1_.jpg"
-      ],
-      "price": 1000,
-      "colors": [
-        "blue"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "tag": "new",
-      "category": 2,
-      "name": "cccccc",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220723/F452319___1_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220723/F452319___3_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220723/F452319___4_.jpg"
-      ],
-      "price": 2000,
-      "colors": [
-        "orange"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "tag": "new",
-      "category": 3,
-      "name": "Áo sơ mi dáng suông, cổ đức, nẹp kẹp bèo",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252241082__1_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252241082__2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F252241082__3_.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "tag": "new",
-      "category": 3,
-      "name": "Đầm dáng xòe, cổ buộc nơ, dập nhăn bèo vai",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452026071__1_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452026071__2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452026071__3_.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "tag": "new",
-      "category": 4,
-      "name": "Đầm dáng suông, thắt nơ cổ, tay sát nách",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452020071__4_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452020071__2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220809/F452020071__3_.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "tag": "new",
-      "category": 5,
-      "name": "Chân váy dáng xòe dập ly hình quạt, họa tiết hoa loang",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__2__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__3__thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "tag": "new",
-      "category": 6,
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___1_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___3_.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "tag": "new",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___1_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___3_.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "tag": "new",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___1_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___2_.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220726/F352326011___3_.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "tag": "seller",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/F42123305__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/F42123305__2__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/F42123305__3__thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 12,
-      "tag": "seller",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/f42123401__1__thumb_400x600.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/f42123401__2__thumb_400x600.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211118/f42123401__3__thumb_400x600.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "tag": "seller",
-      "category": 1,
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__2__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220810/F252733061__3__thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "tag": "seller",
-      "category": 1,
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211119/F45108202__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211119/F45108202__4__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20211119/F45108202__4_.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "tag": "popular",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220816/F352333011_thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220816/F352333011_thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220816/F352333011_thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "tag": "popular",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220812/F352331021__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220812/F352331021__2__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220812/F352331021__3__thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "tag": "popular",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220811/F352327011_thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220811/F352327011_thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220811/F352327011_thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "tag": "popular",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "tag": "popular",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F552229051__1__thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
-        },
-        {
-          "title": "LƯU Ý",
-          "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
-        }
-      ]
-    },
-    {
-      "id": 20,
-      "tag": "popular",
-      "category": "Váy Đầm",
-      "name": "Quần suông dáng dài chất Mango",
-      "images": [
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252245071__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252245071__1__thumb.jpg",
-        "https://img.cdn.vncdn.io/nvn/ncdn/store2/83109/ps/20220628/F252245071__1__thumb.jpg"
-      ],
-      "price": 1080000,
-      "colors": [
-        "white"
-      ],
-      "sizes": [
-        "L",
-        "M",
-        "S"
-      ],
-      "desc": [
-        {
-          "title": "Thông tin chi tiết sản phẩm",
-          "body": "- Nhóm sản phẩm: Đầm Váy Nữ <br> - Mã sản phẩm: F452268 <br> - Thương hiệu: FIONA <br>- Chất Liệu: Ren hoa <br>- Kích thước: S - M – L<br>- Màu sắc: Trắng <br> -Xuất Xứ: Việt Nam<br>Sản phẩm được sản xuất tại Công ty trách nhiệm hữu hạn Thương mại & Dịch vụ Kim Phú <br>Địa chỉ: Số 86 Trần Duy Hưng, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam"
-        },
-        { 
-          "title" : "Mô tả",
-          "body": "FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br> - Đầm công sở thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br> - Đầm ren dáng xòe, cổ xuông, nhún trang trí.<br> - Chất liệu ren đứng phom, co giãn nhẹ."
+          "title": "ĐIỂM NỔI BẬT CỦA SẢN PHẨM",
+          "body": "- FIONA là thương hiệu thời trang nữ công sở cao cấp được các chị em rất tin tưởng sử dụng.<br>- Sản phẩm thiết kế độc quyền thương hiệu Fiona mang đến cho quý khách trải nghiệm thời trang công sở thời thượng và hiện đại.<br>- Sản phẩm thiết kế đẹp mới nhất cho nàng luôn xinh đẹp và sành điệu.<br>- Chất liệu cao cấp giúp chiếc đầm công sở thiết kế luôn giữ phom vô cùng xinh đẹp và thanh lịch."
         },
         {
           "title": "LƯU Ý",

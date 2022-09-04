@@ -28,6 +28,10 @@ const colors = [
     {
         display: 'Xanh dương',
         color: 'blue'
+    },
+    {
+        display: 'Nâu',
+        color: 'brown'
     }
 ]
 const sizes = [
@@ -76,8 +80,8 @@ const Products = () => {
         }
         const getCategoryServer = async () => {
             try {
-                const data = await categoryApi.getAll()
-                setCategories(data)
+                const res = await categoryApi.getAll()
+                setCategories(res)
             } catch (err) {
                 console.log(err)
             }
@@ -130,7 +134,7 @@ const Products = () => {
         let productList = products
 
         if (filters.categories.length > 0) {
-            productList = productList.filter((prod) => filters.categories.includes(prod.category))
+            productList = productList.filter((prod) => filters.categories.includes(prod.cateId))
         }
         if (filters.colors.length > 0) {
             productList = productList.filter((prod) => prod.colors.find((color) => filters.colors.includes(color)))
