@@ -85,7 +85,6 @@ const EditProdModal = ({ display, toggleEditModal, product }) => {
 
         descs[0].body = desc
         const formData = {
-            id: prodId,
             name,
             tag,
             cateId,
@@ -96,7 +95,7 @@ const EditProdModal = ({ display, toggleEditModal, product }) => {
             desc: descs
         }
         console.log(formData)
-        dispatch(updateProdThunk(formData))
+        dispatch(updateProdThunk({ id: prodId, formData }))
         if (!loading) {
             setName('')
             setTag('')

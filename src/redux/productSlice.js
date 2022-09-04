@@ -27,10 +27,9 @@ const createProdThunk = createAsyncThunk('product/create', async (data) => {
     }
 })
 
-const updateProdThunk = createAsyncThunk('product/update', async (data) => {
-    const { id, name } = data
+const updateProdThunk = createAsyncThunk('product/update', async ({ id, data }) => {
     try {
-        const res = await productApi.update(id, { name: name })
+        const res = await productApi.update(id, data)
         return res
     } catch (err) {
         console.log(err)
