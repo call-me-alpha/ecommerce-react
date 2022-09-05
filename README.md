@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## Acount Admin(Google)
+## Account Admin(Google)
 callmealpha.ecommerce@gmail.com
 pass: Example12345
 
