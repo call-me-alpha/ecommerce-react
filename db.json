@@ -53,48 +53,7 @@
     }
   ],
   "orders": [
-    {
-        "id": "#OD1711",
-        "user": "john doe",
-        "date": "17 Jun 2021",
-        "price": "$900",
-        "status": "shipping"
-    },
-    {
-        "id": "#OD1711",
-        "user": "john doe",
-        "date": "17 Jun 2021",
-        "price": "$900",
-        "status": "shipping"
-    },
-    {
-        "id": "#OD1711",
-        "user": "john doe",
-        "date": "17 Jun 2021",
-        "price": "$900",
-        "status": "shipping"
-    },
-    {
-        "id": "#OD1711",
-        "user": "john doe",
-        "date": "17 Jun 2021",
-        "price": "$900",
-        "status": "pendding"
-    },
-    {
-        "id": "#OD1711",
-        "user": "john doe",
-        "date": "17 Jun 2021",
-        "price": "$900",
-        "status": "canceled"
-    },
-    {
-        "id": "#OD1711",
-        "user": "john doe",
-        "date": "17 Jun 2021",
-        "price": "$900",
-        "status": "successful"
-    }
+    
   ],
   "products": [
     {
@@ -577,6 +536,7 @@
       "id": "4387bc7d-60c8-4a9e-bc0d-44ba9693dc67"
     },
     {
+      "id": "ef25dac8-9bb0-4531-a69f-5b3ec55114a7",
       "name": "Áo len lông nữ, cổ tròn họa tiết, dáng bo gấu",
       "tag": "new",
       "cateId": "07191045-2cc9-4cfe-8f90-00a3fb00839b",
@@ -608,8 +568,7 @@
           "title": "LƯU Ý",
           "body": "Bảng size chart đầm thiết kế nữ chỉ mang tính chất tham khảo, tùy thuộc vào số đo cơ thể mỗi người và chất liệu vải khác nhau sẽ có sự chênh lệch nhất định từ 1 - 2cm.<br> Màu sắc sản phẩm đầm thiết kế có thể chênh lệch thực tế một phần nhỏ do ảnh hưởng hưởng về ánh sáng.<br> Nàng hãy luôn chú ý các quy tắc sau để chiếc đầm xòe công sở yêu thích luôn bền đẹp: <br> + Lộn mặt trái khi giặt và phơi sản phẩm + Giặt đầm nữ với xà phòng trung tính <br> + Không phơi trực tiếp dưới ánh nắng mặt trời <br> + Giặt máy ở chế độ nhẹ nhàng. Không sấy, phơi khô tự nhiên."
         }
-      ],
-      "id": "ef25dac8-9bb0-4531-a69f-5b3ec55114a7"
+      ]
     },
     {
       "id": "edb559c3-eec8-42e8-8d51-e790357560e4",

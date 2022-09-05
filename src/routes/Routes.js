@@ -16,6 +16,8 @@ import Category from '../pages/admin/Category'
 import Product from '../pages/admin/Product'
 import Customer from '../pages/admin/Customer'
 import Order from '../pages/admin/Order'
+import CheckOut from '../pages/CheckOut'
+import MyOrder from '../pages/MyOrder'
 
 const Routers = () => {
     return (
@@ -25,8 +27,10 @@ const Routers = () => {
                 <Route path="contact" element={<Contact />} />
                 <Route path="about" element={<About />} />
                 <Route path="cart" element={<Cart />} />
+                <Route path="checkout" element={<CheckOut />} />
                 <Route path="products/:id" element={<ProductDetail />} />
                 <Route path="products" element={<Products />} />
+                <Route path="myorder" element={<MyOrder />} />
                 <Route path="login" element={<Login />} />
             </Route>
             <Route path="/admin" element={<Admin />}>

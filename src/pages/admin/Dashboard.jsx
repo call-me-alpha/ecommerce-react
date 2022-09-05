@@ -1,44 +1,59 @@
 import { Link } from 'react-router-dom'
 import ReactLoading from 'react-loading'
+import { useDispatch, useSelector } from 'react-redux'
 
 import Helmet from '../../components/Helmet'
 import Grid from '../../components/Grid'
 import StatisticalItem from '../../components/admin/StatisticalItem'
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import userApi from '../../api/userApi'
 import orderApi from '../../api/orderApi'
 import Badge from '../../components/admin/Badge'
+import { getProductsThunk } from '../../redux/productSlice'
 
 const Dashboard = () => {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getProductsThunk())
+    }, [dispatch])
+    const prodList = useSelector((state) => state.product.products)
     const [customers, setCustomers] = useState([])
+    const [products, setProducts] = useState([])
     const [orders, setOrders] = useState([])
+    useEffect(() => {
+        setProducts(prodList)
+    }, [prodList])
+
+    const countCust = useMemo(() => customers.length, [customers])
+    const countProd = useMemo(() => products.length, [products])
+
     const statisticals = [
         {
-            icon: 'bx bx-shopping-bag',
-            count: '1,995',
-            title: 'Total sales'
+            icon: 'bx bxs-user-pin',
+            count: countCust,
+            title: 'Tổng khách hàng'
         },
         {
-            icon: 'bx bx-cart',
-            count: '2,001',
-            title: 'Daily visits'
+            icon: 'bx bxs-package',
+            count: countProd,
+            title: 'Tổng sản phẩm'
+        },
+        {
+            icon: 'bx bxs-cart-alt',
+            count: '$2,632',
+            title: 'Tổng đơn hàng'
         },
         {
             icon: 'bx bx-dollar-circle',
-            count: '$2,632',
-            title: 'Total income'
-        },
-        {
-            icon: 'bx bx-receipt',
             count: '1,711',
-            title: 'Total orders'
+            title: 'Doanh thu'
         }
     ]
     useEffect(() => {
         const getCustoterServer = async () => {
             try {
                 const res = await userApi.getAll()
-                setCustomers(res.splice(0, 5))
+                setCustomers(res)
             } catch (err) {
                 console.log(err)
             }
@@ -46,7 +61,7 @@ const Dashboard = () => {
         const getOrderServer = async () => {
             try {
                 const res = await orderApi.getAll()
-                setOrders(res.splice(0, 5))
+                setOrders(res)
             } catch (err) {
                 console.log(err)
             }
@@ -54,6 +69,7 @@ const Dashboard = () => {
         getCustoterServer()
         getOrderServer()
     }, [])
+
     return (
         <Helmet title="Dashboard">
             <div className="dashboard">
@@ -80,7 +96,7 @@ const Dashboard = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {customers.map((cust) => (
+                                        {customers.slice(0, 5).map((cust) => (
                                             <tr key={cust.id}>
                                                 <td>
                                                     <img src={cust.avatar} alt="" />
@@ -116,14 +132,9 @@ const Dashboard = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {orders.map((order, index) => (
+                                        {orders.slice(0, 5).map((order, index) => (
                                             <tr key={index}>
-                                                <td>
-                                                    <img
-                                                        src="https://lh3.googleusercontent.com/a-/AFdZucrKoA9aXhaQqiAStlyyjUtHn35WPFUwD5TdlHxaIw=s96-c"
-                                                        alt=""
-                                                    />
-                                                </td>
+                                                <td>{order.name}</td>
                                                 <td>{order.date}</td>
                                                 <td>{order.price}</td>
                                                 <td>

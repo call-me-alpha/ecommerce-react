@@ -76,7 +76,6 @@ const Header = () => {
         toast.success('Đăng xuất thành công !')
     }
 
-    console.log(user)
     return (
         <header className="header" ref={headerRef}>
             <div className="container">
@@ -122,10 +121,12 @@ const Header = () => {
                                 </div>
                                 <div className="header__menu__right__item__user__control" ref={userRef}>
                                     {user.role !== 'admin' && (
-                                        <div className="header__menu__right__item__user__control__item">
-                                            <i className="bx bxs-cart-alt"></i>
-                                            <span>Đơn hàng của tôi</span>
-                                        </div>
+                                        <Link to="/myorder">
+                                            <div className="header__menu__right__item__user__control__item">
+                                                <i className="bx bxs-cart-alt"></i>
+                                                <span>Đơn hàng của tôi</span>
+                                            </div>
+                                        </Link>
                                     )}
 
                                     {user.role === 'admin' && (

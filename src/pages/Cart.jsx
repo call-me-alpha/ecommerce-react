@@ -14,6 +14,7 @@ const Cart = () => {
     }, [])
 
     const cartItems = useSelector((state) => state.cart.value)
+
     const [totalProd, setTotalProd] = useState(0)
     const [totalPrice, setTotalPrice] = useState(0)
 
@@ -21,6 +22,7 @@ const Cart = () => {
         setTotalProd(cartItems.reduce((total, item) => total + item.quantity, 0))
         setTotalPrice(cartItems.reduce((total, item) => total + item.price * item.quantity, 0))
     }, [cartItems])
+
     return (
         <Helmet title="Giỏ hàng">
             <div className="cart">
@@ -33,7 +35,11 @@ const Cart = () => {
                         </div>
                     </div>
                     <div className="cart__info__btn">
-                        <Button size="full">Đặt hàng</Button>
+                        {cartItems.length > 0 && (
+                            <Link to="/checkout">
+                                <Button size="full">Đặt hàng</Button>
+                            </Link>
+                        )}
                         <Link to="/products">
                             <Button size="full">Tiếp tục mua hàng</Button>
                         </Link>

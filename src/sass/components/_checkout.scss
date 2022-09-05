@@ -1,0 +1,100 @@
+.checkout {
+    @include flex(flex-start, flex-start);
+    @include mobile {
+        flex-direction: column-reverse;
+    }
+    &__left {
+        padding: 0 30px;
+        width: 50%;
+        &__title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: $text-main-color;
+            text-transform: uppercase;
+        }
+        form {
+            margin-top: 20px;
+        }
+        &__form-group {
+            @include flex(center, flex-start);
+            flex-direction: column;
+            font-size: 1.6rem;
+            color: $text-main-color;
+            label {
+                width: 100%;
+            }
+            input {
+                margin-top: 4px;
+                width: 100%;
+                padding: 10px 20px;
+                border: 1px solid #ccc;
+                outline-color: $main-color;
+            }
+        }
+        &__pay {
+            margin-top: 10px;
+            @include flex(center, flex-start);
+            font-size: 1.6rem;
+            span {
+                margin-left: 8px;
+            }
+        }
+        &__btn {
+            margin-top: 30px;
+        }
+        @include mobile {
+            margin-top: 20px;
+            width: 100%;
+            padding: unset;
+        }
+    }
+    &__right {
+        width: 50%;
+        padding: 30px;
+        background-color: #f7f1ea;
+        @include tablet {
+            width: 100%;
+            padding: 30px 10px;
+        }
+        @include mobile {
+            width: 100%;
+            padding: 30px 10px;
+        }
+        &__info {
+            .cart__item__image img {
+                @include tablet {
+                    height: 120px;
+                }
+            }
+        }
+        .cart__item__info__quantity {
+            font-size: 1.4rem;
+        }
+        &__total {
+            padding: 10px 0;
+            border-top: 1px solid $main-color;
+            &__item {
+                padding: 10px 0;
+                @include flex(center, space-between);
+                &__title {
+                    font-size: 1.6rem;
+                    font-weight: 600;
+                }
+                &__price {
+                    font-size: 2rem;
+                    font-weight: 600;
+                    color: $main-color;
+                }
+                &__about {
+                    font-size: 1.3rem;
+                    @include tablet {
+                        display: none;
+                    }
+                }
+            }
+            &__item:last-child {
+                border-top: 1px solid $main-color;
+            }
+        }
+    }
+}
