@@ -61,6 +61,7 @@ const ProductView = (props) => {
             toast.success('Thêm vào giỏ hàng thành công!')
             setColor(undefined)
             setSize(undefined)
+            setQuantity(1)
         }
     }
 

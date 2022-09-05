@@ -1,0 +1,47 @@
+.myorder {
+    overflow-y: auto;
+    margin-bottom: 60px;
+    color: $text-main-color;
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    &__list {
+        background-color: #f7f1ea;
+        table {
+            font-size: 1.4rem;
+            width: 100%;
+            border-spacing: 0;
+            th {
+                text-transform: capitalize;
+                padding: 14px 10px;
+            }
+            tr {
+                text-align: center;
+            }
+            td {
+                border-top: 1px solid #fff;
+                padding: 14px 10px;
+            }
+        }
+        &__btn {
+            cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover {
+                color: $main-color;
+            }
+        }
+    }
+}
+
+.myorder-noitem {
+    height: 500px;
+    @include flex(center, center);
+    font-size: 2rem;
+    flex-direction: column;
+    div {
+        margin-bottom: 10px;
+    }
+}
