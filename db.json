@@ -210,7 +210,7 @@
       "totalProd": 2,
       "totalPrice": 535000,
       "createdAt": "16:05 09/06/2022",
-      "status": "pendding"
+      "status": "successful"
     },
     {
       "id": "0ce2ffc6-24c5-4e06-a7b8-88b850c72382",
@@ -264,7 +264,7 @@
       "totalProd": 2,
       "totalPrice": 1080000,
       "createdAt": "16:11 09/06/2022",
-      "status": "pendding"
+      "status": "shipping"
     },
     {
       "id": "78cef20e-a20b-4167-a865-52dde8ede615",
@@ -361,7 +361,7 @@
       "totalProd": 4,
       "totalPrice": 1240000,
       "createdAt": "16:56 09/06/2022",
-      "status": "pendding"
+      "status": "shipping"
     },
     {
       "id": "af4403dc-4dd1-4899-9881-94b6fce8ec8b",

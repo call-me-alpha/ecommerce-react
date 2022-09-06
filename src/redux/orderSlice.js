@@ -20,8 +20,8 @@ const canceledOrderThunk = createAsyncThunk('order/canceled', async (id) => {
     }
 })
 
-const updateStatusThunk = createAsyncThunk('order/updateStatus', async (data) => {
-    const { id, status } = data
+const updateStatusThunk = createAsyncThunk('order/updateStatus', async ({ id, status }) => {
+    console.log(id, status)
     try {
         const res = await orderApi.updateStatus(id, status)
         return res

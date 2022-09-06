@@ -96,7 +96,6 @@ const Login = () => {
                     const res = await userApi.getOne(id)
                     dispatch(login(res))
                 } catch (err) {
-                    console.log(err)
                     toast.error(err)
                 }
             }

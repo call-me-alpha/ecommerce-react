@@ -8,10 +8,11 @@ import Helmet from '../../components/Helmet'
 import { getOrdersThunk } from '../../redux/orderSlice'
 import Table from '../../components/admin/Table'
 import Badge from '../../components/admin/Badge'
+import ViewOrderModal from '../../components/admin/ViewOrderModal'
 
 const headData = ['Người đặt', 'Tổng sản phẩm', 'Tổng tiền', 'Ngày đặt', 'Trạng thái', 'Thao tác']
 const renderHead = (item, index) => <th key={index}>{item}</th>
-const renderBody = (item, index) => (
+const renderBody = (item, index, handelViewModal) => (
     <tr key={index}>
         <td>{item.name}</td>
         <td>{item.totalProd}</td>
@@ -21,7 +22,9 @@ const renderBody = (item, index) => (
             <Badge status={item.status} />
         </td>
         <td>
-            <span className="btn__edit">Xem chi tiết</span>
+            <span className="btn__view" onClick={() => handelViewModal(item.id)}>
+                Xem chi tiết
+            </span>
         </td>
     </tr>
 )
@@ -57,6 +60,7 @@ const Order = () => {
         }
         return temp
     }, [orders])
+
     return (
         <Helmet title="Quản lý đơn hàng">
             <div className="page">
@@ -77,7 +81,7 @@ const Order = () => {
                     )}
                 </div>
             </div>
-            {/* <EditCateModal display={editModal} toggleEditModal={toggleEditModal} cateEdit={cateEdit} /> */}
+            <ViewOrderModal display={viewModal} toggleViewModal={toggleViewModal} orderView={order} />
         </Helmet>
     )
 }

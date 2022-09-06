@@ -54,7 +54,12 @@
                             margin-left: unset;
                         }
                     }
-                    .btn__edit:hover {
+                    .btn__view {
+                        font-size: 1.4rem;
+                        cursor: pointer;
+                    }
+                    .btn__edit:hover,
+                    .btn__view:hover {
                         color: #10d4d2;
                     }
                     .btn__delete:hover {

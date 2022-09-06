@@ -33,7 +33,10 @@ const Dashboard = () => {
     const countCust = useMemo(() => customers.length, [customers])
     const countProd = useMemo(() => products.length, [products])
     const countOrder = useMemo(() => orders.length, [orders])
-    const totalPrice = useMemo(() => orders.reduce((total, curr) => total + curr.totalPrice, 0), [orders])
+    const totalPrice = useMemo(() => {
+        const revenue = orders.filter((item) => item.status === 'successful')
+        return revenue.reduce((total, curr) => total + curr.totalPrice, 0)
+    }, [orders])
 
     const statisticals = [
         {
