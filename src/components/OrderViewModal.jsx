@@ -1,26 +1,23 @@
 import ReactLoading from 'react-loading'
 import { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify'
+import { useDispatch } from 'react-redux'
 
 import Button from './Button'
 import Badge from '../components/admin/Badge'
-import orderApi from '../api/orderApi'
+import { canceledOrderThunk } from '../redux/orderSlice'
 
 const OrderViewModal = ({ viewModal, toggleViewModal, order }) => {
-    const navigate = useNavigate()
+    const dispatch = useDispatch()
     const [orderInfo, setOrderInfo] = useState()
     useEffect(() => {
         setOrderInfo(order)
     }, [order])
     const handelCanceled = (id) => {
-        const canceledOrderServer = async (id) => {
-            const res = await orderApi.canceled(id)
-            console.log(res)
-            toast.success('Huỷ đơn hàng thành công !')
-            navigate(0)
-        }
-        canceledOrderServer(id)
+        dispatch(canceledOrderThunk(id))
+        toast.success('Huỷ đơn hàng thành công !')
+        toggleViewModal()
     }
     return (
         <div className={`order-modal ${viewModal}`}>

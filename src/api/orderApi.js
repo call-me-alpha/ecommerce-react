@@ -13,6 +13,9 @@ const orderApi = {
     },
     canceled(id) {
         return axiosClient.patch(`${url}/${id}`, { status: 'canceled' })
+    },
+    updateStatus(id, status) {
+        return axiosClient.patch(`${url}/${id}`, { status })
     }
 }
 

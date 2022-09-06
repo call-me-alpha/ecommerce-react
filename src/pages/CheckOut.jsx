@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { v4 } from 'uuid'
+import { format } from 'date-fns'
 
 import Helmet from '../components/Helmet'
 import PolicyItem from '../components/PolicyItem'
@@ -46,9 +47,10 @@ const Cart = () => {
         e.preventDefault()
         const total = totalPrice >= 500000 ? totalPrice : totalPrice + 50000
         const today = new Date()
-        const careteAt = `${today.getHours()}:${today.getMinutes()} ${today.getDate()}/${
-            today.getMonth() + 1
-        }/${today.getFullYear()}`
+        // const careteAt = `${today.getHours()}:${today.getUTCMinutes()} ${today.getDate()}/${
+        //     today.getMonth() + 1
+        // }/${today.getFullYear()}`
+        const createdAt = format(new Date(), 'HH:mm MM/dd/yyyy')
         const formData = {
             id: v4(),
             custId,
@@ -59,7 +61,7 @@ const Cart = () => {
             cartItems,
             totalProd,
             totalPrice: total,
-            createdAt: careteAt,
+            createdAt,
             status: 'pendding'
         }
         const createOrderServer = async (data) => {

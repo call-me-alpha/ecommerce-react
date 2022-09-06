@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
+import { parseJSON } from 'date-fns'
 
 import orderApi from '../api/orderApi'
 import Helmet from '../components/Helmet'
@@ -9,14 +10,20 @@ import Section, { SectionBody } from '../components/Section'
 import Badge from '../components/admin/Badge'
 import Button from '../components/Button'
 import OrderViewModal from '../components/OrderViewModal'
+import { getOrdersThunk } from '../redux/orderSlice'
 
 function MyOrder() {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getOrdersThunk())
+    }, [dispatch])
     const navigate = useNavigate()
 
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
     const user = useSelector((state) => state.user.currentUser)
+    const orderList = useSelector((state) => state.order.orders)
     const [orders, setOrders] = useState([])
     const [curentUser, setCurentUser] = useState({})
     const [order, setOrder] = useState()
@@ -25,13 +32,10 @@ function MyOrder() {
     const toggleViewModal = () => {
         setViewModal((prev) => (prev === 'active' ? '' : 'active'))
     }
+
     useEffect(() => {
-        const getOrdersServer = async () => {
-            const res = await orderApi.getAll()
-            setOrders(res)
-        }
-        getOrdersServer()
-    }, [])
+        setOrders(orderList)
+    }, [orderList])
     useEffect(() => {
         setCurentUser(user)
     }, [user])
@@ -78,7 +82,7 @@ function MyOrder() {
                                         <td>{index + 1}</td>
                                         <td>{item.totalProd}</td>
                                         <td>{item.totalPrice.toLocaleString()} VNĐ</td>
-                                        <td>{item.createdAt}</td>
+                                        <td>{parseJSON(item.createdAt)}</td>
                                         <td>
                                             <Badge status={item.status} />
                                         </td>

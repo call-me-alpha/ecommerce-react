@@ -16,6 +16,7 @@ const Dashboard = () => {
     useEffect(() => {
         dispatch(getProductsThunk())
     }, [dispatch])
+
     const prodList = useSelector((state) => state.product.products)
     const [customers, setCustomers] = useState([])
     const [products, setProducts] = useState([])
@@ -135,8 +136,8 @@ const Dashboard = () => {
                                         {orders.slice(0, 5).map((order, index) => (
                                             <tr key={index}>
                                                 <td>{order.name}</td>
-                                                <td>{order.date}</td>
-                                                <td>{order.price}</td>
+                                                <td>{order.createdAt}</td>
+                                                <td>{order.totalPrice}</td>
                                                 <td>
                                                     <Badge status={order.status} />
                                                 </td>
