@@ -5,7 +5,7 @@ callmealpha.ecommerce@gmail.com
 pass: Example12345
 
 ## Image demo
-### Clinet
+### Client
 <img width="1440" alt="Screen Shot 2022-09-06 at 17 41 50" src="https://user-images.githubusercontent.com/111438030/188616350-778ef2ec-2e0f-4c55-8038-25f9118a3ff2.png">
 
 <img width="1440" alt="Screen Shot 2022-09-06 at 17 42 31" src="https://user-images.githubusercontent.com/111438030/188616229-397a6bac-de92-4a1c-9701-7d63da265eda.png">
