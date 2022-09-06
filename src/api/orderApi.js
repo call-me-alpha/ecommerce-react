@@ -10,6 +10,9 @@ const orderApi = {
     },
     create(data) {
         return axiosClient.post(url, data)
+    },
+    canceled(id) {
+        return axiosClient.patch(`${url}/${id}`, { status: 'canceled' })
     }
 }
 

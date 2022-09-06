@@ -45,6 +45,10 @@ const Cart = () => {
     const handelSubmit = (e) => {
         e.preventDefault()
         const total = totalPrice >= 500000 ? totalPrice : totalPrice + 50000
+        const today = new Date()
+        const careteAt = `${today.getHours()}:${today.getMinutes()} ${today.getDate()}/${
+            today.getMonth() + 1
+        }/${today.getFullYear()}`
         const formData = {
             id: v4(),
             custId,
@@ -55,17 +59,16 @@ const Cart = () => {
             cartItems,
             totalProd,
             totalPrice: total,
-            createdAt: new Date(),
+            createdAt: careteAt,
             status: 'pendding'
         }
-        console.log(formData)
         const createOrderServer = async (data) => {
             await orderApi.create(data)
             toast.success('Đặt hàng thành công !')
         }
-        dispatch(remove())
         createOrderServer(formData)
         setTimeout(() => {
+            dispatch(remove())
             navigate('/myorder')
         }, 2000)
     }
@@ -134,7 +137,7 @@ const Cart = () => {
                             </div>
                         ) : (
                             <div className="checkout__left__btn">
-                                Vui lòng đăng nhập để có thể đặt hàng và theo dõi đơn hàng
+                                <span>Vui lòng đăng nhập để có thể đặt hàng và theo dõi đơn hàng</span>
                                 <Link to="/login">
                                     <span>Đăng nhập</span>
                                 </Link>

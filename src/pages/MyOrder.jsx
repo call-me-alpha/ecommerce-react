@@ -19,18 +19,18 @@ function MyOrder() {
     const user = useSelector((state) => state.user.currentUser)
     const [orders, setOrders] = useState([])
     const [curentUser, setCurentUser] = useState({})
-
+    const [order, setOrder] = useState()
     const [viewModal, setViewModal] = useState('')
 
     const toggleViewModal = () => {
         setViewModal((prev) => (prev === 'active' ? '' : 'active'))
     }
     useEffect(() => {
-        const getOrderServer = async () => {
+        const getOrdersServer = async () => {
             const res = await orderApi.getAll()
             setOrders(res)
         }
-        getOrderServer()
+        getOrdersServer()
     }, [])
     useEffect(() => {
         setCurentUser(user)
@@ -39,12 +39,22 @@ function MyOrder() {
         navigate('/')
     }
     const myOrders = useMemo(() => {
+        let temp
         if (orders && curentUser) {
-            return orders.filter((item) => item.custId === curentUser.id)
+            temp = orders.filter((item) => item.custId === curentUser.id)
         }
+        return temp.sort((a, b) => b.createdAt.localeCompare(a.createdAt))
     }, [orders, curentUser])
 
-    console.log(viewModal)
+    const handelView = (id) => {
+        const getOrderServer = async (id) => {
+            const res = await orderApi.getOne(id)
+            setOrder(res)
+            toggleViewModal()
+        }
+        getOrderServer(id)
+    }
+    console.log(myOrders)
     return (
         <Helmet title="Đơn hàng của tôi">
             {myOrders.length > 0 ? (
@@ -72,7 +82,7 @@ function MyOrder() {
                                         <td>
                                             <Badge status={item.status} />
                                         </td>
-                                        <td onClick={toggleViewModal}>
+                                        <td onClick={() => handelView(item.id)}>
                                             <span className="myorder__list__btn">Xem chi tiết</span>
                                         </td>
                                     </tr>
@@ -94,7 +104,7 @@ function MyOrder() {
                     <PolicyItem />
                 </SectionBody>
             </Section>
-            <OrderViewModal viewModal={viewModal} toggleViewModal={toggleViewModal} />
+            <OrderViewModal viewModal={viewModal} toggleViewModal={toggleViewModal} order={order} />
         </Helmet>
     )
 }
