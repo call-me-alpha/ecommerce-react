@@ -66,7 +66,7 @@ const categorySlice = createSlice({
             })
             .addCase(createCateThunk.fulfilled, (state, { payload }) => {
                 state.loading = false
-                state.categories.push(payload)
+                state.categories.unshift(payload)
             })
             .addCase(updateCateThunk.pending, (state, { payload }) => {
                 state.loading = true

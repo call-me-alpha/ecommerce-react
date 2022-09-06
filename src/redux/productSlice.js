@@ -65,7 +65,7 @@ const productSlice = createSlice({
             })
             .addCase(createProdThunk.fulfilled, (state, { payload }) => {
                 state.loading = false
-                state.products.push(payload)
+                state.products.unshift(payload)
             })
             .addCase(updateProdThunk.pending, (state, { payload }) => {
                 state.loading = true

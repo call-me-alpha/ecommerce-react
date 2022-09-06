@@ -46,7 +46,7 @@ const Cart = () => {
     const handelSubmit = (e) => {
         e.preventDefault()
         const total = totalPrice >= 500000 ? totalPrice : totalPrice + 50000
-        const today = new Date()
+        // const today = new Date()
         // const careteAt = `${today.getHours()}:${today.getUTCMinutes()} ${today.getDate()}/${
         //     today.getMonth() + 1
         // }/${today.getFullYear()}`

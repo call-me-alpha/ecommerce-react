@@ -1,6 +1,10 @@
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { toast } from 'react-toastify'
 
 import logo from '../../assets/images/logos/logo.png'
+import { auth } from '../../firebase/config'
+import { logOut } from '../../redux/userSlice'
 
 const siderBars = [
     {
@@ -42,6 +46,14 @@ const SiderBarItem = (props) => {
 }
 
 const SiderBar = ({ sideBarRef }) => {
+    const navigate = useNavigate()
+    const dispatch = useDispatch()
+    const handelLogout = () => {
+        auth.signOut()
+        dispatch(logOut())
+        navigate('/')
+        toast.success('Đăng xuất thành công !')
+    }
     const { pathname } = useLocation()
     const activeItem = () => {
         const check = siderBars.findIndex((item) => pathname.split('/')[2] === item.path)
@@ -64,6 +76,10 @@ const SiderBar = ({ sideBarRef }) => {
             ))}
             <div className="sidebar__close" onClick={handelToggle}>
                 <i className="bx bx-arrow-back"></i>
+            </div>
+            <div className="sidebar__logout" onClick={handelLogout}>
+                <i className="bx bx-log-out-circle"></i>
+                <span>Đăng xuất</span>
             </div>
         </div>
     )

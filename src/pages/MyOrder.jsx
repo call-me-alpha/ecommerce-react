@@ -1,7 +1,6 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useNavigate } from 'react-router-dom'
-import { parseJSON } from 'date-fns'
 
 import orderApi from '../api/orderApi'
 import Helmet from '../components/Helmet'
@@ -47,7 +46,7 @@ function MyOrder() {
         if (orders && curentUser) {
             temp = orders.filter((item) => item.custId === curentUser.id)
         }
-        return temp.sort((a, b) => b.createdAt.localeCompare(a.createdAt))
+        return temp.sort((a, b) => b.createdAt.localeCompare(a.careteAt))
     }, [orders, curentUser])
 
     const handelView = (id) => {
@@ -58,7 +57,6 @@ function MyOrder() {
         }
         getOrderServer(id)
     }
-    console.log(myOrders)
     return (
         <Helmet title="Đơn hàng của tôi">
             {myOrders.length > 0 ? (
@@ -82,7 +80,7 @@ function MyOrder() {
                                         <td>{index + 1}</td>
                                         <td>{item.totalProd}</td>
                                         <td>{item.totalPrice.toLocaleString()} VNĐ</td>
-                                        <td>{parseJSON(item.createdAt)}</td>
+                                        <td>{item.createdAt}</td>
                                         <td>
                                             <Badge status={item.status} />
                                         </td>

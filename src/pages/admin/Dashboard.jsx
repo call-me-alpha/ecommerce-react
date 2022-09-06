@@ -7,26 +7,33 @@ import Grid from '../../components/Grid'
 import StatisticalItem from '../../components/admin/StatisticalItem'
 import { useEffect, useMemo, useState } from 'react'
 import userApi from '../../api/userApi'
-import orderApi from '../../api/orderApi'
 import Badge from '../../components/admin/Badge'
 import { getProductsThunk } from '../../redux/productSlice'
+import { getOrdersThunk } from '../../redux/orderSlice'
 
 const Dashboard = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getProductsThunk())
+        dispatch(getOrdersThunk())
     }, [dispatch])
 
     const prodList = useSelector((state) => state.product.products)
+    const orderList = useSelector((state) => state.order.orders)
     const [customers, setCustomers] = useState([])
     const [products, setProducts] = useState([])
     const [orders, setOrders] = useState([])
     useEffect(() => {
         setProducts(prodList)
     }, [prodList])
+    useEffect(() => {
+        setOrders(orderList)
+    }, [orderList])
 
     const countCust = useMemo(() => customers.length, [customers])
     const countProd = useMemo(() => products.length, [products])
+    const countOrder = useMemo(() => orders.length, [orders])
+    const totalPrice = useMemo(() => orders.reduce((total, curr) => total + curr.totalPrice, 0), [orders])
 
     const statisticals = [
         {
@@ -41,12 +48,12 @@ const Dashboard = () => {
         },
         {
             icon: 'bx bxs-cart-alt',
-            count: '$2,632',
+            count: countOrder,
             title: 'Tổng đơn hàng'
         },
         {
             icon: 'bx bx-dollar-circle',
-            count: '1,711',
+            count: `${totalPrice.toLocaleString()}`,
             title: 'Doanh thu'
         }
     ]
@@ -59,18 +66,17 @@ const Dashboard = () => {
                 console.log(err)
             }
         }
-        const getOrderServer = async () => {
-            try {
-                const res = await orderApi.getAll()
-                setOrders(res)
-            } catch (err) {
-                console.log(err)
-            }
-        }
+
         getCustoterServer()
-        getOrderServer()
     }, [])
 
+    const ordersNew = useMemo(() => {
+        let temp = []
+        if (orders[0]?.createdAt) {
+            temp = orders.slice(0, 6).sort((a, b) => b.createdAt.localeCompare(a.careteAt))
+        }
+        return temp
+    }, [orders])
     return (
         <Helmet title="Dashboard">
             <div className="dashboard">
@@ -122,7 +128,7 @@ const Dashboard = () => {
                         </div>
                         <div className="dashboard__table__item">
                             <div className="dashboard__table__item__title">Đơn hàng mới</div>
-                            {orders.length ? (
+                            {ordersNew.length ? (
                                 <table>
                                     <thead>
                                         <tr>
@@ -133,11 +139,11 @@ const Dashboard = () => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {orders.slice(0, 5).map((order, index) => (
+                                        {ordersNew.map((order, index) => (
                                             <tr key={index}>
                                                 <td>{order.name}</td>
                                                 <td>{order.createdAt}</td>
-                                                <td>{order.totalPrice}</td>
+                                                <td>{order.totalPrice.toLocaleString()} VNĐ</td>
                                                 <td>
                                                     <Badge status={order.status} />
                                                 </td>
