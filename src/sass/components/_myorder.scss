@@ -9,11 +9,12 @@
         margin-bottom: 20px;
     }
     &__list {
-        background-color: #f7f1ea;
         table {
             font-size: 1.4rem;
             width: 100%;
             border-spacing: 0;
+            overflow-y: auto;
+            background-color: #f7f1ea;
             th {
                 text-transform: capitalize;
                 padding: 14px 10px;
