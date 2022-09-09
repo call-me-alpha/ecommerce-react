@@ -3,7 +3,7 @@ import ReactLoading from 'react-loading'
 import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
 
-import { updateRoleThunk } from '../../redux/userSlice'
+import { getUsersThunk, updateRoleThunk } from '../../redux/userSlice'
 import Helmet from '../../components/Helmet'
 import Table from '../../components/admin/Table'
 import Badge from '../../components/admin/Badge'
@@ -35,6 +35,9 @@ const renderBody = (item, index, handelUpdateRole) => (
 
 const Customer = () => {
     const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getUsersThunk())
+    }, [dispatch])
 
     const users = useSelector((state) => state.user.users)
     const [customers, setCustomers] = useState([])
