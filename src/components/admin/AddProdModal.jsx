@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import Select from 'react-select'
 
 import Button from '../Button'
-import { getCategoriesThunk } from '../../redux/categorySlice'
 import { createProdThunk } from '../../redux/productSlice'
 
 const tags = ['new', 'popular', 'seller']
@@ -31,9 +30,6 @@ const descs = [
 
 const AddProdModal = ({ display, toggleAddModal }) => {
     const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(getCategoriesThunk())
-    }, [dispatch])
     const [name, setName] = useState('')
     const [tag, setTag] = useState('')
     const [cateId, setCateId] = useState()

@@ -7,7 +7,7 @@ import Helmet from '../../components/Helmet'
 import productApi from '../../api/productApi'
 import Table from '../../components/admin/Table'
 import Badge from '../../components/admin/Badge'
-import { getProductsThunk, deleteProdThunk } from '../../redux/productSlice'
+import { deleteProdThunk } from '../../redux/productSlice'
 import AddProdModal from '../../components/admin/AddProdModal'
 import EditProdModal from '../../components/admin/EditProdModal'
 
@@ -53,9 +53,6 @@ const renderBody = (item, index, handelDeleteCate, handelEditProd) => (
 
 const Product = () => {
     const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(getProductsThunk())
-    }, [dispatch])
     const prodList = useSelector((state) => state.product.products)
     const [products, setProducts] = useState(prodList)
     const [product, setProduct] = useState({})

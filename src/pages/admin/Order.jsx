@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import ReactLoading from 'react-loading'
-// import { toast } from 'react-toastify'
 
 import orderApi from '../../api/orderApi'
 import Helmet from '../../components/Helmet'

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import ReactLoading from 'react-loading'
 import { toast } from 'react-toastify'
 import { useDispatch, useSelector } from 'react-redux'
-import { getCategoriesThunk, deleteCateThunk } from '../../redux/categorySlice'
+import { deleteCateThunk } from '../../redux/categorySlice'
 
 import categoryApi from '../../api/categoryApi'
 import Helmet from '../../components/Helmet'
@@ -31,9 +31,6 @@ const renderBody = (item, index, handelDeleteCate, handelEditCate) => (
 
 const Category = () => {
     const dispatch = useDispatch()
-    useEffect(() => {
-        dispatch(getCategoriesThunk())
-    }, [dispatch])
     const cateList = useSelector((state) => state.category.categories)
     const [categories, setCategories] = useState(cateList)
     const isLoading = useSelector((state) => state.category.loading)
