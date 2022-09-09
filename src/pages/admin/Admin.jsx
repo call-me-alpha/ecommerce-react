@@ -1,20 +1,27 @@
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useSelector } from 'react-redux'
-import { Navigate, Outlet } from 'react-router-dom'
+import { useNavigate, Outlet } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 
 import SliderBar from '../../components/admin/SiderBar'
 import TopNav from '../../components/admin/TopNav'
 
 const Admin = () => {
+    const navigate = useNavigate()
     const sideBarRef = useRef()
     const handelToggle = () => {
         sideBarRef.current.classList.toggle('active')
     }
     const user = useSelector((state) => state.user.currentUser)
-    if (user.role !== 'admin') {
-        return <Navigate to="/" />
-    }
+    const [currentUser, setCurrentUser] = useState(user)
+    useEffect(() => {
+        setCurrentUser(user)
+    }, [user])
+    useEffect(() => {
+        if (currentUser?.role !== 'admin') {
+            navigate('/')
+        }
+    }, [currentUser?.role, navigate])
     return (
         <div className="layout">
             <SliderBar sideBarRef={sideBarRef} />

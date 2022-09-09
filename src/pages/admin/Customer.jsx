@@ -50,7 +50,6 @@ const Customer = () => {
             toast.success('Chỉnh sửa vai trò thành công !')
         }
     }
-    console.log(customers)
     return (
         <Helmet title="Quản lý người dùng">
             <div className="page">
