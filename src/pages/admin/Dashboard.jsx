@@ -10,12 +10,14 @@ import userApi from '../../api/userApi'
 import Badge from '../../components/admin/Badge'
 import { getProductsThunk } from '../../redux/productSlice'
 import { getOrdersThunk } from '../../redux/orderSlice'
+import { getCategoriesThunk } from '../../redux/categorySlice'
 
 const Dashboard = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getProductsThunk())
         dispatch(getOrdersThunk())
+        dispatch(getCategoriesThunk())
     }, [dispatch])
 
     const prodList = useSelector((state) => state.product.products)
